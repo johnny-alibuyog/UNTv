@@ -1,0 +1,1894 @@
+﻿{
+    "status": "ok",
+    "count": 12,
+    "pages": 536,
+    "category": {
+        "id": 18,
+        "slug": "headlines",
+        "title": "Headlines",
+        "description": "",
+        "parent": 0,
+        "post_count": 6424
+    },
+    "posts": [
+        {
+            "id": 50501,
+            "type": "post",
+            "slug": "senate-supports-pnp-modernization-vision-of-new-pnp-chief",
+            "url": "http:\/\/www.untvweb.com\/news\/senate-supports-pnp-modernization-vision-of-new-pnp-chief\/",
+            "status": "publish",
+            "title": "Senate supports PNP modernization vision of  new PNP Chief",
+            "title_plain": "Senate supports PNP modernization vision of  new PNP Chief",
+            "content": "<p><strong>MANILA, Philippines<\/strong> &#8211; Philippine National Police (PNP) Chief Director General Ricardo Marquez, along with his officials on Thursday attended the senate hearing on PNP modernization and reorganization.<\/p>\n<p>Marquez believes that the budget for the PNP capability program would be a big help.<\/p>\n<div id=\"attachment_50502\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg\"><img class=\"size-full wp-image-50502\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg\" alt=\"PNP leaders at the senate hearing on police modernization\" width=\"640\" height=\"427\" \/><\/a><p class=\"wp-caption-text\">PNP leaders at the senate hearing on police modernization<\/p><\/div>\n<p>Included in PNP\u2019s wishlist to congress is to have its own police station buildings because 800 of the 1,766 police stations are \u201csquatting\u201d on government offices.<\/p>\n<p>When asked about his deadline for the platforms, Marquez said, &#8220;My personal timetable is: I will not retire until I do not fulfill it.\u201d<\/p>\n<p>The Senate Committee on Public Order and Dangerous Drugs supports the vision and plans of the new PNP chief.<\/p>\n<p>He particularly gained the praise of committee chair Sen. Grace Poe who said,\u201d <em>Itong bagong PNP chief natin ngayon, mayroon siyang vision\u2014may plano. Hindi lang mga plano, nakakasagot siya sa mga tanong natin at importante yun.\u201d<\/em><\/p>\n<p>(This new PNP chief has vision and plans. He also answered our questions which is important)<\/p>\n<p>Senator Grace Poe said that even though PNP is facing controversy, there is no denying the heroism and sacrifices of some thousand honest and decent policemen who serve the public.<strong> (UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>MANILA, Philippines &#8211; Philippine National Police (PNP) Chief Director General Ricardo Marquez, along with his officials on Thursday attended the senate hearing on PNP modernization and reorganization. Marquez believes that the budget for the PNP capability program would be a big help. Included in PNP\u2019s wishlist to congress is to have its own police station [&hellip;]<\/p>\n",
+            "date": "2015-08-14 11:26:13",
+            "modified": "2015-08-14 12:40:12",
+            "categories": [
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 27,
+                    "slug": "police-report",
+                    "title": "Police Report",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 407
+                },
+                {
+                    "id": 15854,
+                    "slug": "videos",
+                    "title": "Videos",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 3
+                },
+                {
+                    "id": 15856,
+                    "slug": "why-news-videos",
+                    "title": "Why News",
+                    "description": "",
+                    "parent": 15854,
+                    "post_count": 3
+                }
+            ],
+            "tags": [
+                {
+                    "id": 15857,
+                    "slug": "modernization",
+                    "title": "modernization",
+                    "description": "",
+                    "post_count": 1
+                },
+                {
+                    "id": 76,
+                    "slug": "philippine-national-police",
+                    "title": "Philippine National Police",
+                    "description": "",
+                    "post_count": 187
+                },
+                {
+                    "id": 394,
+                    "slug": "pnp",
+                    "title": "PNP",
+                    "description": "",
+                    "post_count": 168
+                },
+                {
+                    "id": 249,
+                    "slug": "senate",
+                    "title": "Senate",
+                    "description": "",
+                    "post_count": 6
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50502,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg",
+                    "slug": "image_aug142015_untv-news_pnp-hearing",
+                    "title": "IMAGE_AUG142015_UNTV-News_PNP-HEARING",
+                    "description": "",
+                    "caption": "PNP leaders at the senate hearing on police modernization",
+                    "parent": 50501,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    "Q5uG0S7YA-A"
+                ],
+                "video_youtube_title": [
+                    "Senate supports PNP modernization vision of PNP Chief Director General Ricardo Marquez"
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG142015_UNTV-News_PNP-HEARING.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50497,
+            "type": "post",
+            "slug": "93000-bagong-omr-machines-rerentahan-ng-comelec-para-sa-2016-elections",
+            "url": "http:\/\/www.untvweb.com\/news\/93000-bagong-omr-machines-rerentahan-ng-comelec-para-sa-2016-elections\/",
+            "status": "publish",
+            "title": "93,000 bagong OMR machines, rerentahan ng COMELEC para sa 2016 elections",
+            "title_plain": "93,000 bagong OMR machines, rerentahan ng COMELEC para sa 2016 elections",
+            "content": "<div id=\"attachment_50498\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"wp-image-50498 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg\" alt=\"\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">Ang COMELEC En Banc sa pag-announce ng desisyon sa pag-acquire ng OMR machines. (VICTOR COSARE \/ UNTV News)<\/p><\/div>\n<p><strong>MANILA, Philippines \u2014<\/strong> Kumpleto ang pitong miyembro ng COMELEC En Banc nang humarap sa media kanina upang i-anunsyo ang pinal na pasya ng komisyon kung anong mga makina ang gagamitin sa 2016 elections.<\/p>\n<p>Unanimous ang naging botohan ng en banc, hindi gagamitin ang mga lumang PCOS machine kundi magrerenta ng mahigit 93,000 bagong optical mark reader o OMR machines.<\/p>\n<p>Ang OMR machines ay ang generic name ng Precinct Count Optical Scan (PCOS) machines na ginamit ng Pilipinas noong 2010 at 2013 elections.<\/p>\n<p>Pahayag ni COMELEC Chairman Andres Bautista, &#8220;The commission unanimously decided to choose the more prudent approach of leasing all new 93,000 plus machines for the 2016 elections. Again, the commission believes that this is the most viable, practical and safest option to pursue in our efforts ensures the credibility of the 2016 elections.\u201d<\/p>\n<p>Sa SMARTMATIC kukunin ang mga bagong makina.<\/p>\n<p>Una nang naipanalo ng SMARTMATIC ang bidding para sa lease ng 23,000 new OMR machines sa halagang 1.7 billion pesos at patapos na ang pag-uusap sa kontrata para dito.<\/p>\n<p>SMARTMATIC din ang nagwagi sa bidding para sa lease ng 70,977 new OMR machines sa halagang 6.3 billion pesos.<\/p>\n<p>Mas mura sana ng 2.5 billion pesos kung pakikinabangan uli ang mga dati ng ginamit na PCOS machines ngunit nauwi naman sa 2 failed bidding ang planong pag-refurbish sa mga lumang makina.<\/p>\n<p>Kahit may opsyon ang COMELEC na pumasok sa isang negotiated contract para sa refurbishment option subalit nag abiso na ang ilang kumpanya kabilang ang Smartmatic na hindi na kayang tapusin ang trabaho bago ang 2016 elections.<\/p>\n<p>Hindi rin uubra ang balak ng COMELEC na bawasan ang bilang ng mga kukuning bagong makina at idagdag sa magiging kakulangan ang ilang refurbished PCOS machines.<\/p>\n<p>Ayon kay Chairman Bautista, \u201cIf we were to reduce the award of 70,977, what we were looking to do was to reduce the award to say 60 or even 50 and then refurbish the additional 20 using the existing PCOS machines but we were told that we might encounter a legal problem and second the supplier might not want to award or enter into a contract with COMELEC. In case we did that, because of the price differential.&#8221;<\/p>\n<p>Paliwanag ng COMELEC may technical challenges din kung sabay na isasagawa ang refurbishment ng lumang PCOS at ang pag-manufacture ng mga bagong OMR machine.<\/p>\n<p>Ayon sa SMARTMATIC, magsisimula ngayong Oktubre ang pag-deliver sa mga bagong voting machines at makukumpleto ito hanggang enero ng susunod na taon.<\/p>\n<p>Dagdag pa ni Bautista, &#8220;That would give the COMELEC sufficient time to test these machines as well as sufficient time to practice and to explain the features of these machines to our field personnel and to our teachers. Also the new machines are going to be configured to address the problems that were encountered in 2010 and 2013.&#8221;<\/p>\n<p>Hinggil naman sa tanong kung ano na ang gagawin sa mahigit 81,000 PCOS machines na binili na ng COMELEC sa SMARTMATIC noong 2012, ayon sa poll body gagamitin pa rin ito sa darating na 2019 elections. Kailangan lamang nilang ipa-refurbish ito ng mas maaga upang mas mura ang magagastos ng para dito.&#8221;<\/p>\n<p>Pagkatapos nang announcement, tumanggi nang magpatanong ang mga miyembro ng en banc sa media.<strong> (VICTOR COSARE \/ UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>MANILA, Philippines \u2014 Kumpleto ang pitong miyembro ng COMELEC En Banc nang humarap sa media kanina upang i-anunsyo ang pinal na pasya ng komisyon kung anong mga makina ang gagamitin sa 2016 elections. Unanimous ang naging botohan ng en banc, hindi gagamitin ang mga lumang PCOS machine kundi magrerenta ng mahigit 93,000 bagong optical mark [&hellip;]<\/p>\n",
+            "date": "2015-08-13 20:13:16",
+            "modified": "2015-08-13 20:19:54",
+            "categories": [
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 695,
+                    "slug": "ito-ang-balita",
+                    "title": "Ito ang Balita",
+                    "description": "",
+                    "parent": 29,
+                    "post_count": 66
+                }
+            ],
+            "tags": [
+                {
+                    "id": 480,
+                    "slug": "comelec",
+                    "title": "COMELEC",
+                    "description": "",
+                    "post_count": 192
+                },
+                {
+                    "id": 1667,
+                    "slug": "comelec-en-banc",
+                    "title": "COMELEC En Banc",
+                    "description": "",
+                    "post_count": 11
+                },
+                {
+                    "id": 2297,
+                    "slug": "pcos",
+                    "title": "PCOS",
+                    "description": "",
+                    "post_count": 25
+                },
+                {
+                    "id": 2296,
+                    "slug": "pcos-machines",
+                    "title": "PCOS machines",
+                    "description": "",
+                    "post_count": 12
+                },
+                {
+                    "id": 2162,
+                    "slug": "smartmatic",
+                    "title": "SMARTMATIC",
+                    "description": "",
+                    "post_count": 17
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50498,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg",
+                    "slug": "image_aug132015_untv-news_comelec",
+                    "title": "IMAGE_AUG132015_UNTV-News_COMELEC",
+                    "description": "",
+                    "caption": "Ang COMELEC En Banc sa pag-announce ng desisyon sa pag-acquire ng OMR machines. (VICTOR COSARE \/ UNTV News)",
+                    "parent": 50497,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_COMELEC.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50489,
+            "type": "post",
+            "slug": "pipe-realignment-ng-maynilad-natapos-na-water-interruption-sa-august-17-18-di-na-matutuloy",
+            "url": "http:\/\/www.untvweb.com\/news\/pipe-realignment-ng-maynilad-natapos-na-water-interruption-sa-august-17-18-di-na-matutuloy\/",
+            "status": "publish",
+            "title": "Pipe realignment ng Maynilad, natapos na; water interruption sa August 17-18, di na matutuloy",
+            "title_plain": "Pipe realignment ng Maynilad, natapos na; water interruption sa August 17-18, di na matutuloy",
+            "content": "<div id=\"attachment_50490\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"wp-image-50490 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg\" alt=\"\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">Bahagi ng pipeline realignment site sa dako ng Hermosa Street corner Juan Luna Street sa Maynila. (Enrico Orola \/ Photoville International)<\/p><\/div>\n<p><strong>MANILA, Philippines \u2014<\/strong> Hindi na matutuloy ang nakatakda sanang water interruption sa susunod na linggo sa mga lugar na sine-serbisyuhan ng Maynilad dahil halos patapos na ang isinasagawang pipeline reallignment project sa Tondo, Manila.<\/p>\n<p>Sa update ng Maynilad, hindi na mawawalan ng tubig sa mga lugar na apektado ng pipeline realignment sa darating na August 17 hanggang August 18.<\/p>\n<p>Bukod pa rito, hindi na rin naantala ang supply ng tubig sa Cavite City, Noveleta at Rosario, Cavite.<\/p>\n<p>Ngayong araw ng Huwebes sana magsisimula ang water interruption sa mga nabanggit na bayan ngunit dahil matatapos na ahead of schedule ang nasabing proyekto ay hindi na sila nawalan ng tubig.<\/p>\n<p>Sa susunod na linggo pa sana matatapos ang pipeline realignment, pero dahil sa tuluy-tuloy na pagtatrabaho bente kwatro oras ng mga tauhan ng Maynilad ay halos makukumpleto na ang kanilang proyekto.<\/p>\n<p>Pahayag ng Maynilad Water Supply Operations head na si Ramon Padua, &#8220;Nakatapos po kami ng pipeline realignment project ngayong umaga at immediately sinimula namin ang pag-energized ng 2.2 pipe kaninang 8:32 am.\u201d<\/p>\n<p>Ayon sa Maynilad, pasado alas otso kaninang umaga nang naibalik ang supply ng tubig sa mga naapektuhang lugar ng pagsasaayos ng mga tubo.<\/p>\n<p>Bagaman naibalik na ang suplay, ayon sa Maynilad ay makararanas pa rin ang mga residente ng mahinang pressure tubig.<\/p>\n<p>&#8220;Kailangan lamang po naming i-build up ang water pressure sa aming main line bago tuluyang bumalik ang normal na supply sa aming mga customer&#8230; tinitinganan po namin bago po matapos ang araw na ito ay normal na po ang pressure sa lahat ng customer natin,&#8221; dagdag pa ni Padua.<\/p>\n<p>Sa ngayon ay inaayos na lang ng Maynilad ang line stopper at kinukumpleto ang mga safety measure sa mga tubo.<\/p>\n<p>Ipinagpapasalamat naman ng mga residente na agad natapos ng Maynilad ang naturang proyekto.<\/p>\n<p>Pahayag ni Jonet Novera, &#8220;Mahirap magsaing kapag walang tubig, maligo eh may pasok, kaya maganda yun para di na maabala yung mga gawain.\u201d<\/p>\n<p>Masaya naman si Josephine Palle dahil meron nang tubig.<\/p>\n<p>Samantala, nag-abiso rin ang Maynilad na mawawalan ng tubig ngayong Huwebes ng gabi ang bahagi ng 7th Avenue ng Caloocan City, upang bigyang daan ang pagsasaayos ng nasirang tubo sa may A. Bonifacio.<\/p>\n<p>Mag-uumpisa ang water interruption mamayang alas10 hanggang alas singko ng madaling araw ng Biyernes, kaya pinapayuhan ang mga residente dito na mag-ipon ng tubig. <strong>(JOAN NANO \/ UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>MANILA, Philippines \u2014 Hindi na matutuloy ang nakatakda sanang water interruption sa susunod na linggo sa mga lugar na sine-serbisyuhan ng Maynilad dahil halos patapos na ang isinasagawang pipeline reallignment project sa Tondo, Manila. Sa update ng Maynilad, hindi na mawawalan ng tubig sa mga lugar na apektado ng pipeline realignment sa darating na August [&hellip;]<\/p>\n",
+            "date": "2015-08-13 18:45:24",
+            "modified": "2015-08-13 18:47:09",
+            "categories": [
+                {
+                    "id": 7184,
+                    "slug": "breaking-news",
+                    "title": "Breaking News",
+                    "description": "",
+                    "parent": 18,
+                    "post_count": 3598
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 6033,
+                    "slug": "utilities",
+                    "title": "Utilities",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 91
+                }
+            ],
+            "tags": [
+                {
+                    "id": 945,
+                    "slug": "cavite",
+                    "title": "Cavite",
+                    "description": "",
+                    "post_count": 11
+                },
+                {
+                    "id": 7845,
+                    "slug": "cavite-city",
+                    "title": "Cavite City",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 3984,
+                    "slug": "maynilad",
+                    "title": "Maynilad",
+                    "description": "",
+                    "post_count": 6
+                },
+                {
+                    "id": 7846,
+                    "slug": "noveleta",
+                    "title": "Noveleta",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 5857,
+                    "slug": "rosario",
+                    "title": "Rosario",
+                    "description": "",
+                    "post_count": 5
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50490,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg",
+                    "slug": "image_aug132015_untv-news_pvi_enrico-orola_maynilad",
+                    "title": "IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD",
+                    "description": "",
+                    "caption": "Bahagi ng pipeline realignment site sa dako ng Hermosa Street corner Juan Luna Street sa Maynila. (Enrico Orola \/ Photoville International)",
+                    "parent": 50489,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_PVI_ENRICO-OROLA_MAYNILAD.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50482,
+            "type": "post",
+            "slug": "babaeng-biktima-ng-vehicular-accident-sa-quezon-city-tinulungan-ng-untv-news-and-rescue-team",
+            "url": "http:\/\/www.untvweb.com\/news\/babaeng-biktima-ng-vehicular-accident-sa-quezon-city-tinulungan-ng-untv-news-and-rescue-team\/",
+            "status": "publish",
+            "title": "Babaeng biktima ng vehicular accident sa Quezon City, tinulungan ng UNTV News and Rescue Team",
+            "title_plain": "Babaeng biktima ng vehicular accident sa Quezon City, tinulungan ng UNTV News and Rescue Team",
+            "content": "<div id=\"attachment_50483\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"size-full wp-image-50483\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg\" alt=\"Ang magkasintahang naaksidente sa Quezon City habang nilalapatan ng first aid ng UNTV News &amp; Rescue Team.\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">Ang magkasintahang naaksidente sa Quezon City habang nilalapatan ng first aid ng UNTV News &amp; Rescue Team.<\/p><\/div>\n<p><strong>QUEZON CITY, Philippines \u2014<\/strong> Tinulungan ng UNTV News and Rescue Team ang isang babae matapos maaksidente sa banggaan ng motorsiklo at SUV sa bahagi ng Quirino Highway pasado alas-singko ng madaling araw, Huwebes.<\/p>\n<p>Nadatnan ng grupo ang magkasintahan sa gitna ng kalsada na sina Joseph Acosta, 28 anyos at si Annabelle Alonzo, 24 anyos na iniinda ang natamo ng mga sugat.<\/p>\n<p>Nagtamo ng malubhang sugat sa ulo ang babae na unang binigyang ng assessment ng UNTV News and Rescue team habang gasgas sa iba\u2019t-ibang bahagi ng katawan ang tinamo ng lalaki.<\/p>\n<p>Iniligay sa backboard ang babae at isinakay sa rescue mobile at saka isinugod sa Commonwealth Medical Center upang mabigyan ng atensyong medical.<\/p>\n<p>Ayon sa driver ng kotse na si Jaypee Bautista magpapagasolina sana sila ng may biglang bumangga sa kanilang likuran.<\/p>\n<p>Dito na nga niya nakita na ang magkasintahan na sakay ng motorsiklo na nakabulagta sa kalsada.<\/p>\n<p>Ani Bautista, &#8220;Nagulat ako biglang tumunog, kumalabog sa likod naming. Nagulat ako may motor na bumangga pala.\u201d<\/p>\n<p>Nadamay rin ang isang naka-motorsiklo na si Ronie Ortigas matapos itong natamaan ng motor ng mga biktima.<\/p>\n<p>\u201cYung motor nila, umikot tapus yun lumipad ako sa motor nila,\u201d ani Ortigas.<\/p>\n<p>Nagtamo rin siya ng sugat sa ilong na binigyan ng pang unang lunas ng Lagro Rescue Team.<\/p>\n<p>Pansamantalang inilagak ang mga sasakyang sangkot sa aksidente sa QCPD Traffic Sector -2 habang isinisagawa ang imbestigasyon. <strong>(REYNANTE PONTE \/ UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>QUEZON CITY, Philippines \u2014 Tinulungan ng UNTV News and Rescue Team ang isang babae matapos maaksidente sa banggaan ng motorsiklo at SUV sa bahagi ng Quirino Highway pasado alas-singko ng madaling araw, Huwebes. Nadatnan ng grupo ang magkasintahan sa gitna ng kalsada na sina Joseph Acosta, 28 anyos at si Annabelle Alonzo, 24 anyos na [&hellip;]<\/p>\n",
+            "date": "2015-08-13 17:48:49",
+            "modified": "2015-08-13 17:50:25",
+            "categories": [
+                {
+                    "id": 7184,
+                    "slug": "breaking-news",
+                    "title": "Breaking News",
+                    "description": "",
+                    "parent": 18,
+                    "post_count": 3598
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 695,
+                    "slug": "ito-ang-balita",
+                    "title": "Ito ang Balita",
+                    "description": "",
+                    "parent": 29,
+                    "post_count": 66
+                },
+                {
+                    "id": 30,
+                    "slug": "news-and-rescue",
+                    "title": "News and Rescue",
+                    "description": "",
+                    "parent": 29,
+                    "post_count": 174
+                },
+                {
+                    "id": 29,
+                    "slug": "untv",
+                    "title": "UNTV",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 467
+                }
+            ],
+            "tags": [
+                {
+                    "id": 501,
+                    "slug": "untv-news-and-rescue",
+                    "title": "UNTV NEws and Rescue",
+                    "description": "",
+                    "post_count": 70
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50483,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg",
+                    "slug": "image_aug132015_untv-news_untv-rescue",
+                    "title": "IMAGE_AUG132015_UNTV-News_UNTV-RESCUE",
+                    "description": "",
+                    "caption": "Ang magkasintahang naaksidente sa Quezon City habang nilalapatan ng first aid ng UNTV News & Rescue Team.",
+                    "parent": 50482,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNTV-RESCUE.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50466,
+            "type": "post",
+            "slug": "rep-leni-robredo-urged-to-run-in-2016-vice-presidential-race",
+            "url": "http:\/\/www.untvweb.com\/news\/rep-leni-robredo-urged-to-run-in-2016-vice-presidential-race\/",
+            "status": "publish",
+            "title": "Rep. Leni Robredo urged to run in 2016 vice presidential race",
+            "title_plain": "Rep. Leni Robredo urged to run in 2016 vice presidential race",
+            "content": "<p><strong>MANILA, Philippines<\/strong> &#8211; The \u201cKaya Natin\u201d movement has launched a campaign yesterday which they called \u201cLeni Robredo for vice president movement\u201d in order to push Camarines Sur Rep. Leni Robredo to the vice presidential race in the 2016 national elections.<\/p>\n<p>According to former Quezon Rep. Lorenzo Erin Ta\u00f1ada III, also a member of the Liberal Party, they are preparing for the circumstances in case Sen. Grace Poe declines the offer to become the running mate of DILG Sec. Mar Roxas.<\/p>\n<p>If in case Senator Poe agrees, they will convince Rep. Robredo to run in the senatorial race.<\/p>\n<p>Ta\u00f1ada explained that there isn\u2019t any conflict since vice president and senator are both national positions.<\/p>\n<p>Likewise, the \u201cKaya Natin\u201d movement believes that Rep. Robredo is capable of handling a national position and they are hoping that Robredo will acknowledge the clamor of supporters to run for higher office.<\/p>\n<p>Robredo however said, she and her children are not ready for a higher position. She added that this has not yet been discussed within the Liberal Party either.<\/p>\n<p>\u201cMy children are a bit stressed by the issue. But ultimately, I assured them that we will be the one to decide on this and not other people. I\u2019m just on my second year as a public servant, and there are already talks of a VP position; that is not an easy thing. I don\u2019t see myself fit for the job yet,\u201d Robredo admitted.<\/p>\n<p>On the other hand, presidential spokesperson Sec. Edwin Lacierda said, Malaca\u00f1ang has not yet taken Robredo into consideration as a running mate for Sec. Roxas since it is still waiting for the decision of Senator Grace Poe. <strong>(UNTV News)<\/strong><\/p>\n<div id=\"attachment_50468\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg\"><img class=\"wp-image-50468 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg\" alt=\"Rep. Leni Robredo urged to run for vice president in 2016.\" width=\"640\" height=\"427\" \/><\/a><p class=\"wp-caption-text\">Camarines Sur Rep. Leni Robredo urged to run for vice president in 2016.<\/p><\/div>\n",
+            "excerpt": "<p>MANILA, Philippines &#8211; The \u201cKaya Natin\u201d movement has launched a campaign yesterday which they called \u201cLeni Robredo for vice president movement\u201d in order to push Camarines Sur Rep. Leni Robredo to the vice presidential race in the 2016 national elections. According to former Quezon Rep. Lorenzo Erin Ta\u00f1ada III, also a member of the Liberal [&hellip;]<\/p>\n",
+            "date": "2015-08-13 14:06:46",
+            "modified": "2015-08-13 17:12:45",
+            "categories": [
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 25,
+                    "slug": "political",
+                    "title": "Political",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 894
+                }
+            ],
+            "tags": [
+                {
+                    "id": 11842,
+                    "slug": "2016-national-elections",
+                    "title": "2016 national elections",
+                    "description": "",
+                    "post_count": 3
+                },
+                {
+                    "id": 746,
+                    "slug": "grace-poe",
+                    "title": "Grace Poe",
+                    "description": "",
+                    "post_count": 36
+                },
+                {
+                    "id": 15849,
+                    "slug": "jesse",
+                    "title": "jesse",
+                    "description": "",
+                    "post_count": 1
+                },
+                {
+                    "id": 15850,
+                    "slug": "leni",
+                    "title": "leni",
+                    "description": "",
+                    "post_count": 1
+                },
+                {
+                    "id": 157,
+                    "slug": "liberal-party",
+                    "title": "Liberal Party",
+                    "description": "",
+                    "post_count": 26
+                },
+                {
+                    "id": 994,
+                    "slug": "robredo",
+                    "title": "ROBREDO",
+                    "description": "",
+                    "post_count": 18
+                },
+                {
+                    "id": 12563,
+                    "slug": "vice-president",
+                    "title": "Vice President",
+                    "description": "",
+                    "post_count": 6
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50468,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg",
+                    "slug": "image_aug132015_untv-news_lenny-robredo-movement",
+                    "title": "IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement",
+                    "description": "",
+                    "caption": "Rep. Leni Robredo urged to run for vice president in 2016.",
+                    "parent": 50466,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_Lenny-Robredo-Movement.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50459,
+            "type": "post",
+            "slug": "una-to-possibly-name-binays-running-mate-next-month",
+            "url": "http:\/\/www.untvweb.com\/news\/una-to-possibly-name-binays-running-mate-next-month\/",
+            "status": "publish",
+            "title": "UNA to possibly name Binay&#8217;s running mate next month",
+            "title_plain": "UNA to possibly name Binay&#8217;s running mate next month",
+            "content": "<p><strong>MANILA, Philippines<\/strong> &#8211; United Nationalist Alliances&#8217; search committee is still evaluating personalities who will qualify as Vice-President Jejomar Binay&#8217;s running mate in the 2016 presidential elections.<\/p>\n<p>UNA&#8217;s secretary general JV Bautista said the party is currently looking into 5 or 6 personalities who are being considered for the vice president position. He said, \u201cThe potential vice presidential candidate must believe in the principles of VP Binay. He must be a competent leader, and has concern for the poor.\u201d<\/p>\n<p>Bautista also defended the decision of Binay to consider Senator Bong-Bong Marcos as his running mate. It can be noted that Binay was among those who fought against the martial law rule.<\/p>\n<p>\u201cI think the public is open-minded about that because they elected Senator Marcos. There&#8217;s no reason they should be disqualified just because they fought before or they have opposing principles before.\u201d<\/p>\n<p>UNA is currently having talks with four national political parties; these are Pwersa Ng Masang Pilipino of Manila Mayor Joseph Estrada, Lakas CMD, Nationalist People&#8217;s Coalition and National Unity Party.<\/p>\n<p>Bautista also questioned anew the qualification of Senator Poe to run for a higher position in the government.<\/p>\n<p>He said there has to be definite findings about what he described as questionable information about Senator Poe&#8217;s citizenship, residency, and birth certificate.<\/p>\n<p>Bautista said, \u201cWhoever accomplished that birth certificate can be asked to explain why is it like that, and what happened to that document? Adoption requires a judicial process. Birth certificates could not be easily acquired. You have to go to court and the court will determine if the parents are qualified to adopt.\u201c<\/p>\n<p>Senator Poe for her part said she is ready to answer all the allegations about her qualification in the proper forum. \u201cI don&#8217;t want to pay attention to what they are alleging. Because I think all of those will be answered before the Senate Electoral Tribunal. As for me, I am loyal to my job as well as to serving the public. \u201c <strong>(UNTV News)<\/strong><\/p>\n<div id=\"attachment_50460\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg\"><img class=\"size-full wp-image-50460\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg\" alt=\"VP Binay waves to supporters during a rally.  \" width=\"640\" height=\"427\" \/><\/a><p class=\"wp-caption-text\">VP Binay waves to supporters during a rally. (MAR ROXAS \/ PHOTOVILLE International)<\/p><\/div>\n<p>&nbsp;<\/p>\n",
+            "excerpt": "<p>MANILA, Philippines &#8211; United Nationalist Alliances&#8217; search committee is still evaluating personalities who will qualify as Vice-President Jejomar Binay&#8217;s running mate in the 2016 presidential elections. UNA&#8217;s secretary general JV Bautista said the party is currently looking into 5 or 6 personalities who are being considered for the vice president position. He said, \u201cThe potential [&hellip;]<\/p>\n",
+            "date": "2015-08-13 11:23:56",
+            "modified": "2015-08-13 18:54:49",
+            "categories": [
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 695,
+                    "slug": "ito-ang-balita",
+                    "title": "Ito ang Balita",
+                    "description": "",
+                    "parent": 29,
+                    "post_count": 66
+                },
+                {
+                    "id": 10335,
+                    "slug": "national-news",
+                    "title": "National News",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 66
+                }
+            ],
+            "tags": [
+                {
+                    "id": 13576,
+                    "slug": "2016",
+                    "title": "2016",
+                    "description": "",
+                    "post_count": 3
+                },
+                {
+                    "id": 148,
+                    "slug": "binay",
+                    "title": "Binay",
+                    "description": "",
+                    "post_count": 12
+                },
+                {
+                    "id": 8354,
+                    "slug": "elections",
+                    "title": "elections",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 2353,
+                    "slug": "jejomar",
+                    "title": "Jejomar",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 152,
+                    "slug": "una",
+                    "title": "UNA",
+                    "description": "",
+                    "post_count": 24
+                },
+                {
+                    "id": 12563,
+                    "slug": "vice-president",
+                    "title": "Vice President",
+                    "description": "",
+                    "post_count": 6
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50460,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg",
+                    "slug": "image_aug132015_untv-news_una_political-rally",
+                    "title": "IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY",
+                    "description": "",
+                    "caption": "VP Binay waves to supporters during a rally.  ",
+                    "parent": 50459,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG132015_UNTV-News_UNA_POLITICAL-RALLY.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50455,
+            "type": "post",
+            "slug": "mga-na-promote-na-pnp-officers-nanumpa-kay-pres-aquino",
+            "url": "http:\/\/www.untvweb.com\/news\/mga-na-promote-na-pnp-officers-nanumpa-kay-pres-aquino\/",
+            "status": "publish",
+            "title": "Mga na-promote na PNP officers nanumpa kay Pres. Aquino",
+            "title_plain": "Mga na-promote na PNP officers nanumpa kay Pres. Aquino",
+            "content": "<div id=\"attachment_50456\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"wp-image-50456 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg\" alt=\"\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">Ang panunumpa ng mga bagong promote na opisyales ng PNP kay Pangulong Benigno Aquino III sa Malaca\u00f1ang. Una na rito si PNP Chief Director General Ricardo Marquez na kasama ang kanyang pamilya. (Malaca\u00f1ang Photo Bureau)<\/p><\/div>\n<p><strong>MANILA, Philippines \u2014<\/strong> Apatnapu\u2019t siyam na star rank officials ng Philippine National Police ang nanumpa sa tungkulin nitong Miyerkules ng umaga sa Malaca\u00f1ang.<\/p>\n<p>Kabilang dito ang bagong itinalagang hepe ng PNP na si Police Director General Ricardo Marquez.<\/p>\n<p>Kasama ring nanumpa sina Police Deputy Director General Danilo Constantino, PNP-Special Action Force Police Director Moro Virgilio Lazo, spokesperson ng PNP na si Police Chief Superintendent Wilben Mayor at ang dating OIC ng SAF na si Police Chief Superintendent Noli Talino.<\/p>\n<p>Kasama ring dumalo sa panunumpa ang mga pamilya ng mga promoted official ng PNP.<strong> (NEL MARIBOJOC \/ UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>MANILA, Philippines \u2014 Apatnapu\u2019t siyam na star rank officials ng Philippine National Police ang nanumpa sa tungkulin nitong Miyerkules ng umaga sa Malaca\u00f1ang. Kabilang dito ang bagong itinalagang hepe ng PNP na si Police Director General Ricardo Marquez. Kasama ring nanumpa sina Police Deputy Director General Danilo Constantino, PNP-Special Action Force Police Director Moro Virgilio [&hellip;]<\/p>\n",
+            "date": "2015-08-12 18:53:24",
+            "modified": "2015-08-12 18:53:24",
+            "categories": [
+                {
+                    "id": 7184,
+                    "slug": "breaking-news",
+                    "title": "Breaking News",
+                    "description": "",
+                    "parent": 18,
+                    "post_count": 3598
+                },
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 27,
+                    "slug": "police-report",
+                    "title": "Police Report",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 407
+                }
+            ],
+            "tags": [
+                {
+                    "id": 36,
+                    "slug": "benigno-aquino-iii",
+                    "title": "Benigno Aquino III",
+                    "description": "",
+                    "post_count": 238
+                },
+                {
+                    "id": 76,
+                    "slug": "philippine-national-police",
+                    "title": "Philippine National Police",
+                    "description": "",
+                    "post_count": 187
+                },
+                {
+                    "id": 15848,
+                    "slug": "ricardo-marquez",
+                    "title": "Ricardo Marquez",
+                    "description": "",
+                    "post_count": 1
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50456,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg",
+                    "slug": "image_aug122015_pcoo_pnp_oathtaking",
+                    "title": "IMAGE_AUG122015_PCOO_PNP_Oathtaking",
+                    "description": "",
+                    "caption": "Ang panunumpa ng mga bagong promote na opisyales ng PNP kay Pangulong Benigno Aquino III sa Malaca\u00f1ang. Una na rito si PNP Chief Director General Ricardo Marquez na kasama ang kanyang pamilya. (Malaca\u00f1ang  Photo Bureau)",
+                    "parent": 50455,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_PCOO_PNP_Oathtaking.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50445,
+            "type": "post",
+            "slug": "china-lets-yuan-fall-further-fuels-fears-of-currency-war",
+            "url": "http:\/\/www.untvweb.com\/news\/china-lets-yuan-fall-further-fuels-fears-of-currency-war\/",
+            "status": "publish",
+            "title": "China lets yuan fall further, fuels fears of currency war",
+            "title_plain": "China lets yuan fall further, fuels fears of currency war",
+            "content": "<div id=\"attachment_50446\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"wp-image-50446 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg\" alt=\"\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">Chinese 100 yuan banknotes are seen in this picture illustration taken in Beijing in this July 11, 2013 file photo.<br \/> REUTERS\/JASON LEE\/FILES<\/p><\/div>\n<p>China&#8217;s yuan hit a four-year low on Wednesday, falling for a second day after authorities devalued it in a move that sparked fears of a global currency war and accusations that Beijing was unfairly supporting its struggling exporters.<\/p>\n<p>Spot yuan in China fell to 6.45 per dollar, its weakest since August 2011, after the central bank set its daily midpoint reference at 6.3306, even weaker than Tuesday&#8217;s devaluation.<\/p>\n<p>The currency fared worse in international trade, touching 6.59.<\/p>\n<p>The central bank, which had described the devaluation as a one-off step to make the yuan CNY=CFXS more responsive to market forces, sought to reassure financial markets on Wednesday that it was not embarking on a steady depreciation.<\/p>\n<p>&#8220;Looking at the international and domestic economic situation, currently there is no basis for a sustained depreciation trend for the yuan,&#8221; the People&#8217;s Bank of China (PBOC) said.<\/p>\n<p>Foreign exchange traders later said state-owned banks were selling dollars on behalf of the PBOC to keep the yuan around 6.43.<\/p>\n<p>&#8220;Apparently, the central bank does not want the yuan to run out of control,&#8221; said a trader at a European bank in Shanghai.<\/p>\n<p>A trader at another European bank said the unexpected devaluation had caused &#8220;some panic&#8221; in markets.<\/p>\n<p>&#8220;Although the central bank made explanations again today, stressing the yuan would not show sustained depreciation, the market is very jittery,&#8221; he said.<\/p>\n<p>Analysts at BMI downgraded their end-year forecasts for the currency to 6.83, down 10 percent from pre-devaluation levels.<\/p>\n<p>The yuan has lost 3.5 percent in China in the last two days, and around 4.8 percent in global markets.<\/p>\n<p>Its slide pulled down other Asian currencies on Wednesday, with Indonesia&#8217;s rupiah IDR=ID and Malaysia&#8217;s ringgit MYR= hitting 17-year lows, and the Australian AUD=D4 and New Zealand dollars NZD=D4 touching six-year lows.<\/p>\n<p>Indonesia&#8217;s central bank pinned the rupiah&#8217;s fall directly on the yuan devaluation and said it would step into the foreign exchange and bond markets to curb volatility.<\/p>\n<p>POOR ECONOMIC DATA<\/p>\n<p>Tuesday&#8217;s devaluation followed a run of poor economic data and raised market suspicions that China was embarking on a longer-term slide in the exchange rate. It was the biggest one-day fall in the yuan since a massive devaluation in 1994.<\/p>\n<p>A cheaper yuan will help Chinese exports by making them less expensive on overseas markets. Last weekend, data showed an 8.3 percent drop in exports in July and that producer prices were well into their fourth year of deflation.<\/p>\n<p>China&#8217;s Ministry of Commerce acknowledged on Wednesday that the depreciation would have a stimulative effect on exports.<\/p>\n<p>Data released later in the day underlined sluggish growth in the world&#8217;s second-largest economy. Factory output growth slipped to 6 percent in July from a year earlier, missing market forecasts, while fixed asset investment and retail sales were also lower than expected.<\/p>\n<p>Data from the Finance Ministry showed a jump in fiscal expenditure of 24.1 percent in July, which reflects Beijing&#8217;s efforts to stimulate economic activity.<\/p>\n<p>TRYING TO WIN OVER THE IMF?<\/p>\n<p>The International Monetary Fund said China&#8217;s move to make the yuan more responsive to market forces appeared to be a welcome step and that Beijing should aim to achieve an effectively floating exchange rate within two to three years.<\/p>\n<p>Beijing has been lobbying the IMF to include the yuan in its basket of reserve currencies known as Special Drawing Rights, which it uses to lend to sovereign borrowers. This would mark a major step in terms of international use of the yuan.<\/p>\n<p>&#8220;Greater exchange rate flexibility is important for China as it strives to give market forces a decisive role in the economy and is rapidly integrating into global financial markets,&#8221; an IMF spokesperson said by email.<\/p>\n<p>The devaluation was condemned by U.S. lawmakers from both parties on Tuesday as a grab for an unfair export advantage and could set the stage for testy talks when Chinese President Xi Jinping visits Washington next month, given acrimony over issues ranging from cybersecurity to Beijing&#8217;s territorial ambitions.<\/p>\n<p>Not all countries consider the devaluation a threat, however. Korea&#8217;s Finance Minister Choi Kyung-hwan said it would be positive for Korean exports to China, much of which were intermediate items and not in direct competition with Chinese products.<\/p>\n<p>While a weaker yuan will not cure all the ills of China&#8217;s exporters, which suffer from rising labor costs, it will help relieve deflationary pressure, a far bigger concern in the view of some economists.<\/p>\n<p>Falling commodity prices have been blamed for producer price deflation, putting China at risk of repeating the deflationary cycle that blighted Japan for decades.<\/p>\n<p>Growth in China, the world&#8217;s second-largest economy, has slowed markedly this year and is set to hit a 25-year low even if it meets its official 7 percent target.<\/p>\n<p>Some economists believe China&#8217;s economy is already growing only half as fast as official data shows, or even less.<\/p>\n<p>(Additional reporting by Samuel Shen in SHANGHAI and Jason Subler in BEIJING; Writing by Will Waterman; Editing by Kim Coghill)<\/p>\n",
+            "excerpt": "<p>China&#8217;s yuan hit a four-year low on Wednesday, falling for a second day after authorities devalued it in a move that sparked fears of a global currency war and accusations that Beijing was unfairly supporting its struggling exporters. Spot yuan in China fell to 6.45 per dollar, its weakest since August 2011, after the central [&hellip;]<\/p>\n",
+            "date": "2015-08-12 17:33:41",
+            "modified": "2015-08-12 17:33:41",
+            "categories": [
+                {
+                    "id": 11,
+                    "slug": "asia",
+                    "title": "Asia",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 277
+                },
+                {
+                    "id": 16,
+                    "slug": "business",
+                    "title": "Business",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 172
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 7,
+                    "slug": "world",
+                    "title": "World",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1232
+                }
+            ],
+            "tags": [
+                {
+                    "id": 279,
+                    "slug": "china",
+                    "title": "China",
+                    "description": "",
+                    "post_count": 185
+                },
+                {
+                    "id": 15830,
+                    "slug": "yuan",
+                    "title": "yuan",
+                    "description": "",
+                    "post_count": 4
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50446,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg",
+                    "slug": "image_aug112015_reuters_yuan",
+                    "title": "IMAGE_AUG112015_REUTERS_YUAN",
+                    "description": "",
+                    "caption": "Chinese 100 yuan banknotes are seen in this picture illustration taken in Beijing in this July 11, 2013 file photo.\nREUTERS\/JASON LEE\/FILES",
+                    "parent": 50445,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS_YUAN1.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50423,
+            "type": "post",
+            "slug": "aquino-directs-new-navy-chief-to-continue-modernization-program-address-security-threats",
+            "url": "http:\/\/www.untvweb.com\/news\/aquino-directs-new-navy-chief-to-continue-modernization-program-address-security-threats\/",
+            "status": "publish",
+            "title": "Aquino directs new navy chief to continue modernization program, address security threats",
+            "title_plain": "Aquino directs new navy chief to continue modernization program, address security threats",
+            "content": "<p><strong>MANILA, Philippines<\/strong> &#8211; President Benigno Aquino III thanked outgoing Navy Chief Vice Admiral Jesus Millan for his service in the Philippine Navy.<\/p>\n<p>Aquino made the gesture during the change of command ceremony at the Philippine Navy Headquarters in Pasay City on Monday.<\/p>\n<p>The president gave credit to the accomplishments of the navy under Millan&#8217;s leadership, such as the successful delivery of supplies to our soldiers on board BRP Sierra Madre in Ayungin Shoal, and the navy&#8217;s immediate response to calamities and crises, such as the Zamboanga siege and the onslaught of super typhoon Yolanda.<\/p>\n<p>Aquino says that despite the naval force&#8217;s limited resources, still it is able to address the security threats to the country.<\/p>\n<p>He challenged incoming Navy Flag Officer Rear Admiral Caesar Taccad to continue the modernization program for the navy and secure the nation&#8217;s future.<\/p>\n<div id=\"attachment_50424\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png\"><img class=\"size-full wp-image-50424\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png\" alt=\"Pres. Aquino marching alongside incoming Navy Flag Officer Rear Admiral Caesar Taccad \" width=\"640\" height=\"438\" \/><\/a><p class=\"wp-caption-text\">Pres. Aquino marching alongside incoming Navy Flag Officer Rear Admiral Caesar Taccad<\/p><\/div>\n<p>Aquino admitted that although he does not personally know Taccad, he admires the new Philippine navy chief&#8217;s simplicity and humility. <strong>(UNTV News)<\/strong><\/p>\n",
+            "excerpt": "<p>MANILA, Philippines &#8211; President Benigno Aquino III thanked outgoing Navy Chief Vice Admiral Jesus Millan for his service in the Philippine Navy. Aquino made the gesture during the change of command ceremony at the Philippine Navy Headquarters in Pasay City on Monday. The president gave credit to the accomplishments of the navy under Millan&#8217;s leadership, [&hellip;]<\/p>\n",
+            "date": "2015-08-12 12:54:19",
+            "modified": "2015-08-12 12:54:19",
+            "categories": [
+                {
+                    "id": 15549,
+                    "slug": "defense",
+                    "title": "Defense",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 3
+                },
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                }
+            ],
+            "tags": [
+                {
+                    "id": 15835,
+                    "slug": "defense",
+                    "title": "defense",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 6323,
+                    "slug": "military",
+                    "title": "Military",
+                    "description": "",
+                    "post_count": 4
+                },
+                {
+                    "id": 283,
+                    "slug": "philippine-navy",
+                    "title": "Philippine Navy",
+                    "description": "",
+                    "post_count": 12
+                },
+                {
+                    "id": 3122,
+                    "slug": "west-philippine-sea-dispute",
+                    "title": "West Philippine Sea dispute",
+                    "description": "",
+                    "post_count": 3
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50424,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png",
+                    "slug": "image_for_phl-navy-chain-of-command",
+                    "title": "IMAGE_FOR_PHL-NAVY-CHAIN-of-Command",
+                    "description": "",
+                    "caption": "Pres. Aquino marching alongside incoming Navy Flag Officer Rear Admiral Caesar Taccad ",
+                    "parent": 50423,
+                    "mime_type": "image\/png",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png",
+                            "width": 640,
+                            "height": 438
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command-150x150.png",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command-300x205.png",
+                            "width": 300,
+                            "height": 205
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png",
+                            "width": 640,
+                            "height": 438
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command-150x150.png",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png",
+                    "width": 640,
+                    "height": 438
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command-150x150.png",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command-300x205.png",
+                    "width": 300,
+                    "height": 205
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_FOR_PHL-NAVY-CHAIN-of-Command.png",
+                    "width": 640,
+                    "height": 438
+                }
+            }
+        },
+        {
+            "id": 50419,
+            "type": "post",
+            "slug": "naia-to-use-new-full-body-scanner-this-month",
+            "url": "http:\/\/www.untvweb.com\/news\/naia-to-use-new-full-body-scanner-this-month\/",
+            "status": "publish",
+            "title": "NAIA to use new full body scanner this month",
+            "title_plain": "NAIA to use new full body scanner this month",
+            "content": "<p><strong>Manila, Philippines<\/strong> &#8211; Compared to the old scanner, the new full body scanner is more reliable in inspecting passengers coming through the airport.<\/p>\n<p>The body scanner makes use of an advanced millimeter-wave technology which detects concealed objects on a person&#8217;s body.<\/p>\n<p>The technology makes use of low-frequency radiation, making the scanner safe even for pregnant women and those with body implants.<\/p>\n<p>Among others, the new body scanner can detect ceramics, liquids, metals, narcotics, and explosives.<\/p>\n<p>Fourteen eqo portal systems were procured by the Manila International Airport Authority last year. These were delivered late in June and were installed this month.<\/p>\n<p>A passenger going through the body scanner will simply have to turn &#8211; 360 degrees &#8211; inside the open booth and scan results will show immediately on the operator&#8217;s screen indicating the location of concealed items.<\/p>\n<p>DPSPI president Jose Mari Casta\u00f1eda said, \u201cIt can improve (inspection) because there is no need for frisking. If your clear you will not be touched.\u201d<\/p>\n<p>Privacy is also ensured as the system has a mode that will present only the outline of the body.<\/p>\n<p>Full body scanners are placed only at the final security screening checkpoints of each terminal. There are three units at terminal 1; five units at terminal 2; another five units at terminal 3; and one unit at terminal 4.<\/p>\n<p>The full body scanners will serve as a security enhancement augmenting the 26 walkthrough metal detectors also at the final check in of the terminals.<\/p>\n<p>Full body scanners cost 12 million pesos each.\u00a0Airport authorities remind passengers not to bring prohibited items in the airport to avoid inconvenience.<\/p>\n<p>(UNTV News)<\/p>\n<div id=\"attachment_50420\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg\"><img class=\"size-full wp-image-50420\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg\" alt=\"New body scanner uses advanced millimeter-wave technology which can detect ceramics, liquids, metals, narcotics, and explosives.\" width=\"640\" height=\"427\" \/><\/a><p class=\"wp-caption-text\">New body scanner uses advanced millimeter-wave technology which can detect ceramics, liquids, metals, narcotics, and explosives.<\/p><\/div>\n",
+            "excerpt": "<p>Manila, Philippines &#8211; Compared to the old scanner, the new full body scanner is more reliable in inspecting passengers coming through the airport. The body scanner makes use of an advanced millimeter-wave technology which detects concealed objects on a person&#8217;s body. The technology makes use of low-frequency radiation, making the scanner safe even for pregnant [&hellip;]<\/p>\n",
+            "date": "2015-08-12 12:26:47",
+            "modified": "2015-08-12 12:26:47",
+            "categories": [
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 17,
+                    "slug": "travel",
+                    "title": "Travel",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 82
+                }
+            ],
+            "tags": [
+                {
+                    "id": 14946,
+                    "slug": "airport",
+                    "title": "airport",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 15837,
+                    "slug": "inspection",
+                    "title": "inspection",
+                    "description": "",
+                    "post_count": 1
+                },
+                {
+                    "id": 361,
+                    "slug": "naia",
+                    "title": "NAIA",
+                    "description": "",
+                    "post_count": 31
+                },
+                {
+                    "id": 13280,
+                    "slug": "philippine",
+                    "title": "Philippine",
+                    "description": "",
+                    "post_count": 3
+                },
+                {
+                    "id": 15836,
+                    "slug": "scanner",
+                    "title": "scanner",
+                    "description": "",
+                    "post_count": 1
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50420,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg",
+                    "slug": "image_aug122015_untv-news_naia",
+                    "title": "IMAGE_AUG122015_UNTV-NEWS_NAIA",
+                    "description": "",
+                    "caption": "New body scanner uses advanced millimeter-wave technology which can detect ceramics, liquids, metals, narcotics, and explosives.",
+                    "parent": 50419,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_NAIA.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50413,
+            "type": "post",
+            "slug": "philippine-navy-acquires-new-multipurpose-equipment",
+            "url": "http:\/\/www.untvweb.com\/news\/philippine-navy-acquires-new-multipurpose-equipment\/",
+            "status": "publish",
+            "title": "Philippine Navy acquires new multipurpose equipment",
+            "title_plain": "Philippine Navy acquires new multipurpose equipment",
+            "content": "<div id=\"attachment_50415\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><a href=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg\"><img class=\"size-full wp-image-50415\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg\" alt=\"Philippine Navy's newly acquired Agustawestland AW109 &quot;power&quot; helicopters \" width=\"640\" height=\"427\" \/><\/a><p class=\"wp-caption-text\">Philippine Navy&#8217;s newly acquired Agustawestland AW109 &#8220;power&#8221; helicopters<\/p><\/div>\n<p><strong>MANILA, Philippine<\/strong>s &#8211; Two new attack helicopters or Agustawestland AW109 &#8220;power&#8221; helicopters landed at the Philippine Navy headquarters. These are multi-purpose helicopters with additional capacities and armaments.<\/p>\n<p>Coinciding with this, two landing crafts have also been turned over to the Philippine Navy by the Australian Navy for free. These can transport many cargoes, military personnel, and equipment from one operational area to another.<\/p>\n<p>These are also utilized for humanitarian assistance, disaster response and rescue operations in times of disaster and calamities.<\/p>\n<p>\u201cThe capability of the landing craft heavy is humanitarian assistance and disaster response. So these were donated by the Australian Navy to augment the logistics capability of the Philippine Navy,\u201d said BRP IVATAN Commanding Officer Joselito De Guzman<\/p>\n<p>Both equipment can also be used in intensifying patrol of the Philippine Navy.<\/p>\n<p>Philippine Navy Spokesperson Col. Edgard Arevalo said, &#8220;These can perform combat and non-combat role. When it comes to combat, it does not only serve the navy but other services of the army when necessary.&#8221;<\/p>\n<p>According to newly installed Philippine Navy Flag-Officer-In-Command Rear Admiral Cesar Taccad, though the Philippine Navy&#8217;s capacity is still limited, the more important thing to monitor is our maritime security.<\/p>\n<p>&#8220;We come up with acquisitions of needed fire power, which means more or less deter any naval force that would try to stop us from employing our assets to assert sovereignty over our waters,&#8221; said Taccad. (UNTV News)<\/p>\n",
+            "excerpt": "<p>MANILA, Philippines &#8211; Two new attack helicopters or Agustawestland AW109 &#8220;power&#8221; helicopters landed at the Philippine Navy headquarters. These are multi-purpose helicopters with additional capacities and armaments. Coinciding with this, two landing crafts have also been turned over to the Philippine Navy by the Australian Navy for free. These can transport many cargoes, military personnel, [&hellip;]<\/p>\n",
+            "date": "2015-08-12 11:50:01",
+            "modified": "2015-08-12 11:58:05",
+            "categories": [
+                {
+                    "id": 15549,
+                    "slug": "defense",
+                    "title": "Defense",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 3
+                },
+                {
+                    "id": 24,
+                    "slug": "government",
+                    "title": "Government",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1816
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                }
+            ],
+            "tags": [
+                {
+                    "id": 15835,
+                    "slug": "defense",
+                    "title": "defense",
+                    "description": "",
+                    "post_count": 2
+                },
+                {
+                    "id": 6323,
+                    "slug": "military",
+                    "title": "Military",
+                    "description": "",
+                    "post_count": 4
+                },
+                {
+                    "id": 283,
+                    "slug": "philippine-navy",
+                    "title": "Philippine Navy",
+                    "description": "",
+                    "post_count": 12
+                },
+                {
+                    "id": 166,
+                    "slug": "philippines-2",
+                    "title": "Philippines",
+                    "description": "",
+                    "post_count": 53
+                },
+                {
+                    "id": 3122,
+                    "slug": "west-philippine-sea-dispute",
+                    "title": "West Philippine Sea dispute",
+                    "description": "",
+                    "post_count": 3
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50415,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg",
+                    "slug": "image_aug122015_untv-news_acquire",
+                    "title": "IMAGE_AUG122015_UNTV-NEWS_ACQUIRE",
+                    "description": "",
+                    "caption": "Philippine Navy's newly acquired Agustawestland AW109 \"power\" helicopters ",
+                    "parent": 50413,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG122015_UNTV-NEWS_ACQUIRE.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        },
+        {
+            "id": 50401,
+            "type": "post",
+            "slug": "chinas-devaluation-fires-cannon-in-global-currency-war",
+            "url": "http:\/\/www.untvweb.com\/news\/chinas-devaluation-fires-cannon-in-global-currency-war\/",
+            "status": "publish",
+            "title": "China&#8217;s devaluation fires cannon in global currency war",
+            "title_plain": "China&#8217;s devaluation fires cannon in global currency war",
+            "content": "<div id=\"attachment_50402\" style=\"width: 650px\" class=\"wp-caption aligncenter\"><img class=\"wp-image-50402 size-full\" src=\"http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg\" alt=\"\" width=\"640\" height=\"427\" \/><p class=\"wp-caption-text\">An investor checks on his mobile phone in front of an electronic board showing stock information at a brokerage house in Hangzhou, Zhejiang province, China, July 29, 2015. REUTERS\/Stringer<\/p><\/div>\n<p>The global currency war entered a new and critical phase on Tuesday as China&#8217;s surprise devaluation threatened to unleash a wave of competitive devaluations and keep monetary policy around the world looser for longer &#8211; perhaps even forcing the U.S. Federal Reserve to delay or slow its expected rate rise cycle.<\/p>\n<p>&#8216;Currency wars&#8217;, a phrase used by Brazil&#8217;s former finance minister Guido Mantega in 2010 to describe how competing countries explicitly or implicitly weaken their exchange rates to boost exports and gain trade advantage, have intensified in recent years.<\/p>\n<p>As interest rates have fallen to zero and below in many developed economies, money printing has proliferated and exchange rates have become one of the few remaining levers to stimulate business activity and, in some cases, avoid deflation.<\/p>\n<p>The European Central Bank&#8217;s move to quantitative easing in March, for example, was widely seen as a way for the euro zone to weaken what was seen as an over valued euro and prevent a deflationary spiral in many of its heavily indebted countries.<\/p>\n<p>The Bank of Japan&#8217;s latest wave of QE was also designed to weaken the yen.<\/p>\n<p>Against that backdrop, China&#8217;s tight peg to an appreciating dollar meant the yuan&#8217;s real trade-weighted exchange rate had climbed more than 10 percent over the past year, even as its economy slowed and exports slumped.<\/p>\n<p>But the near-2 percent devaluation of the yuan on Tuesday suggested Beijing had had enough, and was willing to risk toppling another row of regional dominoes and opening up fresh trade tensions with the United States.<\/p>\n<p>DOLLAR&#8217;S STEEP RISE<\/p>\n<p>The dollar has risen 20 percent on a trade-weighted basis in just one year. This de facto tightening of monetary policy has eroded the competitiveness of U.S. exports, eaten into economic growth and diminished company profits repatriated from overseas.<\/p>\n<p>&#8220;(The yuan devaluation) puts the Fed in a difficult spot. It opens the possibility that the Fed might delay (a rate increase),&#8221; said Patrick Chovanec, chief strategist at Silvercrest Asset Management in New York. &#8220;On its own, it makes it harder to raise rates.&#8221;<\/p>\n<p>Over the past decade, the U.S. Congress has pressed Beijing to loosen its dollar-pegged exchange rate to allow the yuan to appreciate, arguing that trillions of dollars of currency market intervention had depressed the yuan artificially and given China an unfair trade advantage on global export markets.<\/p>\n<p>That made sense with China growing 10 percent per annum and attracting hundreds of billions of dollars of global capital every year. But with growth expected to slow to its weakest in 25 years and Beijing dipping into its foreign reserves to offset the biggest outflow of capital in years, a looser exchange rate now means a weaker yuan.<\/p>\n<p>&#8220;Treasury now has to choose which is more important,&#8221; said Chovanec, also Adjunct Professor at Columbia School of International Public Affairs. &#8220;Should the renminbi (yuan) float, or should Beijing actively intervene to support it and draw down its reserves?&#8221;<\/p>\n<p>The People&#8217;s Bank of China described its move, which caught markets by surprise, as a &#8220;one-off depreciation&#8221; of the yuan CNY=SAEC and billed it as a free-market reform.<\/p>\n<p>The yuan&#8217;s slide to a three-year low instantly rippled across the world. South Korea&#8217;s won fell 1.6 percent against the dollar KRW=, its biggest fall in 10 months, and South African central bank governor Lesetja Kganyago said his country&#8217;s exports would be less competitive.<\/p>\n<p>PRESSURE ON ASIAN CURRENCIES<\/p>\n<p>&#8220;If China is really moving towards greater alignment with the market, which implies greater yuan weakness, this may be a factor that adds more pressure on China-related currencies,&#8221; Barclays Asia-based strategists said in a note on Tuesday.<\/p>\n<p>Their counterparts at Morgan Stanley also Asian currencies excluding the yen were likely to slide against the dollar.<\/p>\n<p>Many emerging market currencies, including the Malaysian ringgit MYR=, Indonesian rupiah IDR= and Brazil&#8217;s real BRL=, had already slumped to their weakest levels against the dollar in over a decade as capital fled their slowing economies.<\/p>\n<p>The big question now for emerging markets, where growth has slowed and capital flight has increased dramatically this year, is whether their officials respond to China&#8217;s move in kind.<\/p>\n<p>&#8220;It was inevitable that China would join the currency war at some point. The key will be the response of other central banks &#8230; There should be further pressure on the currencies of China&#8217;s trade partners,&#8221; said Nick Lawson, managing director at Deutsche Bank in London.<\/p>\n<p>Central banks dumped as much as $260 billion of foreign exchange reserves in the second quarter as emerging market central banks tried to mitigate the impact of capital fleeing their own economies.<\/p>\n<p>The decline was the largest drop in global foreign exchange reserves in more than a decade, outstripping the depletion in 2008-09 when central banks frantically tried to manage the fallout from the global financial crisis.<\/p>\n<p><strong>(Reporting by Jamie McGeever; Editing by Kevin Liffey)<\/strong><\/p>\n",
+            "excerpt": "<p>The global currency war entered a new and critical phase on Tuesday as China&#8217;s surprise devaluation threatened to unleash a wave of competitive devaluations and keep monetary policy around the world looser for longer &#8211; perhaps even forcing the U.S. Federal Reserve to delay or slow its expected rate rise cycle. &#8216;Currency wars&#8217;, a phrase [&hellip;]<\/p>\n",
+            "date": "2015-08-11 22:14:35",
+            "modified": "2015-08-11 22:14:35",
+            "categories": [
+                {
+                    "id": 16,
+                    "slug": "business",
+                    "title": "Business",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 172
+                },
+                {
+                    "id": 18,
+                    "slug": "headlines",
+                    "title": "Headlines",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 6424
+                },
+                {
+                    "id": 7,
+                    "slug": "world",
+                    "title": "World",
+                    "description": "",
+                    "parent": 0,
+                    "post_count": 1232
+                }
+            ],
+            "tags": [
+                {
+                    "id": 279,
+                    "slug": "china",
+                    "title": "China",
+                    "description": "",
+                    "post_count": 185
+                },
+                {
+                    "id": 15830,
+                    "slug": "yuan",
+                    "title": "yuan",
+                    "description": "",
+                    "post_count": 4
+                }
+            ],
+            "author": {
+                "id": 6,
+                "slug": "jengferrer",
+                "name": "UNTV Correspondents",
+                "first_name": "UNTV",
+                "last_name": "Correspondents",
+                "nickname": "jengferrer",
+                "url": "http:\/\/www.untvweb.com",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+                {
+                    "id": 50402,
+                    "url": "https:\/\/intranet.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg",
+                    "slug": "image_aug112015_reuters-stocks",
+                    "title": "IMAGE_AUG112015_REUTERS-STOCKS",
+                    "description": "",
+                    "caption": "An investor checks on his mobile phone in front of an electronic board showing stock information at a brokerage house in Hangzhou, Zhejiang province, China, July 29, 2015. REUTERS\/Stringer",
+                    "parent": 50401,
+                    "mime_type": "image\/jpeg",
+                    "images": {
+                        "full": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg",
+                            "width": 640,
+                            "height": 427
+                        },
+                        "thumbnail": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS-150x150.jpg",
+                            "width": 150,
+                            "height": 150
+                        },
+                        "medium": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS-300x200.jpg",
+                            "width": 300,
+                            "height": 200
+                        },
+                        "large": {
+                            "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg",
+                            "width": 640,
+                            "height": 427
+                        }
+                    }
+                }
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "thumbnail": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS-150x150.jpg",
+            "custom_fields": {
+                "video_youtube_id": [
+                    ""
+                ],
+                "video_youtube_title": [
+                    ""
+                ],
+                "govt_file_links": [
+                    ""
+                ]
+            },
+            "thumbnail_size": "thumbnail",
+            "thumbnail_images": {
+                "full": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg",
+                    "width": 640,
+                    "height": 427
+                },
+                "thumbnail": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS-150x150.jpg",
+                    "width": 150,
+                    "height": 150
+                },
+                "medium": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS-300x200.jpg",
+                    "width": 300,
+                    "height": 200
+                },
+                "large": {
+                    "url": "http:\/\/www.untvweb.com\/news\/wp-content\/uploads\/2015\/08\/IMAGE_AUG112015_REUTERS-STOCKS.jpg",
+                    "width": 640,
+                    "height": 427
+                }
+            }
+        }
+    ]
+}

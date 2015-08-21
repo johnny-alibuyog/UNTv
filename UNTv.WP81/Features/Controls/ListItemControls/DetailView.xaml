@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="UNTv.WP81.Features.Controls.ListItemControls.DetailView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UNTv.WP81.Features.Controls.ListItemControls"
+    xmlns:converters="using:UNTv.WP81.Common.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid ScrollViewer.VerticalScrollMode="Auto">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock x:Name="CategoryTextBlock" Text="{Binding Category, Converter={StaticResource UpperCaseConverter}}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock x:Name="TitleTextBlock" Text="{Binding Title}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" TextWrapping="WrapWholeWords" TextAlignment="Justify"/>
+        </StackPanel>
+
+        <!-- Content Container-->
+        <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <RichTextBlock TextAlignment="Justify" Style="{ThemeResource BaseRichTextBlockStyle}" x:Name="ContentGridView" converters:Properties.Html="{Binding Content}" />
+        </ScrollViewer>
+    </Grid>
+</Page>

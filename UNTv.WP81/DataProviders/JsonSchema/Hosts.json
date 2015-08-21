@@ -1,0 +1,627 @@
+﻿{
+    "status": "ok",
+    "programs": [
+        [
+            {
+                "id": 66009,
+                "title": "Dr. Lady Ruvi Tagulao",
+                "description": "Lady Ruvi Tagulao or simply Doc Ruvi is an experienced physician in the field of integrative medicine. She has extensive knowledge on the holistic treatment of patients.  She integrates Conventional Medicine with Naturopathic Medicine, Homeopathy and Homotoxicology, Orthomolecular Medicine, Biooxidative Therapies, Bio-Energetic Therapies and Regenerative Medicine-Cellular Therapy.\r\n\r\nDoc Ruvi is also a well-regarded speaker on health and wellness. Her secret to better health is the combination of the right kind of medicine at the right time. Being a patient herself, she was able to experience first hand the benefits of natural treatment modalities. Her passion and focus is to share her knowledge and experiences with people to achieve better health by, among other things, making simple changes to diet and lifestyle.\r\n\r\n",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": "",
+                "thumbnail": ""
+            },
+            {
+                "id": 65910,
+                "title": "Dr. Kaycee Reyes",
+                "description": "Wellness expert and health advocate, Dr. Kristina \u2018Kaycee\u2019 Cuevas Reyes, studied medicine at the University of Sto. Tomas Faculty of Medicine & Surgery. She completed her Diploma in Dermatology and Master of Science in Clinical Dermatology from King\u2019s College and St. John\u2019s Institute of Dermatology at Guy\u2019s & St. Thomas Hospital respectively in London.\r\n\r\nHaving served as a visiting fellow in Dermatologic Laser Surgery at the National Skin Centre in Singapore, Dr. Reyes specializes in lasers and in Complementary & Alternative Medicine (CAM). She underwent a visiting fellowship in Dermatologic Laser Surgery in the University of Ramathibodi Hospital \u2013 Mahidol University in Bangkok, Thailand. Practicing wellness care, she dealt exclusively with wellness and acupuncture, with the Traditional Medicine Clinic at the Philippine General Hospital.\r\n\r\nPassionate about beauty and wellness, Dr. Reyes makes it a point to attend international conferences to further widen her outlook towards treating diversified skin cases. Through this, her patients are guaranteed to receive only the latest techniques and technologies in the field of non-invasive aesthetic and cosmetic dermatology. She believes that a tailor-fit and individualized approach to managing skin and weight problems is an effective way to take care of her patients.\r\n\r\nAs an advocate towards health and wellness issues in the Philippines, she formerly directed the ALAGA KA project, a local cause that focuses on helping unprivileged communities to renovate their barangay health centers and include staff training. It has become her mission to educate, inspire, and help people to live happier and healthier lives through encouraging important lifestyle changes",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": "",
+                "thumbnail": ""
+            },
+            {
+                "id": 60484,
+                "title": "Marilen Lagnitan",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 60482,
+                "title": "Eren Tumali",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 60481,
+                "title": "Jun Farcon",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 60480,
+                "title": "Jess Cifra",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 58511,
+                "title": "Jackie Aquino",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55417,
+                "title": "Dr. Mon Del Rosario",
+                "description": "Dr. Mon Del Rosario, a veteran in the field of music industry who attributes a lot of hit songs and considered to be a truly awarded composer\/arranger.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55416,
+                "title": "Dr. Bong Santiago",
+                "description": "Dr. Bong Santiago, an Internist and resident doctor of Clinic ni Kuya.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55415,
+                "title": "Dr. Joseph Lee",
+                "description": "Dr. Joseph Lee, is a urologist and the Section Head of Stone Center Fatima University Medical Center.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55414,
+                "title": "Dr. Kathleen Anne Antonio",
+                "description": "Dr. Kathleen Anne Antonio is a dedicated Orthopedic and Spine Surgeon and a Fellow at the Philippine Orthopedic Association (POA).",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55413,
+                "title": "Dr. Sarah Barba-Cabodil",
+                "description": "Dr. Sarah Barba-Cabodil specializes in Aesthetic Dermatology and Anti-Aging Medicine. Her passion for her field led to the inception of Figura Clinica; a successful cosmetics center that provides aesthetic and cosmetic procedures amid a nurturing atmosphere.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55412,
+                "title": "Dr. Janis Ann Espino-De Vera",
+                "description": "Dr. Janis Ann Espino-De Vera is an active consultant in the Institute of Orthopedics and Sports Medicine of St. Luke's Medical Center-Global City and Healthway Medical Clinics-Festival Mall.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55411,
+                "title": "Jun Soriao",
+                "description": "A home grown talent of UNTV where his interests is on news anchoring and hosting as well.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55410,
+                "title": "Monica Verallo",
+                "description": "A multi-talented woman with enthusiastic character that inspite of her hectic schedules Monica manages to do her tasks. Being a consistent outstanding student from elementary to highschool and graduated with Cum Laude in Bachelor of Arts in Broadcast Communication at University of the Philippines-Diliman, she was easily engaged in the field of TV Broadcasting",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 55409,
+                "title": "Thalia Javier",
+                "description": "Youngest among the hosts, but she has the guts to be one of them. A fashion designer by profession and has her own boutique already. As teen, she represents the voice of the youth today in her generation.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54748,
+                "title": "Jeffrey Santos",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54747,
+                "title": "Benedict Galazan",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54746,
+                "title": "Lea Ylagan",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54666,
+                "title": "Flor Perez",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54665,
+                "title": "Lakay Rolly Gonzalo",
+                "description": "",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 54638,
+                "title": "Geronimo L. Sy",
+                "description": "GERONIMO L. SY is an Assistant Secretary of the Department of Justice. He heads the Planning and Management Service in charge of the justice sector reform agenda among other functions.\r\n\r\nHe was a career State Prosecutor before his appointment. The major cases he handled include: Multitel\/Baladjay pyramiding scam, Dacer-Corbito double murder, Esperat media killing, Fort Bonifacio coup, and the conviction of the first terrorism (Rizal Day bomber Al-Ghozi) and the first cybercrime (Office of the President hacking) cases. He was lead prosecutor for various task forces on terrorism, business fraud, corruption and human trafficking and presided over the e-Government Task Force on Cybercrime and Cybersecurity.\r\n\r\nHe was the DOJ representative to the Government of the Republic of the Philippines \u2013National Democratic (GRP-NDF) Monitoring Committee. In addition, he was Special Prosecutor for Senate Committee on Banks, Financial Institutions and Foreign Currencies and the Bureau of Immigration.\r\n\r\nHe chaired the Senate Sub-Committee on Anti-trust and Competition Policy and serves as member of the Supreme Court Committee on the Revision of the Rules of Court, Sub-Committees on Criminal Procedure and E-Commerce.\r\n\r\nHe is a recognized expert in technology law and competition law. He represented the DOJ at the APEC IP Expert Group Seminar on Cybercrime and Intellectual Property, presenter at the APEC Training Course on Competition Policy Abuse of Dominant Position \u2013 Monopolization and Government Speaker at the ABA-Libertas Forum: Balancing State Rights and Individual Liberties in 2005. He was also a Country Speaker to the International Commission of Jurists (ICJ) Southeast Asian Hearing on Terrorism, Counter-terrorism and Human Rights held in Jakarta, Indonesia in 2006. He was a Panel Speaker at the Council of Europe (COE) Convention on Cybercrime held in Strasbourg, France in 2008 and 2009. He represented the DOJ in the United Nations Office of Drugs and Crime Expert Groups Meeting on Cybercrime in 2010 and 2011.\r\n\r\nIn 2003, he was invited to the International Visitor\u2019s Program (IVP) in Washington, D.C. for a comparative study of U.S. and R.P. Judicial Systems. He finished an International Law Fellowship with the United Nations Institute for Training and Research (UNITAR) in Thailand in 2005 and was a United Nations Asia and Far East Institute for the Prevention of Crime and the Treatment of Offenders (UNAFEI)-Japan International Cooperation Agency (JICA) scholar on Criminal Justice Response to Corruption in Tokyo,Japan in 2008.\r\n\r\nAssistant Secretary Sy obtained his degrees on B.S. Management Engineering and Juris Doctor from the Ateneo de Manila University. He attended the University of the Philippines where he received his Masters in Public Management (MPM) degree in 2004. Currently, he is a candidate for Doctor of Public Administration (DPA) at the University of the Philippines, National College of Public Administration and Governance (NCPAG).\r\n\r\nHe did his law thesis on protecting Internationally Well-Known Trademarks in 1995. In 2001, he published his first book titled E-Commerce Act of the Philippines (Rex Bookstore). He wrote his masteral paper on Controlling Corruption in Government \u2013 Proposal for Instituting an Independent Commission against Corruption (ICAC) in the Philippines. Since then, he has published Foundations of Prosecution \u2013 A History of the Department of Justice (Lawyer\u2019s Review 2004), Rethinking the Five Pillars of the Criminal Justice System: From Theory to Practice (Philippine Journal of Public Administration, University of the Philippines 2005), The Case for Human Rights Democracy: University in Particularity, Beyond Borders (Liberal Philippines, Inc. 2006) and Here I Stand: The End of the Republic (Manila Times, Inc. 2007). His research interest covers criminal justice, corruption studies and administrative theory.\r\n\r\nAcademically, Asec Sy is professor of law and a lecturer in criminal law, criminal procedure, technology law and cybercrime, competition policy, corporate governance, risk management and financial laws.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1424160104sythumb.jpg",
+                "teaser_poster": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1424160171sythumb.jpg",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 53620,
+                "title": "Gerry Alcantara",
+                "description": "<span style=\"text-decoration: underline;\"><\/span>\r\nGerry is currently the co-anchor of \"Why News\" \u2013 UNTV\u2019s first English primetime news program. Prior to this, she was one of the regular hosts of Good Morning Kuya (GMK) and was also stationed in the UNTV Radio Mobile Booth, providing daily traffic updates and connecting the program to different barangays for medical and legal consultations through the Ikonsulta Mo segment of GMK.\r\n\r\nGerry also did morning Hataw Balita newsbreaks, and as an in-house reporter, covered UNTV\u2019s political and public affairs programs (Get It Straight and Polwatch) and other special events, including the 2014 President\u2019s State of the Nation Address (SONA).\r\n\r\nPrior to her engagement with the News &amp; Public Affairs department, Gerry was a courtside reporter for the UNTV Cup (a basketball league involving government agencies) and a co-host of Rise &amp; Shine.\r\n\r\nBeyond her work as a news anchor and reporter, Gerry is a health policy and research consultant for the UPecon Health Policy Development Program, a USAID-commissioned group that provides technical assistance to various agencies in the Philippine health sector.\r\n\r\nGerry graduated Magna Cum Laude from the Ateneo de Manila University, and is currently completing her Masters in Development Economics at the University of the Philippines. She also took a communications course at the National University of Singapore \u2013 Lee Kuan Yew School of Public Policy.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 33137,
+                "title": "Gretchen Stephanie Mendiola Espina",
+                "description": "Gretchen Stephanie Mendiola Espina is one of the hosts of Doctors on TV.\u00a0 She is a singer and an actress who rose to notability after winning Pinoy Idol, an interactive reality-based singing competition. \u00a0A succession of recognitions followed in 2010 with a win from Awit Awards for Best Performance by a New Female Recording Artist for Kasalanan Nga Ba? her carrier single.\u00a0 She also received nominations for New Female Recording Artist of the Year and Best R&amp;B for her carrier single Kasalanan Nga Ba? from PMPC Star Awards and Awit Awards respectively.\r\n\r\nEspina came from a musically-inclined family who is also the prominent political family in Biliran, with her father, Congressman Dr. Rogelio \"Roger\" J. Espina, Representative of the Lone District of Biliran, described as a \"good piano player and singer.\" Her mother, Cecil, works as a pediatrician; while her grandfather, Gerry, is a Mayor of Kawayan, Biliran. Her uncle, Gerry (Gerryboy) Espina Jr. is the present Governor of Biliran.\r\n\r\nEspina pursued college in University of the Philippines Diliman campus in Quezon City, with a major in European Languages. She is a member of The University of the Philippines Singing Ambassadors and represented UP in the Inter-Collegiate Singing Contest held in Shantou University, Guangdong, China, where she won the first prize as a solo performer.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1393547920GretchenE.BannerAd.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 29450,
+                "title": "Rheena Villamor",
+                "description": "Behind the pretty face of this lady is a pile of skills and know-how that lead her to a spot in the Good Morning Kuya studio.\u00a0 Her wide-ranging catalog of expertise includes project management training, event organizing and hosting, video production and broadcasting.\u00a0 She is well remembered as a courtside reporter in an inter-college sports competition.\r\n\r\nUNTV acknowledged and welcomed her charisma as the station hired her as one of the reporters assigned in the coverage of UNTV Cup, a basketball league for a cause that gathered various government units. Now, her unquestionable charm can be seen more regularly on the small screen through Good Morning Kuya.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1384366874reenabanner.png",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 29449,
+                "title": "Cong. Lorenzo Ta\u00f1ada III",
+                "description": "Known as Erin to his close friends, and now to GMK\u2019s avid followers, Cong. Lorenzo Ta\u00f1ada III was the Representative of the Fourth District of Quezon in the Philippine Congress in the 15<sup>th<\/sup> Congress.\r\n\r\nHis political inclination can be traced to his father, Senator Bobby Ta\u00f1ada, and grandfather, Senator Lorenzo Ta\u00f1ada. He obtained his formal education on Political Science in Ateneo de Manila University. Being a congressman, first elected last 2004, he has already passed pieces of legislation that significantly helped maintain equity in the Philippine society. The list includes Anti-Torture and Crimes against International Humanitarian Law, and the Renewable Energy Law. Presently, he is a strong advocate of the Freedom of Information Bill.\r\n\r\nThough honed in the political realm, he is indeed an interesting addition to the GMK family. His smiling face and insightful opinions and pieces of advice as a resource speaker for legal matters are added features of the show.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1390556752Cong.Erin.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 27739,
+                "title": "Jenny Fajardo",
+                "description": "Print &amp; commercial model Jenny Fajardo started her hosting career with UNTV\u2019s lifestyle program Dito Po Sa Amin and magazine show Good Morning Kuya during its early days.\u00a0 She took a hiatus from work while she focused on being a full time mom.\u00a0 She recently returned to team up with Louella Cordova as co-hosts of the mommy morning show Rise and Shine.\u00a0 Jenny\u2019s bubbly personality adds to the cheerful and dynamic feel of the show.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1380537526jennyfajardo.png",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 16744,
+                "title": "Angelo Diego Castro III",
+                "description": "Angelo Diego Castro III is among the latest addition to the growing family of the Kasangbahay Network.\u00a0 He is the son of veteran broadcast journalists, Ms. June Keithley and the late Angelo Castro Jr.\r\n\r\nHe started his career in front the camera as an actor in a series of soap operas and TV commercials. \u00a0He started acting in theater at the age of 11, appearing in plays by Fr. James B. Reuter productions.\r\n\r\nAway from the glare of the spotlight, he is an accomplished chef.\u00a0 He graduated from Culinary Arts Management back in 2004 and was Executive Chef for 2 major food brands here in the Philippines.\u00a0 He currently owns a restaurant called Lord of the Wings.\r\n\r\nHis journalistic genes and love for the dishes paved the way for him being a resident host and cook in this UNTV\u2019s morning program.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1384386574diegobannerred.png",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 16743,
+                "title": "Angela Lagunzad",
+                "description": "Angela Lagunzad is a radio broadcaster; a TV commercial model and a co-anchor for UNTV Ito Ang Balita evening newscast.\r\n\r\nMore popularly known as Trapik Angel, Angela specializes in traffic reports for radio stations DWLS, WAVE FM and Home Radio. She also writes on-air content for the weather and entertainment news.\r\n\r\nHer involvement in modeling led her to pursue fashion styling at the pioneering School of Fashion and the Arts. Angela\u2019s modeling career has seen endorsements for several local and foreign-aired TV commercials.\u00a0 She has also walked the runway for John Rufo Couture in Ultra Vires Unmasked, a fashion campaign for Violence Against Women and Their Children.\r\n\r\nHer bubbly personality flared with maturity brought about by her being a partner to Mr. Diego Castro III and a mother to a healthy son is a well-kept asset of the morning show.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1384337831ANGELLBANNER.png",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 15319,
+                "title": "Eric Cabobos",
+                "description": "Eric Cabobos is more popularly known as \"Kuya Eric\" from the children\u2019s bible-based program Kawan Ng Cordero Show. He serves as the children\u2019s mentor who teaches them Bible-based values.\r\n\r\nEric has been with the KNC show since it started in 2007. Aside from hosting the show, Eric is well acquainted with the technical aspects of the program such as scriptwriting, cinematography and lighting. \u00a0He continues to take a more active role in promoting UNTV\u2019s advocacy for public service.\u00a0 It has always been his aspiration to help improve the lives of the less fortunate.\r\n\r\nBut before his hosting debut, Eric was known professionally as a singer. He\u2019s into ballads and sings at church and special events. His other passion is architectural and interior design.\r\n\r\nEric is a consistent nominee for Best Host at the PMPC Star Awards for TV since 2009.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364971821eric.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 14329,
+                "title": "Romeo &#8220;Romy&#8221; Roxas",
+                "description": "A businessman by profession, Romeo Roxas had a very long and successful career both in government and private offices. His collection of awards and honors from Rotary and other affiliated organizations is a testament to his managerial skills.\r\n\r\nRomeo Roxas first worked in a recruitment agency before switching to tourism. His latest projects involved him in efforts to boost Philippine tourism, particularly in Puerto Galera, through the promotion\u00a0of different aspects of Filipino culture.\r\n\r\nAs a Rotarian, Romeo holds a passion for public service and in sharing his ideas for social change. Aside from these, he actively partakes in event organizing, team building, leadership and safety training, and human resource development.\r\n\r\nRomeo Roxas is 2007-2008 Rotary Club of Kamuning President. He became part of Rotary\u2019s television series in UNTV since 2010.\r\n\r\n&nbsp;",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364798931RIARomyRoxas.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 14328,
+                "title": "Dondon Tenorio Jr.",
+                "description": "Dondon Tenorio has been practicing law for thirty years. Recently, he found a fresh opportunity to share his talents and expertise with other people through hosting programs in UNTV.\r\n\r\nOn Rotary In Action, Dondon gives emphasis on Rotary\u2019s ability to impart medical, dental, and legal attention to the less fortunate through the wholehearted support of club members who are either doctors, dentists, lawyers, or are involved in related professions. He enjoys lending a hand to senior citizens and students alike, helping them to see a brighter tomorrow by giving free eyeglasses to the elderly and underlining the importance of good education among young people.\r\n\r\nAside from Rotary In Action, which airs on TV, Dondon is also a mainstay in the program\u2019s radio version of the same name, which airs live over Radio La Verdad 1350 kHz. He is also part of \u201cPondahan,\u201d a segment of UNTV\u2019s morning public service show \"Good Morning Kuya.\"",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364797564RIAAtty.DondonTenorio.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 14327,
+                "title": "Salvador &#8220;Dong&#8221; Lorbes",
+                "description": "A practicing lawyer for more than thirty years now, Salvador \u201cDong\u201d Lorbes believes winning a case is not necessarily excellent. It is when he wins the heart and trust of his clients that excellence comes in.\r\n\r\nDong is always motivated by Rotary\u2019s slogan, \u201cService Above Self.\u201d He considers this an almost-perfect attitude a person can and must have. To him, it\u2019s a way of showing unconditional love to others in obedience to God\u2019s commandment to \u201clove your neighbor as yourself.\u201d Whenever he and his colleagues extend help to the needy and, in return, see smiles and the glow of happiness in people\u2019s eyes, Dong feels an indescribable joy and sense of fulfillment. This kind of feeling inspires him even more to stay an active and committed Rotarian.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364798362RIAAtty.DongLorbes.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 14326,
+                "title": "Gerry Panghulan",
+                "description": "Gerry Panghulan is not only a regular host of Rotary In Action but also sits as the vice president for administration of BMPI-UNTV.\r\n\r\nHe was once the aide secretary of former Vice President Salvador \u201cDoy\u201d Laurel for six years and previously a part of the Department of Tourism.\u00a0His personal advocacies focus on education and training and livelihood programs for students, housewives, and others.\r\n\r\nIt was during Gerry Panghulan\u2019s term as president of the Rotary Club of Kamuning that Rotary In Action was conceptualized by his friend and club member, Daniel Razon. Back then, UNTV had just began its broadcast operation and the opportunity to air a Rotary TV program was valuable mileage in the public image aspect not only of RC Kamuning but of the different Rotary clubs in the country and the Rotary International at large. Since then, Rotary and UNTV have always partnered to advance service-oriented projects that help Filipinos in many ways.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364798586RIAGerryPanghulan.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 14325,
+                "title": "Efren &#8220;Eco&#8221; Capa",
+                "description": "A civil engineer and licensed contractor by profession, Efren \"Eco\" Capa believes that practicing excellence in his field requires thorough knowledge of both the work and the business. To achieve this, he does continuous reading, researches on new trends in the construction industry, and exchanges views with other people to enhance his awareness.\r\n\r\nThis is also what Eco appreciates about Rotary In Action. Through the TV program, Rotary clubs in the country are able to share new ways to serve the needs of many people. Like any other Rotarian, Eco experiences fulfillment in helping others through Rotary In Action as well as his own Rotary club.\r\n\r\nEfren Capa is the Immediate Past President of Rotary Club of Kamuning, 2011-2012.\u00a0The club garnered 23 recognition during his stint, including an Outstanding President and Outstanding Club Award.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1364798786RIAEfrenCapa.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13910,
+                "title": "Lyn Perez",
+                "description": "Lyn Perez is considered as one of the pioneers of UNTV 37.\u00a0 A Mass Communication graduate of St. Scholastica\u2019s College from Dongalo Paranaque, Lyn pursued a career in television and broadcasting industry after coming home from the United States in 1995.\r\n\r\nUNTV CEO Mr. Daniel Razon discovered her talent and provided her with an evening entertainment program co-hosting with one of our talented balladeers, Mr. Anthony Castello, in \u201cFriday Night Live\u201d aired on SBN21. Also under SBN21, she became a VJ and entertainment segment host in the station\u2019s news program.\r\n\r\nHer well-roundedness was tapped to cater to the program\u2019s Usapang Pangkalusugan segment where she welcomes guest doctors and medical experts and guides them in sharing their knowledge to the audience.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1366601620lyn_4.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13840,
+                "title": "Attorney George Erwin Garcia",
+                "description": "Atty. George Erwin Garcia is the most sought-after election lawyer in the country having counseled for prominent politicians.\u00a0 He is also a law professor at the Lyceum of the Philippines University.\r\n\r\nHis political savviness makes him a lively and informative host of political talk shows on radio and TV namely UNTV 37\u2019s \u201cPolitical Watch\u201d and UNTV-Radio\u2019s \u201cHuntahan.\u201d",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1362552821GeorgeErwin.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13838,
+                "title": "Arlene Razon",
+                "description": "The fashion icon in the trio, Arlene Razon completes the tri-kada. Arlene exemplifies urban contemporary style in her choice of clothing. She has a sensitive sense in style and an eye for details in the arts.\r\n\r\nHer interests in life are diverse which includes dancing. She also believes in the adage \u201cCarpe Diem\u201d or seize the day, an axiom that she practices every waking day of her life. Evidence of her character can be traced in her seemingly unaffected manner in dealing with trials that comes her way. Possessing a vibrant personality, there is never a dull moment when she\u2019s around.\r\n\r\nAlso a newbie in the industry, she is determined to be one of the best in this field. She enjoys hosting the show since she plans to go to business someday. Arlene also loves to travel a lot. With the show keeping her on the go, she is able to meet new faces, visit diverse places and learn a thing or two about business. Arlene will definitely make her mark as a host, add to the fact that her opinion is highly regarded in the general direction of the show.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1363139015atearlene.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13837,
+                "title": "Kitt Meily",
+                "description": "Sophisticated, stylish, friendly and likable. These definitely describe Kitt. The reluctant and camera shy Kitt never imagined herself hosting a program as she is used being behind the camera. But with much coaxing from friends, she finally conceded. Lo and behold, hosting, as she discovered comes natural to her.\r\n\r\nA true blue Bulakenya, growing up in a provincial town taught her the value of work and diligence. Never averse to challenges, she resolved to reach her goals and aspirations in life no matter what. She gives high value to persistence and believes that it is a key to success. Kitt is also a source of encouragement, a reason why people loves to be around her.\u00a0Having a vivacious personality too, she always puts life in a boring room whenever she\u2019s around.\r\n\r\nBeing a neophyte host of a travel and business show is a challenge for her but she feels lucky to be literally on her toes. She always looks forward to visiting far-off provinces and the hidden nooks and crannies of Manila to discover what businesses they have to offer.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1362552870kitt.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13601,
+                "title": "Rodel Flordeliz",
+                "description": "Rodel Flordeliz is the multi-talented host and producer of the award-winning livelihood show Bread n\u2019 Butter.<b>\u00a0<\/b>A homegrown talent of UNTV, Rodel started as a computer specialist, having a degree in Computer Engineering. \u00a0He was soon discovered for his voice-over skills and continued to work as an off-cam talent.\u00a0 Gaining confidence, he later tried on-cam duties as a field reporter for \"Ito Ang Balita\" in SBN 21. It has always been his dream to work in front of the camera and when the opportunity came, he took it like a duck to water.\r\n\r\nRodel was nominated twice at the PMPC Star Awards for Best Travel Show Host (Bread n\u2019 Butter) in 2009 and Best Morning Show Host (Good Morning Kuya) in 2012. His dark good looks have also earned him modeling stints for print ads and TV commercials.\u00a0 His talent extends to the visual arts too as he currently supervises UNTV\u2019s Creative Department.\r\n\r\n&nbsp;",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1366098182rodel.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13600,
+                "title": "Attorney Ramon Rodrigo",
+                "description": "Atty. Ramon E. Rodrigo is a true-blue Atenean, having studied in Ateneo from gradeschool to law school. Ten years after passing the bar, he tried for the New York Bar in 1984 and was admitted.\u00a0 He is also a New York licensed Financial Adviser.\r\n\r\nHe was an associate lawyer and a managing partner at the Rodrigo Law Office. He has held various top positions in government and private sector.\u00a0 He served as City Prosecutor of Caloocan City from 1997 to 2009.\u00a0 He was also the Associate Commissioner of the Presidential Commission on Good Government (PCGG) in 1987.\r\n\r\nHe is also active in civic and religious organizations. He is a past president of Rotary Club of Kamuning (R.I. District 3780) and a Grand Knight of Knights of Columbus.\u00a0 A master at public speaking, he was elected Charter President of Sultan Toastmasters Club, a non-profit educational organization that teaches public speaking and leadership skills through a worldwide network of meeting locations.\r\n\r\nIn 2009, Atty. Rodrigo joined Law Profile\u2019s league of legal experts where he generously shares his expertise to the masses thereby bringing the law closer to the people.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1362462876lp4.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13597,
+                "title": "Dr. Daisy Camitan",
+                "description": "Dr. Daisy Lim-Camitan of Dermgem is one of the most respected figures in the derm-facial-skin care wellness sector. She is also one of the Board of directors of the Philippine Academy of Anti-Ageing Medicine.\r\n\r\nIn 2008, Dr. Camitan joined UNTV as a segment host of Doc on TV\u2019s skin care portion. Sharing the network\u2019s advocacy for public service, she volunteered her time and expertise at Clinic ni Kuya, accommodating patients from poor families across Metro Manila. In 2010, she completed the triumvirate of \"Kaagapay\" with Annie Rentoy and Rolly \u201cLakay\u201d Gonzalo. She hosted the segment Special People, in which she was able to touch the lives of mentally challenged members of the society.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1362636805daisyDR.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13596,
+                "title": "Dean Antonio Abad",
+                "description": "Dean Antonio H. Abad is the former Dean of Far Eastern University\u2019s Institute of Law and of Adamson University\u2019s College of Law.\u00a0 He received his law degree, <i>cum laude<\/i> from Far Eastern University\u2019s Institute of Law in 1963 and was among the topnotchers during their Bar Examination.\r\n\r\nAs a practicing lawyer, he founded the ANTONIO H. ABAD &amp; ASSOCIATES which handles legal cases from various corporations. At present, he is an active academician at various institutions in different positions, namely: La Consolacion University, Far Eastern University, School of Manpower in Auto-Assembly Research &amp; Technology (SMART),Legal Counsel of the Philippine Associates of Colleges and Universities (PACU), Ateneo de Manila University, Adamson University, San Beda College, University of Sto. Tomas, San Sebastian College and University of the Philippines including U.P Law Center.\r\n\r\nDean Abad is currently a member of the Legal Education Board; a member of the Board of Governors of the Employers\u2019 Confederation of the Philippines (ECOP); member of the Tripartite Labor Code Review Committee, Department of Labor and Employment; and Member, Committee on Continuing Legal Education and Bar Matters of the Supreme Court of the Philippines.\r\n\r\nHis leap to television through the show \"Law Profile\" was propelled by his lifelong advocacy of educating the public about the constitution and their constitutional rights.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1362463129lp3.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 13594,
+                "title": "Attorney Eros Zu\u00f1iga",
+                "description": "Atty. Eros Zu\u00f1iga\u00a0is the President of Safety Organization of the Philippines - a non-profit, non-governmental, national public service organization aimed at preserving life, promoting health and protecting the environment. He is the man behind ensuring security issues at work, at home or during catastrophic, man-made disasters.\r\n\r\nAtty. Zuniga joined the military in the 70\u2019s where he earned a degree in Political Science at Fort Bonifacio College (now Makati University).\u00a0 He was member of Scout Rangers Class 14 and was assigned to troubled spots in the country.\u00a0 His rank soon rose from third-class trainee to captain.\u00a0 After a decade of military service he was awarded an honorable discharge, reverting to inactive status.\r\n\r\nHis first job as a private citizen was detachment commander of the security agency hired to secure the premises of Gelmart Philippines. He managed 80 security guards within a 24-hour production plant and 8,000 employees.\u00a0 He also worked for Hyatt Regency Manila as security officer, holding the assistant security manager position for two years. In 1989, Isetann Department Store engaged his services as security officer of its Recto branch then later became the security manager of all Isetann outlets.\r\n\r\nAfter two years he moved to Shangri La Plaza as security and safety manager, until his retirement a decade later. It was during his stay at Shangri La where he realized that security and safety are two different things. This was the catalyst to his membership in SOPI.\u00a0 Atty. Zuniga states, \u201csafety is broader in scope, covering security, health, and environment.\u00a0 As a security person, I was conducting fire drills not knowing these were part of the wider safety net. I realized that emergency preparedness measures undertaken by security personnel are just one aspect of safety.\u201d\r\n\r\nAtty. Zuniga regularly appears on the show Serbisyo Publiko where he shares his knowledge and expertise regarding safety in the workplace.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 12916,
+                "title": "Attorney Erlando Abrenica",
+                "description": "Atty. Erlando \u201cLani\u201d Abrenica has been in the law profession for 32 years \u00a0and is currently a co-partner at the Abrenica &amp; Velez Law Offices.\u00a0He served as Manager of the Legal Department of Equitable Bank and General Counsel for Atlanta Industries, Inc. &amp; Group of Companies.\r\n\r\nAs a past president of the Rotary Club of Kamuning, Lani has long realized that Rotary plays a very important role in helping many Filipinos solve their legal concerns. With\u00a0his exemplary leadership during his term, he was presented with the Presidential Citation Award given by Rotary International in 2006.\r\n\r\nLani finds passion in promoting justice; dealing with different legal issues and alleviating the plight of his clients. He shares this spirit for advocacy with UNTV, where he continues to support the network\u2019s humanitarian\u00a0endeavors.",
+                "teaser_video": "",
+                "banner_image": "",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 12831,
+                "title": "Richard Reynoso",
+                "description": "<p>What makes a great singer?\u00a0 Is it the quality of the voice?\u00a0 Or catchy melodies?\u00a0 Or heartfelt lyrics?<\/p>\r\n<p>Well, whatever it is, all three must have been average fare for Richard Reynoso for him to continuously enjoy a slew of awards.\u00a0 Though it is true that he did lose some competitions, he has won more than he has lost.\u00a0 Just consider him winning second in the 1st KBP Musicfest for Isang Dugo, Isang Lahi, Isang Musika; being nominated in the 1990 Tinig Awards for the Classical and Kundiman Category; garnering four nominations in the 1991 Awit Awards for Best Performance by a Male Artist, Record of the Year, Album of the Year and Best Ballad Recording, as well as Best Revival by a Male Artist in 1992 and an award for Artist in Excellence given during the 1997 Philippine-American Convention and Exposition in California, USA.<\/p>\r\n<p>Neither did Richard miss out on performances.\u00a0 He was the front act for Tiffany and The Jets\u2019 Philippine concerts in 1989.\u00a0 He graced the Binibining Pilipinas 1988 Beauty Pageant as a guest performer, as well as the 1988 Look of the Year and the 1993 Miss Asia-Pacific.\u00a0 He had his share of international performances both as a guest and as a solo artist in countries such as the USA, British Columbia, Japan, Hawaii, Guam, Greece, Germany, Belgium, Amsterdam, Hongkong and Indonesia performing to both Filipino and foreign audiences.<\/p>\r\n<p>To date, he has already released eight solo albums, six of which are in CD format with gold and platinum awards to boot his most memorable songs including Hindi Ko Kaya, Paminsan-minsan, Maaalala Mo Pa Rin &amp; Kahit Sino.<\/p>\r\n<p>As a versatile artist, he not only performed as a singer but acted in movies as well.\u00a0 Between 1987 and 1992 (within a span of six years), he recorded fifteen movie theme songs.\u00a0 Between 1987 and 1994, he starred in 15 movies including the Vilma Santos-Christopher De Leon starrer, \"Imortal\" and the Sharon Cuneta-Gabby Concepcion movie, \"Bakit Ikaw Pa Rin.\"<\/p>\r\n<p>Richard Reynoso\u2019s public appearances include guestings in top-rated television programs.\u00a0 He co-hosted German Moreno\u2019s GMA Supershow for five years, was a mainstay of Armida Siguion-Reyna\u2019s Aawitan Kita Special (a musical show he co-directs) for more than 12 years, and hosted a weekly talk show, On d' Spot wherein he was also the Associate Producer.\u00a0 He hosted All The Way With Richard Reynoso, an evening talk show over RJTV.\u00a0 Critics immediately noticed his hosting prowess that he was immediately nominated for Best Emcee \/ Host Category at the 19th Aliw Awards in August, 2006.<\/p>\r\n<p>To date, he co-hosts A Song of Praise (ASOP) Music Festival that airs over the Kasangbahay Network - UNTV every Sunday evening with Toni Rose Gayda.<\/p>\r\n<p>From singing, hosting, acting to TV guestings including modeling (he was the signature model for Bozz\u2019A shirts way back in 1990) klieg lights beckon for Richard.<\/p>\r\n<p>However, unknown to many, there is another side of the artist Richard Reynoso, and that is Richard Reynoso, the businessman.<\/p>\r\n<p>He did finish college at the Philippine Christian University where he took up Business Administration, major in Marketing Management.\u00a0 Off centerstage, he puts his education to good use working as a Special Projects Coordinator for the Philippine Association of National Advertisers (PANA) in 1995, a Marketing Manager of Praise, Incorporated from 1996-1998 and Image Consultant of various firms (one of which is The Landmark).\u00a0<br \/>\r\nCombining business sense to his creative side as an artist makes Richard Reynoso a potent force to reckon with.\u00a0 There is, indeed, more to come from the country\u2019s Original Prince of Ballad.<\/p>\r\n<p>Awarded by the TBA Diamond Consumers Choice Awards as Most Inspiring Performer and TV Host for the year 2011.<\/p>\r\n",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1361777540richard.jpg",
+                "teaser_poster": "",
+                "host_banner": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/cache\/th_13413971b280720344faa797bf330e3c_1433573201richardbanner.jpg",
+                "thumbnail": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/cache\/th_d4496fa0cee5c88228aa25ca576a9496_1433569025programminithumbreynoso.jpg"
+            },
+            {
+                "id": 12828,
+                "title": "Toni Rose Gayda",
+                "description": "Born to the philanthropist and movie star, Ms. Rosa Rosal, Toni Rose Gayda was destined to work in front of a camera despite her mother\u2019s objection to her joining show business.\u00a0 She started her career as a model and was selected to join the \u00fcber exclusive league of Camay Girls.\u00a0 She also starred in various films in the \u201870\u2019s, but it was in hosting that she found her niche.\r\n\r\nIn the mid 80\u2019s Toni Rose joined \u201cLunch Date,\u201d a noontime variety show at GMA 7. Her natural comedic timing and light-hearted stage presence endeared her to viewers, earning her a place among Philippine TV\u2019s most respected and well-loved television hosts. \u00a0Her hosting career has seen her work with different networks.\u00a0 She was in \u201cIt\u2019s A Real Deal\u201d at PTV4 and \u201cSkin Deep\u201d at TV5.\u00a0 In 2011, Toni Rose joined the Kasangbahay network of UNTV as the co-host of A Song of Praise (ASOP), a song writing competition.\u00a0 She shares the stage with balladeer Richard Reynoso and their wacky tandem makes for a lively and entertaining show every Sunday night.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1361503334tony2.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 12829,
+                "title": "William Thio",
+                "description": "William Thio is a highly experienced news anchor and talk show host with a proven track record for presenting the news and handling live interviews both with ease.\u00a0 He is currently co-hosting UNTV\u2019s bio-documentary Spotlight. He also anchors the evening news on Global News Network (GNN), as well as hosts the talk show <i>Opinion Leaders with William Thio<\/i>.\r\n\r\nHe has more than seven years of experience gained in television news, including stints as a host on Solar Entertainment\u2019s <i>ShopTV, <\/i>\u00a0NBN\u2019s legal aid program <i>At Your Service\/@ Ur Serbis<\/i> and the long running Public Service show <i>Damayan<\/i>. Further, he has served as a news anchor on RPN, making him a compelling storyteller highly knowledgeable about world news as well as local events and politics.\r\n\r\nWilliam is also well-travelled with a genuine interest in assortment of subjects as shown by the variety of interviews he has done in the past with politicians, medical experts and on-the-town coverage of popular eateries and other businesses. Through these experiences, he could easily gain the trust of his sources or guests and can be creative when it comes to story ideas. As a pro, William develops the ability to think on his feet during equipment malfunction or unexpected guest reactions, maintaining a professional demeanor not only in the newsroom but the community-at-large.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1361868064william_thio2.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 12654,
+                "title": "Eagle Riggs",
+                "description": "Actor, comedian and host, Eagle (Real Name:\u00a0Michael Anthony Pangilinan Riggs)\u00a0is one of the most familiar TV personalities on Philippine television today.\u00a0 He has been in the media industry for 25 years and is well acquainted with all aspects of production, having been an editor, writer and producer.\r\n\r\nHe started working in 1988 for ABS-CBN\u2019s \u2018Magandang Umaga Po\u2019 daily morning show, as editing assistant and was promoted as segment writer and host for the art and culture segment of the same show, then promoted to continuity writer, head writer and associate producer. Eagle was tapped as the segment host for the cooking portion in the show until it went off the air and was replaced by \u2018Teysi Ng Tahanan,\u2019 where he still hosted the same cooking segment which was called \u2018Eagle\u2019s Nest.\u2019\r\n\r\nAs a professional writer, he worked with top-rated programs including\u00a0\u2018Mel and Jay\u2019 and \u2018Sharon\u2019 at ABS-CBN.\u00a0 In 1999 he transferred to GMA\u2019s daily talk show \u2018Brunch\u2019.\r\n\r\nAside from his writing skills, Eagle\u2019s talent as an actor-comedian continually brings him awards from various award-giving bodies. He acted in soap operas like \u2018Mara Clara\u2019 and \u2018Mula sa Puso\u2019 of the Kapamilya Network and \u2018Mulawin\u2019 and \u2018Luna Mystica\u2019 of the Kapuso Network.\u00a0 Eagle continues to play bit roles for \u00a0soap operas such as 'Mula sa Puso, 'Wako Wako',\u00a0 and 'Kahit Puso'y Masugatan'.\u00a0 He was also cast in hit movies like 'Petrang Kabayo', and 'This Guy\u2019s In Love With U Mare.'\r\n\r\nHis work as a host garnered him recognition from PMPC Star Awards.\u00a0 He was nominated as Best Game Show Host for \u2018Ready Get Set Go\u2019 where he co-hosted with Eric Quizon and Eula Valdez and\u00a0 Best New TV Personality in 1989. He also won as Best Morning Program Host for \u2018Unang Hirit\u2019 together with his co- hosts <span style=\"text-decoration: underline;\">Daniel Razon<\/span>, Arnold Clavio. Suzi Abrera, Lyn Ching Pascual. Drew Arellano, Regine Tolentino, when he was in GMA7 in 2000 to 2010.\r\n\r\nHe currently shares his wealth of knowledge and passion for hosting with the Kasangbahay Network UNTV as the host of the show \u2018Easy Lang Yan; a creative guide to practical home solutions.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1360912992eagle.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11903,
+                "title": "Commissioner Wilhelm Soriano",
+                "description": "Commissioner Wilhelm Soriano is a renowned personality in public service. His amiable and highly-spirited character earned him the trademark of being a complete caregiver.\u00a0 He never gets tired of honing his skills and talents in various fields of endeavors. Because of his wisdom and compassion to \u201clesser mortals\u201d, his popularity to his former colleagues and with the people he worked with is par beyond excellence. To them, he is larger than life. A public servant\u00a0 who treats everyone with\u00a0 a\u00a0 sense of respect and sincerity,\u00a0 his\u00a0 down-to-earth\u00a0 style of dealings with\u00a0 people from all walks of life\u00a0 will forever be\u00a0 associated with his\u00a0 reputation as the \u2018Action Man.\u2019. With a deep sense of\u00a0 dedication and hard work, Commissioner Soriano will once again bring smile to those whose life he touched as he showcase his expertise in the newest television talk show.\r\n\r\nAside from being appointed as \u00a0the Vice President for External Relations of UNTV in 2008, right after his retirement from the CHR, Commissioner Soriano continues to be an inspiration to everyone. His advocacy for the protection of human rights for everyone remains his advocacy in life. In addition, he remains to be the idol of the youth as he shares his knowledge and wisdom in his law profession at San Beda College of Law.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1359971379BANNERHOSTwilhelm.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11658,
+                "title": "Beth Santiago",
+                "description": "A graduate of broadcast communications, Beth Santiago started her career as traffic reporter for AM and FM radio.  She was in the radio program \u201cDouble Banda\u201d with Rene Jose and Rey Pacheco at DZBB, RMN and DWIZ.  Since the launch of UNTV Radio La Verdad 1350, Beth has joined the dynamic team of Atty. George Erwin Garcia and Atty. Jose Castigador, Jr. in hosting the lively and informative political commentary, \u201cHuntahan.\u201d  Beth is also among the regular cast of Pondahan, and former news anchor of Hataw Balita. ",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1359974809BANNERHOSTbeth.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11657,
+                "title": "Jose Castigador Jr.",
+                "description": "Jose Castigador, Jr. is a political analyst and strategist. He served as the Chief of Staff of former Senator Ace Barbers at the Philippine Senate and held the same office with then DILG Secretary, Robert Barbers. He is one of the hosts of UNTV\u2019s primetime program, \u201cPolWatch\u201d and UNTV Radio\u2019s <a href=\"http:\/\/www.untvweb.com\/program\/huntahan-2\/\">\u201cHuntahan.\u201d<\/a>",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1360131236BANNERHOSTcastigador.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11651,
+                "title": "Louella de Cordova",
+                "description": "Rise &amp; Shine is co-hosted by the multi-talented Louella de Cordova. \u00a0Louella is one of UNTV\u2019s seasoned anchors for UNTV News as well as co-host of the informative public service program Pulis @ Ur Serbis.\r\n\r\nLouella continues to play bit roles in top Filipino teleseryes after having established herself as a versatile actress in the 80\u2019s through the 90\u2019s when she starred opposite big stars such as Nora Aunor, Fernando Poe Jr., Richard Gomez and Lito Lapid.\r\n\r\nBefore joining UNTV, Louella has had extensive experience in news anchoring for channels 4 and 13. ",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1361868224Louella.jpg",
+                "teaser_poster": "",
+                "host_banner": "",
+                "thumbnail": ""
+            },
+            {
+                "id": 11634,
+                "title": "Attorney Regie Tongol",
+                "description": "Atty. Regie Tongol is one of today\u2019s most promising lawyers. Already a prolific litigator and corporate lawyer, he once held the position of Assistant Cabinet Secretary and Bids and Awards Committee Chairman in the Presidential Communications Development and Strategic Planning Office until his controversial resignation in 2011.  In his seven years as a lawyer, he had involved himself in government policy and political communications making him one of the most sought after Public Relations and Communications consultants in the country. His government experience and stature made him to be the chosen host for \u201cSpotlight\u201d where he conducts one-on-one intimate and lengthy sit-down biographical interviews with celebrities, business and political leaders aired every Sundays 6:30-7:00 p.m.  He also hosts the segment \u201cCommon Law\u201d in UNTV\u2019s \u201cLaw Profile\u201d program aired every Thursdays 5:00-6:00 p.m.  Both these shows have been constant frontrunners in the PMPC Star Awards for Television and ANAK TV Seal awardees.  He is also a favorite substitute co-host for \u201cPolwatch\u201d \u2013 a political talk show aired every Thursdays 7:00-8:00 p.m. -- and \u201cHuntahan\u201d \u2013a political commentary show on radio everyday 4:30-5:45 p.m. at RadioLaVerdad 1350.  Atty. Tongol continues his legal public service in the radio program \u201cIkonsulta Mo\u201d aired every Mondays and Wednesdays 7:00-8:00 p.m. at RadioLaVerdad 1350.\r\n\r\n\r\nAtty. Tongol began his career in the media as a Legal Resource person in the \u201cLegally Yours\u201d segment of the program \u201cGood Morning Kuya and in the program \u201cKaagapay\u201d early 2007 where answers  live the diverse legal queries from viewers. He also dabbled in co-hosting the now defunct Showbiz Overload \u2013a showbiz talk-magazine format show with a public service thrust -- forefronting its E-Legal (Entertainment Legal) segment.  He also co-hosted the multi-nominated travel show \u201cEstranghero\u201d which run for four years from 2009 to 2012. The show also gave Atty. Tongol the prestige to be nominated for two consecutive years as \u201cBest Travel Show Host\u201d in the prestigious PMPC Star Awards for Television. He also delves into events hosting as he co-hosted live with RJ Ledesma and Carls Teng UNTV\u2019s building inauguration last July 21, 2008, UNTV\u2019s yearly Anniversary Special and many more.  Atty. Tongol\u2019s credibility and integrity had also made him as one of the trusted persons to act as substitute host for the program \u201cGet it Straight with Daniel Razon.\u201d  \u201cPollwatch 2013: The UNTV Special Election Coverage.\u201d Atty. Tongol then went on to naturally become one of UNTV\u2019s credible news anchors. From February to June 2013 he co-anchored \u201cIto Ang Balita\u201d with veterans Daniel Razon and Louella De Cordova which aired everyday 5:45-6:45 p.m.  He also co-anchored \u201cHataw Balita\u201d with Hilary Isaac every Tuesdays and Thursdays 6:30-7:15 a.m. \r\n\r\nAtty. Regie graduated from the Ateneo de Manila University School of Law with a juris doctor degree.  Back in college and law school, he has consistently been a student leader.  He has since acted as Lead Counsel of the Genuine Opposition Coalition in the Provincial Board of Canvassers of Camarines Norte during the 2007 elections, held several corporate secretaryship positions in different corporations and made appearances in programs of other networks such as ABS-CBN, ANC and QTV.  He used to be a Senior Associate at the prestigious law firm of Chato & Vinzons Chato Law Offices before becoming then Representative Liwayway Vinzons-Chato\u2019s Political Officer III in charge of all legislation related work of her office in the 14th Congress.  More than anything, Atty. Regie has always had a heart for public service.  He has since parlayed this knack for public service by being one of UNTV\u2019s foremost legal resource persons, one of its credible hosts and one of its trusted news anchors. \r\n",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1384368861regiebanner.png",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11627,
+                "title": "Chef Redj Baron Saguin",
+                "description": "As young as 9 years old, Chef Redj has been serving dishes for family and friends, while getting into music as a vocalist and guitarist. In 2008, the young cook actively pursued his passion and completed a professional culinary arts program.\r\n\r\nBefore engaging in television, Chef Redj had already established himself in the culinary industry by putting up his own catering business. His skills did not go unnoticed as he was eventually absorbed by St. Giles Hotel as a line cook, then by Asian Development Bank\u2019s Italian Kitchen.\r\n\r\nWhile hosting Cook Eat Right, Chef Redj was selected to be the in-house chef and food consultant of Kitchen Avenue; a high end international culinary equipment shop and training center. He shares his expertise on food costing and whipping up various cuisines, typically French and Italian.\r\n\r\nAs fit as his sporty cooking show, Chef Redj is also into martial arts and weight lifting. On top of all these, he still sings and plays the guitar with his band.\r\n\r\n&nbsp;",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1359970353BANNERHOSTredj.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 11449,
+                "title": "Juan Maria Ibarra O. Co, M.D.",
+                "description": "Juan Maria Ibarra O. Co, M.D.\u00a0is an internist and endocrinologist. He currently sits as the President of the Philippine College of Physicians Pasig-San Juan-Mandaluyong Chapter, the Head of the\u00a0Section of Endocrinology at\u00a0the University of the East Ramon Magsaysay Memorial Medical Center, Inc., and the Vice President of the Philippine Society for the Study of the Aging Male Foundation, Inc. He is a diplomate and fellow of the Philippine College of Physicians\u00a0and the Philippine Society of Endocrinology and Metabolism. Dr. Co is also\u00a0affiliated with Cardinal Santos Medical Center,\u00a0St. Luke\u2019s Medical Center and The Medical City.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1360130714BANNERHOSTJMCo.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 78,
+                "title": "Ryan Ramos",
+                "description": "Ryan Ramos, who hosts the sporting program, Sports 37, looks at being a celebrity not for performance, glamor, nor socializing. He believe there is an attached responsibility to being a public figure.\r\n\r\n\"Being regarded as a public figure, [I should] use this opportunity to be a role model by keeping a clean disposition in life despite the impurities associated with showbiz,\" his insight goes.\r\n\r\nThe vibrant Ryan Ramos is a product of the talent development group, ABS-CBN Talent Center, which launched him as a showbiz potential through Star Circle Batch 9.\r\n\r\nSome say he looks serious but \"I am also very makulit and I could quite impersonate a number of personalities and cartoon characters,\" he boasts.\r\n\r\nHe has Piolo Pascual, Vilma Santos, Nida Blanca and Eddie Garcia as favorite local stars\u2014big names for a boy with enough courage to try the tricky world of show business.\r\n\r\nHis hobbies include playing basketball, learning martial arts and reading books, especially religious ones.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1337414733ryanramosbanner.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 76,
+                "title": "Rolly &#8220;Lakay&#8221; Gonzalo",
+                "description": "A veteran radio and television practitioner for 25 years, Rolly \"Lakay\" Gonzalo has covered most of the local and international trips of former presidents Corazon Aquino, Fidel Ramos and Joseph Estrada.\r\n\r\nHe has proven much of his works in delivering credible news and public service to his listeners. On February 1, 1981, he started as a reporter for RMN-DWHB Baguio, at the same time, worked for Office of Media Affairs (OMA) and in Philippine News Agency (PNA). Later on, he joined RMN-DZXL Manila in 1986 as a Malaca\u00f1ang correspondent and news director.\r\n\r\nHis turning point of success came when he had decided to venture in broadcasting as a broadcast journalist and print media practitioner.\r\n\r\nCurrently, he is the news director of DWIZ Aliw Broadcasters Corporation, newscaster of NBN Channel 4 Teleradyo, and director of National Press Club.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1337414880lakaygonazalobanner.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 74,
+                "title": "Larry Henares",
+                "description": "Dr. Hilarion M. Henares, Jr., Doctor of Economics, will probably be known as the Alexander Hamilton of the Philippines. As Hamilton argued for his \"Theory of Manufactures\" to point the way to the United States' emergence as an industrial power against Thomas Jefferson's advocacy of a `pastoral economy,' so did Henares argue for Philippine Industrialization against American policy to keep the Philippines agricultural.\r\n\r\nMore than anyone else, Henares is the most eloquent spokesman for the Philippine industrial middle class and he articulated for his generation the Nationalist Economic Philosophy for the advancement of the common masses. Said Education Secretary Juan Manuel, \"Fiercely nationalistic, Henares chose as his field of battle, the area of economics. There are many milestones that mark our way to economic emancipation and Henares was there first. He was a visionary, a gadfly, an achiever - who prodded this country almost against its will to accept the challenge of change in the postwar years.''\r\n\r\nHilarion M. Henares Jr., known as Larry Henares, is a graduate of Ateneo de Manila, University of the Philippines, and the Massachusetts Institute of Technology, an Eisenhower Fellow, an engineer, economist, educator, big businessman, writer, author of 35 books, civic leader, public servant, and hobbyist (guns, books, amateur radio and electronics).\r\n\r\nAt the age of 30, he was already the head of a multi-million peso business enterprise, manufacturing paints, chemicals, and such products as Mongol pencils, Crayola and Parker Quink. He was a businessman who was awarded Young Businessman of the Year 1959, and the Industrialist of the Year 1963 by the Business Writers Association. He was an educator and dean of two graduate schools before the age of 25. He is a film maker who won the Famas Academy Award for the Best Documentary of the Year 1957. He is a writer known for his essays on economics, history, art and culture, the most widely read front page columnist (\u201cWays and Means\u201d) in the pre-martial law Manila Times and \"Make my Day\" in the Philippine Daily Inquirer after the EDSA revolt. He is one of the first five-sided multimedia journalist, having been on radio (DZRJ-fm and DWBR-fm), on television (Channel 9, 13 and UNTV) and in the Internet http:\/\/www.philippinefolio.com, as well as on newsprint and published books.\r\n\r\nHe became the President of the powerful Philippine Chamber of Industries and a member of the Presidential Cabinet as the Chairman of the National Economic Council. \"One of the most brilliant of my cabinet,'' said President Diosdado Macapagal of him, the fifth President of the Philippine Republic. He is now a Presidential Consultant on National Affairs to the President of the Philippines.\r\n\r\nCarlos P. Romulo once said that Henares did not spend his life climbing to the peak of one career. He jumped from peak to peak in many different fields. Indeed, Henares is a modern Renaissance Man whose breadth of knowledge, experience and culture can only be surmised with the reading of his essays and listening to his speeches, already well-known for their literacy, perspicacity, wit, humor, Filipinism and deep sense of humanity. Above all, he is a Nationalist in the great tradition of Claro M. Recto and Jose Rizal, an indefatigable champion of the nationalist cause, whose life and works will show the way and the light for future generations of Filipinos.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1337415002larryhenaresbanner.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 69,
+                "title": "Bro. Eli Soriano",
+                "description": "<a>Eliseo Fernando Soriano<\/a> was born on April 4, 1947 to Triunfo Soriano and Catalina Fernando in Pasay City, Metro Manila. He is the seventh of eight siblings.\r\n\r\nDuring his childhood, Eli was very shy and reluctant to be in front of a crowd. For this reason he entered elementary school a year late and would always escape his teachers during class.\u00a0Notwithstanding his shyness, young Eli was very intelligent. His parents were able to persuade him later on to take his studies seriously and became the consistent top honor of his primary school.\r\n\r\nIn high school, Eli was elected President of the Student Council. He often\u00a0took the role of a substitute teacher in his class and in higher year level and\u00a0was even assigned as assistant to the school principal.\r\n\r\nA few days before his 17th birthday, Eli\u2019s parents brought him to a worship service in the Locale of Pasay. He was moved to tears when he heard the preaching of Bro. Nicolas Perez, the assigned worker at that time, regarding the true Church of God in the Bible. After hearing the sermon, he became interested in the Bible and began investigating. Three months before his high school graduation though, he decided to stop attending his classes to dedicate his full time in reading the Holy Scriptures. This is the reason why he wasn\u2019t able to finish high school.\r\n\r\nSoon, Eli pleaded Bro. Perez to baptize him (as the latter deemed him too young) in the Church of God where his parents and siblings are attending. On April 7, 1964, at the age of 17, he was baptized in Sineguelasan, Bacoor, Cavite at 5:05 p.m.\r\n\r\nIn his desire to zealously serve God, Bro. Eli Soriano attended the workers\u2019 ministerial classes under the instruction of Bro. Perez. With the help and mercy of God, he later became a minister of Christ and dedicated his life in serving God and the Church and in propagating the righteousness and the kingdom of God.\r\n\r\nBro. Eli conducted his first Bible study in Guagua, Pampanga. The nightly meetings bore 33 new brethren, thus establishing the Locale of Sto. Cristo, the first locale in Pampanga.\u00a0The province of Pampanga then became the first Division in the Church, which Bro. Eli himself supervised.\r\n\r\nIn debates, Bro. Eli was at the forefront to prove the faith and teachings of Christ against different pastors, ministers and priests. He was also Bro. Perez\u2019 assistant in making outline of topics being taught during the ministerial class of the church workers.\r\n\r\nIn 1975, Bro. Perez died without laying his hands onto a successor to preside over the Church. In the coming months, Brother Eli continued to outline the topics being taught to the brethren in order to keep their hopes alive.\u00a0On July 11 of the same year, members of the Board of Trustees of the church, including Bro. Eli, signed an agreement that Levita Gugulan, General Secretary of the organization, shall, as the law states, succeed Bro. Perez as \u201ctemporary\u201dpresiding officer.\r\n\r\nHowbeit, Gugulan desired to preside over the Church permanently, which is against the doctrine of the Holy Scriptures that women are not allowed to rule over the people of God.\u00a0In their belief that the group now led by Gugulan has went astray, Bro. Eli, together with the elders in the Church, left the group.\r\n\r\nOn March 30, 1977, Bro. Eli registered the group \u201cMga Kaanib sa Iglesia ng Dios kay Kristo Hesus Haligi at Saligan ng Katotohanan sa Bansang Pilipinas\u201d (Members of the Church of God in Christ Jesus, the Pillar and Ground of Truth in the Philippines, Inc.). Bro. Eli used the word \u201csaligan\u201d (ground) in reference to the Greek word hedraioma, and not \u201csuhay\u201d (brace), which is used in the group of Gugulan.\r\n\r\nThe year 1980 marked Bro. Eli Soriano\u2019s launching of his own radio program <a>Ang Dating Daan<\/a> (The Old Path). Ang Dating Daan was first aired on DWWA 1206 kHz, then in DWAR, DZME, DZMB, DWAD, DZRD, DWAN, DZXQ and in other local stations in the country.\r\n\r\nBro. Eli Soriano was also invited as guest panelist in the DZBB program, \u201cDis is Manolo and his GENIUS Family\u201d (GENIUS stands for God Eternal News In Universal Salvation). Other panelists included Bert Valinton and Domingo Filomeno of Seventh Day Adventist Church, Manuel Manzanilla of Jehovah\u2019s Witnesses, Agustin Tabu\u00f1ar of Iglesia Spiritista, Onnie Santiago of Iglesia ng Dios Espiritu Santo, Jess Patricio of Roman Catholic Church, Tydee Toloui of Bahai Faith, Miguel Inciong of Iglesia ng Espiritu Santo, Severino Taril, a Dr. Jose Rizal follower, Romulo Aldana, Mr. Khempis, Resty Policarpio, Aldon Tagumpay, and Rudy Natividad. For three consecutive years, Bro. Eli Soriano received the \u201cMost Outstanding Minister\u201d award in the GENIUS Family. No other minister was awarded the same after him.\r\n\r\nAng Dating Daan television counterpart was launched in 1983 on IBC 13.\u00a0In 1997, RJTV 29 accommodated the TV program when it moved out from its former station, then on SBN 21 in the year 2000. During this period, the TV program was also heard simultaneously on RMN, DZRH and 100 Radyo Natin radio stations.\r\n\r\nIt was in 2004 when Ang Dating Daan moved to UNTV 37 along the other programs of Bro. Eli, including Itanong Mo Kay Soriano (Ask Bro. Eli), Bible Guide, Truth in Focus and Biblically Speaking.\r\n\r\nOn January 13, 2004, Bro. Eli registered the current name, Members Church of God International, in response to the growing number of members in other countries, both Filipinos and non-Filipinos. Despite the persecution of other religious groups, the congregation he leads remains steadfast.\r\n\r\nBro. Eli also authored the book \u201cLeaving behind the Fundamental Doctrines of Christ,\u201d released in the late 1990\u2019s. He had also published articles in magazines such as The Blog magazine, The Old Path Magazine, Believer News magazine and Ang Dating Daan Magazine.\r\n\r\nBro. Eli Soriano also built orphanages in some parts of the country and funded their operations to accommodate orphans and helpless citizens of the country. The orphanages welcome both members and non-members of the congregation.\r\n\r\nIn 2005, Bro. Eli was forced to leave the country due to the grave persecution of his opponents in other religious organizations and from several government officials. Beyond his and his enemies\u2019 expectations, leaving the Philippines gave him the opportunity to extend the mission of salvation in other countries, thus making his endeavor worldwide.\r\n\r\nIn 2007, Bro. Eli Soriano began writing his own blog in e<a>soriano.wordpress.com<\/a>, which won the Most Popular Website award in the 2009 Philippine Web Awards. Another award was bestowed to Bro. Eli during the Open Web Awards from Pete Cashmore-founded Mashable.com, hailing the phenomenal preacher as the year's \"Most Educational to Follow.\"\r\n\r\nFor over three years of hosting worldwide Bible expositions in different parts of the globe, natives of different countries were able to listen to Bro. Eli\u2019s preaching and were converted to the <a>Members Church of God International<\/a>. In such a short span of time, major international coordinating centers were established in Ghana, Africa, Papua New Guinea, and South America. Members here are natives of these countries.\r\n\r\nMost recent developments have seen the Ang Dating Daan or The Old Path program viewed and heard in several parts of Asia, Africa, Europe, South America, North America and Australia through television and Cable channels, radio stations and the Internet. Literature containing Bible-based articles and collections of preachings of Bro. Eli Soriano are also being distributed for free. In the web today, Bro. Eli is also hosting a live stream program at <a>Livestream.com<\/a> and maintaining a <a>Twitter account<\/a>.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1337415142broelisoriano.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 65,
+                "title": "Daniel Razon",
+                "description": "A veteran broadcaster and an ambassador of goodwill, Mr, Public Service Daniel Razon leads the early morning barkada in putting up a show that will serve as a one stop-shop social service program that\u2019s truly an innovation in the Philippine television.\r\n\r\nHe has become of the most competent and credible news anchor in the Philippines after years of thorough experience in the broadcast industry.\u00a0 With his undeniable talent, charming voice and aura, he swiftly rose to the top of his game after being a rookie in his humble beginnings.\r\n\r\nNow, he is the Chairman and CEO of UNTV, fully utilizing the station\u2019s resources to put up social-welfare-enhancing programs. His roster of advocacies include transport, medical-dental, and legal services, the revolutionary News and Rescue Center, and Tulong Muna Bago Balita campaign, and the first-ever Mobile Radio Booth.\r\n\r\nOutside broadcasting and public service, he also takes pleasure in composing songs, recording, directing and acting. He is also into technological advancements, sports, and photography.\r\n\r\nHis sharp ideas and sensible thoughts on almost everything under the sun give vibrancy to the early hours of the day, waking the audience up to shinier mornings.",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1361871066kuya.jpg",
+                "teaser_poster": "",
+                "host_banner": false,
+                "thumbnail": false
+            },
+            {
+                "id": 38,
+                "title": "Annie Rentoy",
+                "description": "<p>Ms. Annie Rentoy is the Station Manager of UNTV-Radio La Verdad 1350.\u00a0 She started her career in broadcasting at DZME 1530 kHz Radyo Uno Capitol Broadcasting Center as a field reporter.\u00a0 Soon after, she anchored her own public affairs radio program, \"Punto de Vista\".<\/p>\r\n<p>In 1990, she moved to UBN-United Broadcasting Network and then appointed as station manager of DWAN Banahaw Broadcasting Corp. for four years.<\/p>\r\n<p>She was hosting a daily commentary program with DZXQ under Mabuhay Broadcasting Corporation when she began hosting for UNTV\u2019s television programs.<\/p>\r\n<p>Aside from managing and anchoring for UNTV-Radio, Ms. Rentoy also hosts UNTV\u2019s public service-oriented programs \"Kaagapay\" and \"Serbisyo Publiko\".<\/p>\r\n",
+                "teaser_video": "",
+                "banner_image": "http:\/\/www.untvweb.com\/wp-content\/files_mf\/1360043970BANNERHOSTrentoy.jpg",
+                "teaser_poster": "",
+                "host_banner": "",
+                "thumbnail": "Resize path invalid"
+            }
+        ]
+    ]
+}
