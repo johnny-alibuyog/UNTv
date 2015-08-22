@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
 using UNTv.WP81.Features.Controls.ListItemControls;
@@ -11,6 +9,8 @@ namespace UNTv.WP81.Features.News
 {
     public sealed partial class NewsSectionView : UserControl, IViewFor<NewsSectionViewModel>
     {
+        private bool _isActivated;
+
         public NewsSectionView()
         {
             this.InitializeComponent();
@@ -21,15 +21,22 @@ namespace UNTv.WP81.Features.News
         {
             this.WhenActivated(block =>
             {
+                if (_isActivated)
+                    return;
+
                 this.ViewModel = new NewsSectionViewModel();
 
-                block(this.BindCommand(ViewModel, x => x.NavigateToNewsPageCommand, x => x.GoToNewsPage));
-                block(this.OneWayBind(ViewModel, x => x.Headlines, x => x.HeadlinesListView.ItemsSource));
+                block(this.BindCommand(ViewModel, x => x.NavigateToNewsHubCommand, x => x.NavigateToNewsHubButton));
+                block(this.OneWayBind(ViewModel, x => x.News, x => x.NewsListView.ItemsSource));
 
-                this.HeadlinesListView.Events().ItemClick
+                this.NewsListView.Events().ItemClick
                     .Select(x => x.ClickedItem as ItemViewModel)
                     .Where(x => this.ViewModel.NavigateToNewsDetailCommand.CanExecute(null))
                     .Subscribe(x => this.ViewModel.NavigateToNewsDetailCommand.Execute(x));
+
+                this.ViewModel.PopulateCommand.Execute(null);
+
+                _isActivated = true;
             });
         }
 

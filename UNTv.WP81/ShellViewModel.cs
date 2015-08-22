@@ -17,7 +17,7 @@ namespace UNTv.WP81
         public ShellViewModel(RoutingState router = null)
         {
             this.Router = router;
-            this.Router.Navigate.Execute(new HubPageViewModel(this));
+            this.Router.Navigate.Execute(new MainHubViewModel(this));
         }
     }
 }

@@ -1,31 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Reactive;
-using System.Reactive.Linq;
-using ReactiveUI;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace UNTv.WP81.Features
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HubPageView : Page, IViewFor<HubPageViewModel>
+    public sealed partial class MainHubView : Page, IViewFor<MainHubViewModel>
     {
-        public HubPageView()
+        //private static int _currentHubIndex;
+
+        public MainHubView()
         {
             this.InitializeComponent();
             this.InitializeBindings();
@@ -33,7 +19,12 @@ namespace UNTv.WP81.Features
 
         private void InitializeBindings()
         {
-            this.Bind(ViewModel, x => x.Items, x => x.NewsSection.DataContext);
+            this.WhenActivated(block =>
+            {
+
+            });
+
+            //this.Bind(ViewModel, x => x.Items, x => x.NewsSection.DataContext);
 
             //this.WhenAnyValue(x => x.ViewModel.GetDataCommand)
             //    .SelectMany(x => x.ExecuteAsync())
@@ -51,18 +42,18 @@ namespace UNTv.WP81.Features
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
-            .Register("ViewModel", typeof(HubPageViewModel), typeof(HubPageView), new PropertyMetadata(null));
+            .Register("ViewModel", typeof(MainHubViewModel), typeof(MainHubView), new PropertyMetadata(null));
 
-        public HubPageViewModel ViewModel
+        public MainHubViewModel ViewModel
         {
-            get { return (HubPageViewModel)GetValue(ViewModelProperty); }
+            get { return (MainHubViewModel)GetValue(ViewModelProperty); }
             set { SetValue(ViewModelProperty, value); }
         }
 
         object IViewFor.ViewModel
         {
             get { return ViewModel; }
-            set { ViewModel = (HubPageViewModel)value; }
+            set { ViewModel = (MainHubViewModel)value; }
         }
     }
 }

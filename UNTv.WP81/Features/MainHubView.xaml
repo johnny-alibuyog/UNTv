@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="UNTv.WP81.Features.HubPageView"
+    x:Class="UNTv.WP81.Features.MainHubView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UNTv.WP81.Features"
@@ -9,6 +9,7 @@
     xmlns:data="using:UNTv.WP81.DataProviders"
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
     xmlns:news="using:UNTv.WP81.Features.News"
+    xmlns:videos="using:UNTv.WP81.Features.Videos"
     d:DataContext="{Binding Source={d:DesignData Source=./../DataProviders/SampleData.json, Type=data:SampleDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -81,10 +82,22 @@
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
         <Hub x:Name="Hub" x:Uid="Hub" Header="untv public service channel" Background="{ThemeResource HubBackgroundImageBrush}">
-            <HubSection x:Name="NewsSection" x:Uid="HubSection2" Header="NEWS" DataContext="{Binding Items}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="NEWS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
                     <news:NewsSectionView />
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="VIDEOS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <videos:VideosSectionView />
                 </DataTemplate>
             </HubSection>
 
@@ -109,7 +122,7 @@
                         ItemsSource="{Binding}"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True">
-                        <ListView.ItemTemplate>
+                        okay<ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Margin="0,0,0,27.5">
                                     <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
@@ -120,7 +133,7 @@
                 </DataTemplate>
             </HubSection>-->
 
-            <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+            <!--<HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView
                         ItemsSource="{Binding}"
@@ -208,7 +221,7 @@
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     </ListView>
                 </DataTemplate>
-            </HubSection>
+            </HubSection>-->
         </Hub>
     </Grid>
 

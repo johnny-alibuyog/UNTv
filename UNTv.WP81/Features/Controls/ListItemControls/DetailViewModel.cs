@@ -5,9 +5,9 @@ namespace UNTv.WP81.Features.Controls.ListItemControls
 {
     public class DetailViewModel : ItemViewModel, IRoutableViewModel
     {
-        public IScreen HostScreen { get; protected set; }
+        public virtual IScreen HostScreen { get; protected set; }
 
-        public string UrlPathSegment { get; protected set; }
+        public virtual string UrlPathSegment { get; protected set; }
 
         public DetailViewModel(IScreen hostScreen = null, ItemViewModel value = null)
         {
@@ -20,7 +20,7 @@ namespace UNTv.WP81.Features.Controls.ListItemControls
                 this.Subtitle = value.Subtitle;
                 this.Category = value.Category;
                 this.Description = value.Description;
-                this.ImagePath = value.ImagePath;
+                this.ImageUri = value.ImageUri;
                 this.Content = value.Content;
             }
         }

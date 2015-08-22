@@ -10,7 +10,7 @@ using UNTv.WP81.Features.News;
 
 namespace UNTv.WP81.Features
 {
-    public class HubPageViewModel : ReactiveRoutableBase
+    public class MainHubViewModel : ReactiveRoutableBase
     {
         public string Name { get; set; }
 
@@ -24,7 +24,7 @@ namespace UNTv.WP81.Features
 
         public ReactiveCommand<IEnumerable<UNTv.WP81.DataProviders.SampleDataGroup>> GetDataCommand { get; set; }
 
-        public HubPageViewModel(IScreen hostScreen = null)
+        public MainHubViewModel(IScreen hostScreen = null)
             : base(hostScreen)
         {
             this.Name = "johnny";
@@ -41,7 +41,7 @@ namespace UNTv.WP81.Features
 
         private void GotoBasic()
         {
-            this.HostScreen.Router.Navigate.Execute(new NewsPageViewModel());
+            this.HostScreen.Router.Navigate.Execute(new NewsHubViewModel());
         }
 
         public async Task GetData()

@@ -113,9 +113,9 @@ namespace UNTv.WP81
         /// <param name="e">Details about the navigation event.</param>
         private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
         {
-            var rootFrame = sender as Frame;
-            rootFrame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
-            rootFrame.Navigated -= this.RootFrame_FirstNavigated;
+            //var rootFrame = sender as Frame;
+            //rootFrame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
+            //rootFrame.Navigated -= this.RootFrame_FirstNavigated;
         }
 
         /// <summary>
@@ -125,8 +125,8 @@ namespace UNTv.WP81
         /// <param name="e"></param>
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            var frame = Window.Current.Content as Frame;
-            frame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
+            //var frame = Window.Current.Content as Frame;
+            //frame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
             
             var router = Locator.CurrentMutable.GetService<IScreen>().Router;
             if (router.NavigateBack.CanExecute(null))
@@ -148,7 +148,6 @@ namespace UNTv.WP81
             //    e.Handled = true;
             //}
         }
-
 
         /// <summary>
         /// Invoked when application execution is being suspended. Application state is saved without knowing 

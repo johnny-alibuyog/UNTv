@@ -387,7 +387,8 @@ namespace UNTv.WP81.Common.Converters
                 else if (node.Descendants("#text").Count() > 0)
                 {
                     stringBuilder.AppendFormat("<Hyperlink NavigateUri=\"{0}\" ", EncodeUrl(navigateUrl));
-                    stringBuilder.Append(" FontWeight=\"Bold\" Foreground=\"{StaticResource AppForegroundColor}\"><Underline>");
+                    stringBuilder.Append(" FontWeight=\"Bold\"><Underline>");
+                    //stringBuilder.Append(" FontWeight=\"Bold\" Foreground=\"{StaticResource AppForegroundColor}\"><Underline>");
                     ProcessChildNodes(node.Descendants("#text"));
                     stringBuilder.Append("</Underline></Hyperlink>");
                 }
@@ -525,7 +526,8 @@ namespace UNTv.WP81.Common.Converters
             stringBuilder.Append("<InlineUIContainer>");
             if (hasBorder)
             {
-                stringBuilder.Append("<Border BorderThickness=\"0.5\" BorderBrush=\"{StaticResource AppForegroundColor}\">");
+                //stringBuilder.Append("<Border BorderThickness=\"0.5\" BorderBrush=\"{StaticResource AppForegroundColor}\">");
+                stringBuilder.Append("<Border BorderThickness=\"0.5\">");
             }
             stringBuilder.Append("<Grid>");
             stringBuilder.Append("<Grid.RowDefinitions>");
@@ -571,7 +573,8 @@ namespace UNTv.WP81.Common.Converters
             string position = string.Format("Grid.Row=\"{0}\" Grid.Column=\"{1}\"{2}{3}", row, column, rowSpanString, colSpanString);
             if (hasBorder)
             {
-                stringBuilder.AppendFormat("<Border {0} BorderThickness=\"0.5\" BorderBrush=\"{{StaticResource AppForegroundColor}}\"/>", position);
+                //stringBuilder.AppendFormat("<Border {0} BorderThickness=\"0.5\" BorderBrush=\"{{StaticResource AppForegroundColor}}\"/>", position);
+                stringBuilder.AppendFormat("<Border {0} BorderThickness=\"0.5\"/>", position);
             }
             if (cellNode.HasChildNodes)
             {

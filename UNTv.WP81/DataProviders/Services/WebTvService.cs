@@ -7,6 +7,8 @@ namespace UNTv.WP81.DataProviders.Services
 {
     public class WebTvService : IWebTvService //: BaseRestService, IWebTvService
     {
+        private readonly int _pageItem = 20;
+
         private readonly Uri _baseAddress = new Uri("http://www.untvweb.com");
 
         public async Task<T> Get<T>(string queryString)
@@ -26,10 +28,14 @@ namespace UNTv.WP81.DataProviders.Services
 
         public async Task<NewsResponse> Get(NewsRequest request)
         {
-            var query = string.Format("/news/api/get_category_posts/?callback=?&count=12&slug={0}", request.Category);
-            var response = await Get<NewsResponse>(query);
-            LocalData.News[request.Category] = response.Posts; 
-            return response;
+            var query = string.Format("/news/api/get_category_posts/?callback=?&count={0}&slug={1}", _pageItem, request.Category);
+            return await Get<NewsResponse>(query);
+        }
+
+        public async Task<TvProgramResponse> Get(TvProgramRequest request)
+        {
+            var query = string.Format("http://www.untvweb.com/api/programs/get_sorted_video_list/?sortby={0}&numposts={1}", request.SortBy.ToString().ToLower(), _pageItem);
+            return await Get<TvProgramResponse>(query);
         }
     }
 }

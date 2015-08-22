@@ -12,42 +12,40 @@ namespace UNTv.WP81.Features.News
 {
     public class NewsSectionViewModel : ReactiveBase
     {
-        private RoutingState _router;
-        private IWebTvService _service;
+        private readonly RoutingState _router;
+        private readonly IWebTvService _service;
 
-        public ReactiveList<ItemViewModel> Headlines { get; set; }
-
-        public ReactiveCommand<Object> InitializeCommand { get; private set; }
-
-        public ReactiveCommand<Object> NavigateToNewsPageCommand { get; private set; }
-
-        public ReactiveCommand<Object> NavigateToNewsDetailCommand { get; private set; }
+        public virtual ReactiveList<ItemViewModel> News { get; set; }
+        public virtual ReactiveCommand<object> PopulateCommand { get; set; }
+        public virtual ReactiveCommand<object> NavigateToNewsHubCommand { get; private set; }
+        public virtual ReactiveCommand<object> NavigateToNewsDetailCommand { get; private set; }
 
         public NewsSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
             _service = Locator.CurrentMutable.GetService<IWebTvService>();
 
-            this.NavigateToNewsPageCommand = ReactiveCommand.Create();
-            this.NavigateToNewsPageCommand.Subscribe(x => NavigateToNewsPage());
+            this.PopulateCommand = ReactiveCommand.Create();
+            this.PopulateCommand.Subscribe(x => Populate());
+
+            this.NavigateToNewsHubCommand = ReactiveCommand.Create();
+            this.NavigateToNewsHubCommand.Subscribe(x => NavigateToNewsHub());
 
             this.NavigateToNewsDetailCommand = ReactiveCommand.Create();
             this.NavigateToNewsDetailCommand.Subscribe(x => NavigateToNewsDetail((ItemViewModel)x));
-
-            Populate();
         }
 
         private void Populate()
         {
             _service.Get(new NewsRequest(Category.Headlines)).ContinueWith(
-                continuationAction: x => this.Headlines = x.Result.AsItems(),
+                continuationAction: x => this.News = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
         }
 
-        private void NavigateToNewsPage()
+        private void NavigateToNewsHub()
         {
-            _router.Navigate.Execute(new NewsPageViewModel());
+            _router.Navigate.Execute(new NewsHubViewModel());
         }
 
         private void NavigateToNewsDetail(ItemViewModel newsItem)

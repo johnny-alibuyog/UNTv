@@ -1,0 +1,213 @@
+﻿<Page
+    x:Class="UNTv.WP81.Features.News.NewsHubView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Pivot x:Name="NewsPivot" Title="NEWS" >
+            <!--
+            <Pivot.ItemTemplate>
+                <DataTemplate>
+                    <ListView Grid.Row="1" x:Name="HeadlinesListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <controls:PhotoLeftView />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </Pivot.ItemTemplate>
+            -->
+            
+            <!-- headlines -->
+            <PivotItem x:Name="HeadlinesPivotItem" Header="headlines">
+                <ListView Grid.Row="1" x:Name="HeadlinesListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- world news -->
+            <PivotItem x:Name="WorldNewsPivotItem" Header="world">
+                <ListView Grid.Row="1" x:Name="WorldNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- sports news -->
+            <PivotItem x:Name="SportsNewsPivotItem" Header="sports">
+                <ListView Grid.Row="1" x:Name="SportsNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- health news -->
+            <PivotItem x:Name="HealthNewsPivotItem" Header="health">
+                <ListView Grid.Row="1" x:Name="HealthNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- political news -->
+            <PivotItem x:Name="PoliticalNewsPivotItem" Header="political">
+                <ListView Grid.Row="1" x:Name="PoliticalNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- education news -->
+            <PivotItem x:Name="EducationNewsPivotItem" Header="education">
+                <ListView Grid.Row="1" x:Name="EducationNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- technology news -->
+            <PivotItem x:Name="TechnologyNewsPivotItem" Header="technology">
+                <ListView Grid.Row="1" x:Name="TechnologyNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- government news -->
+            <PivotItem x:Name="GovernmentNewsPivotItem" Header="government">
+                <ListView Grid.Row="1" x:Name="GovernmentNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- provincial news -->
+            <PivotItem x:Name="ProvincialNewsPivotItem" Header="provincial">
+                <ListView Grid.Row="1" x:Name="ProvincialNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+
+            <!-- science news -->
+            <PivotItem x:Name="ScienceNewsPivotItem" Header="science">
+                <ListView Grid.Row="1" x:Name="ScienceNewsListView"
+                        SelectionMode="Single"
+                        IsItemClickEnabled="True"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                        ScrollViewer.VerticalScrollMode="Auto">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:PhotoLeftView />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </PivotItem>
+        </Pivot>
+
+        
+        
+        
+        <!--<Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        --><!-- Title Panel --><!--
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="NEWS" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="news title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        --><!--TODO: Content should be placed within the following grid--><!--
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+        </Grid>-->
+    </Grid>
+</Page>

@@ -1,26 +1,26 @@
 ﻿<UserControl
-    x:Class="UNTv.WP81.Features.News.NewsSectionView"
+    x:Class="UNTv.WP81.Features.Videos.VideosSectionView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UNTv.WP81.Features.News"
+    xmlns:local="using:UNTv.WP81.Features.Videos"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
-    
+
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" x:Name="NavigateToNewsHubButton" Content="More ..." />
-        <ListView Grid.Row="1" x:Name="NewsListView"
+        <Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Content="More ..." />
+        <ListView Grid.Row="1" x:Name="VideosListView"
             SelectionMode="Single"
             IsItemClickEnabled="True"
             ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
@@ -28,10 +28,6 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <controls:PhotoLeftView />
-                    <!--<controls:BigCardView />-->
-                    <!--<controls:BigPictureView />-->
-                    <!--<controls:DoubleLineView />-->
-                    <!--<controls:PhotoColumns4View />-->
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

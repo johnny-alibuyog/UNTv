@@ -11,7 +11,7 @@
 
     <Grid Margin="0, 10" MinWidth="340" Height="340">
         <Grid.Background>
-            <ImageBrush ImageSource="{Binding ImagePath, Converter={StaticResource ThumbnailConverter}, ConverterParameter=340}" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
+            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=340}" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
