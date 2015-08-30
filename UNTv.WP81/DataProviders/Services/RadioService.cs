@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UNTv.WP81.DataProviders.Services
 {
-    public class WebRadioService
+    public class RadioService
     {
     }
 }

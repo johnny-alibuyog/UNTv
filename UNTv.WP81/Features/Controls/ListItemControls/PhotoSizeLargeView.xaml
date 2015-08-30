@@ -11,7 +11,8 @@
 
     <Grid Margin="0, 10" MinWidth="340" Height="340">
         <Grid.Background>
-            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=340}" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
+            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=340}" 
+                        Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -28,8 +29,8 @@
             </Border.Background>
         </Border>
         <StackPanel Grid.Row="1" Margin="12">
-            <TextBlock Style="{StaticResource ListViewItemContentTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxLines="2" TextWrapping="WrapWholeWords" />
-            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource TextPlainConverter}, ConverterParameter=280}" MaxLines="3" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxLines="1" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource TextPlainConverter}, ConverterParameter=280}" MaxLines="4" TextWrapping="WrapWholeWords" />
         </StackPanel>
     </Grid>
 </UserControl>

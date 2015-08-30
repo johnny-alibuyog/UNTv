@@ -4,6 +4,7 @@ using UNTv.WP81.DataProviders.Services;
 using UNTv.WP81.Features;
 using UNTv.WP81.Features.Controls.ListItemControls;
 using UNTv.WP81.Features.News;
+using UNTv.WP81.Features.Television;
 using UNTv.WP81.Features.Videos;
 
 namespace UNTv.WP81
@@ -22,7 +23,7 @@ namespace UNTv.WP81
             Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
 
             // Web Services
-            Locator.CurrentMutable.Register(() => new WebTvService(), typeof(IWebTvService));
+            Locator.CurrentMutable.Register(() => new TelevisionService(), typeof(ITelevisionService));
 
             // Pages
             Locator.CurrentMutable.Register(() => new ShellView(), typeof(IViewFor<ShellViewModel>));
@@ -31,6 +32,8 @@ namespace UNTv.WP81
             Locator.CurrentMutable.RegisterConstant(new NewsSectionView(), typeof(IViewFor<NewsSectionViewModel>));
             Locator.CurrentMutable.RegisterConstant(new VideosHubView(), typeof(IViewFor<VideosHubViewModel>));
             Locator.CurrentMutable.RegisterConstant(new VideosSectionView(), typeof(IViewFor<VideosSectionViewModel>));
+            Locator.CurrentMutable.RegisterConstant(new ScheduleHubView(), typeof(IViewFor<ScheduleHubViewModel>));
+            Locator.CurrentMutable.RegisterConstant(new ProgramsSectionView(), typeof(IViewFor<ProgramsSectionViewModel>));
 
             // Controls
             Locator.CurrentMutable.Register(() => new DetailView(), typeof(IViewFor<DetailViewModel>));

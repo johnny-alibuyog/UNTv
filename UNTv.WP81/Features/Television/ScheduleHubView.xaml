@@ -1,7 +1,8 @@
 ﻿<Page
-    x:Class="UNTv.WP81.Features.News.NewsHubView"
+    x:Class="UNTv.WP81.Features.Television.ScheduleHubView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UNTv.WP81.Features.Television"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
@@ -14,174 +15,130 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Pivot x:Name="NewsPivot" Title="NEWS" >
+        <Pivot x:Name="NewsPivot" Title="TELEVISION PROGRAMS" >
             <!--
             <Pivot.ItemTemplate>
                 <DataTemplate>
-                    <ListView Grid.Row="1" x:Name="HeadlinesListView"
+                    <ListView Grid.Row="1" x:Name="MondayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <controls:PhotoLeftView />
+                                <controls:PhotoSizeMediumView />
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
                 </DataTemplate>
             </Pivot.ItemTemplate>
             -->
-            
-            <!-- headlines -->
-            <PivotItem x:Name="HeadlinesPivotItem" Header="headlines">
-                <ListView Grid.Row="1" x:Name="HeadlinesListView"
+
+            <!-- monday programs-->
+            <PivotItem x:Name="MondayProgramsPivotItem" Header="monday">
+                <ListView Grid.Row="1" x:Name="MondayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- world news -->
-            <PivotItem x:Name="WorldNewsPivotItem" Header="world">
-                <ListView Grid.Row="1" x:Name="WorldNewsListView"
+            <!-- tuesday programs -->
+            <PivotItem x:Name="TuesdayProgramsPivotItem" Header="tuesday">
+                <ListView Grid.Row="1" x:Name="TuesdayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- sports news -->
-            <PivotItem x:Name="SportsNewsPivotItem" Header="sports">
-                <ListView Grid.Row="1" x:Name="SportsNewsListView"
+            <!-- wednesday programs -->
+            <PivotItem x:Name="WednesdayProgramsPivotItem" Header="wednesday">
+                <ListView Grid.Row="1" x:Name="WednesdayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- health news -->
-            <PivotItem x:Name="HealthNewsPivotItem" Header="health">
-                <ListView Grid.Row="1" x:Name="HealthNewsListView"
+            <!-- thursday programs -->
+            <PivotItem x:Name="ThursdayProgramsPivotItem" Header="thursday">
+                <ListView Grid.Row="1" x:Name="ThursdayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- political news -->
-            <PivotItem x:Name="PoliticalNewsPivotItem" Header="political">
-                <ListView Grid.Row="1" x:Name="PoliticalNewsListView"
+            <!-- friday programs -->
+            <PivotItem x:Name="FridayProgramsPivotItem" Header="friday">
+                <ListView Grid.Row="1" x:Name="FridayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- education news -->
-            <PivotItem x:Name="EducationNewsPivotItem" Header="education">
-                <ListView Grid.Row="1" x:Name="EducationNewsListView"
+            <!-- saturday programs -->
+            <PivotItem x:Name="SaturdayProgramsPivotItem" Header="saturday">
+                <ListView Grid.Row="1" x:Name="SaturdayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
 
-            <!-- technology news -->
-            <PivotItem x:Name="TechnologyNewsPivotItem" Header="technology">
-                <ListView Grid.Row="1" x:Name="TechnologyNewsListView"
+            <!-- sunday programs -->
+            <PivotItem x:Name="SundayProgramsPivotItem" Header="sunday">
+                <ListView Grid.Row="1" x:Name="SundayProgramsListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
                         ScrollViewer.VerticalScrollMode="Auto">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <controls:PhotoLeftView />
+                            <controls:PhotoSizeMediumView />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </PivotItem>
-
-            <!-- government news -->
-            <PivotItem x:Name="GovernmentNewsPivotItem" Header="government">
-                <ListView Grid.Row="1" x:Name="GovernmentNewsListView"
-                        SelectionMode="Single"
-                        IsItemClickEnabled="True"
-                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
-                        ScrollViewer.VerticalScrollMode="Auto">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <controls:PhotoLeftView />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </PivotItem>
-
-            <!-- provincial news -->
-            <PivotItem x:Name="ProvincialNewsPivotItem" Header="provincial">
-                <ListView Grid.Row="1" x:Name="ProvincialNewsListView"
-                        SelectionMode="Single"
-                        IsItemClickEnabled="True"
-                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
-                        ScrollViewer.VerticalScrollMode="Auto">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <controls:PhotoLeftView />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </PivotItem>
-
-            <!-- science news -->
-            <PivotItem x:Name="ScienceNewsPivotItem" Header="science">
-                <ListView Grid.Row="1" x:Name="ScienceNewsListView"
-                        SelectionMode="Single"
-                        IsItemClickEnabled="True"
-                        ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
-                        ScrollViewer.VerticalScrollMode="Auto">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <controls:PhotoLeftView />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </PivotItem>
+   
         </Pivot>
     </Grid>
 </Page>

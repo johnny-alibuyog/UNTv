@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
 using UNTv.WP81.DataProviders.Models;
 using UNTv.WP81.DataProviders.Services;
-using UNTv.WP81.Features;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Features.News
@@ -15,7 +11,7 @@ namespace UNTv.WP81.Features.News
     public class NewsHubViewModel : ReactiveRoutableBase
     {
         private readonly RoutingState _router;
-        private readonly IWebTvService _service;
+        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> Headlines { get; set; }
         public virtual ReactiveList<ItemViewModel> WorldNews { get; set; }
@@ -31,11 +27,11 @@ namespace UNTv.WP81.Features.News
         public virtual ReactiveCommand<object> NavigateToNewsDetailCommand { get; private set; }
 
 
-        public NewsHubViewModel(IScreen hostScreen = null, IWebTvService service = null)
+        public NewsHubViewModel(IScreen hostScreen = null, ITelevisionService service = null)
             : base(hostScreen)
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<IWebTvService>();
+            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());

@@ -30,9 +30,9 @@
         </StackPanel>-->
 
         <!--<WebView Grid.Row="1" x:Name="WebView" />-->
-        <!--<MediaElement Grid.Row="1" x:Name="VideoPlayer" Source="{Binding VideoUri}"/>-->
-        <!--<mmppf:MediaPlayer x:Name="VideoPlayer" Source="{Binding VideoUri}" />-->
-        <!--<mmppf:MediaPlayer />-->
+        <MediaElement Grid.Row="1" x:Name="VideoPlayer" Source="{Binding VideoUri}"/>
+        <!--<mmppf:MediaPlayer x:Name="VideoPlayer" Source="{Binding VideoUri}" />
+        <mmppf:MediaPlayer />-->
         <!-- Content Container-->
         <!--
         <ScrollViewer Grid.Row="1" x:Name="ContentRoot">

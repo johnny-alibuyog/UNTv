@@ -5,13 +5,12 @@
     xmlns:local="using:UNTv.WP81.Features.Controls.ListItemControls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    d:DesignHeight="220"
-    d:DesignWidth="320">
+    mc:Ignorable="d" d:DesignHeight="220" d:DesignWidth="320">
 
     <Grid Width="320" Height="220" Margin="0,15,0,0">
         <Grid.Background>
-            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=220}" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=220}" 
+                        Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Top" />
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -19,7 +18,7 @@
         </Grid.RowDefinitions>
         <Border Grid.Row="1" VerticalAlignment="Stretch" Background="Black" Opacity="0.7" />
         <StackPanel Grid.Row="1" Margin="8">
-            <TextBlock Style="{StaticResource ListViewItemContentTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxHeight="40" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxHeight="40" TextWrapping="WrapWholeWords" />
             <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource TextPlainConverter}, ConverterParameter=280}" TextWrapping="WrapWholeWords" />
         </StackPanel>
     </Grid>

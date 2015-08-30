@@ -23,7 +23,7 @@
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
             <TextBlock x:Name="CategoryTextBlock" Text="{Binding Category, Converter={StaticResource UpperCaseConverter}}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock x:Name="TitleTextBlock" Text="{Binding Title}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" TextWrapping="WrapWholeWords" TextAlignment="Justify"/>
+            <TextBlock x:Name="TitleTextBlock" Text="{Binding Title, Converter={StaticResource TextPlainConverter}}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" TextWrapping="WrapWholeWords" TextAlignment="Justify"/>
         </StackPanel>
 
         <!-- Content Container-->

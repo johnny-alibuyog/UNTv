@@ -10,6 +10,7 @@
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
     xmlns:news="using:UNTv.WP81.Features.News"
     xmlns:videos="using:UNTv.WP81.Features.Videos"
+    xmlns:television="using:UNTv.WP81.Features.Television"
     d:DataContext="{Binding Source={d:DesignData Source=./../DataProviders/SampleData.json, Type=data:SampleDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -98,6 +99,12 @@
             <HubSection Header="VIDEOS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
                     <videos:VideosSectionView />
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="TV PROGRAMS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <television:ProgramsSectionView />
                 </DataTemplate>
             </HubSection>
 

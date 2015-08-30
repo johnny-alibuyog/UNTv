@@ -13,7 +13,7 @@ namespace UNTv.WP81.Features.Videos
     public class VideosHubViewModel : ReactiveRoutableBase
     {
         private readonly RoutingState _router;
-        private readonly IWebTvService _service;
+        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> LatestVideos { get; set; }
         public virtual ReactiveList<ItemViewModel> FeaturedVideos { get; set; }
@@ -22,11 +22,11 @@ namespace UNTv.WP81.Features.Videos
         public virtual ReactiveCommand<object> NavigateToVideosDetailCommand { get; private set; }
 
 
-        public VideosHubViewModel(IScreen hostScreen = null, IWebTvService service = null)
+        public VideosHubViewModel(IScreen hostScreen = null, ITelevisionService service = null)
             : base(hostScreen)
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<IWebTvService>();
+            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -37,17 +37,17 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate()
         {
-            _service.Get(new TvProgramRequest(TvProgramRequest.Filter.Latest)).ContinueWith(
+            _service.Get(new VideosRequest(SortFilter.Latest)).ContinueWith(
                 continuationAction: x => this.LatestVideos = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new TvProgramRequest(TvProgramRequest.Filter.Featured)).ContinueWith(
+            _service.Get(new VideosRequest(SortFilter.Featured)).ContinueWith(
                 continuationAction: x => this.FeaturedVideos = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new TvProgramRequest(TvProgramRequest.Filter.Popular)).ContinueWith(
+            _service.Get(new VideosRequest(SortFilter.Popular)).ContinueWith(
                 continuationAction: x => this.PopularVideos = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );

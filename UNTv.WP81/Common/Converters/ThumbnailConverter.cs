@@ -24,7 +24,7 @@ namespace UNTv.WP81.Common.Converters
                     }
                     else
                     {
-                        uri = new Uri(url, UriKind.Absolute);
+                        uri = new Uri(url, UriKind.RelativeOrAbsolute);
                     }
                     var bm = new BitmapImage(uri)
                     {

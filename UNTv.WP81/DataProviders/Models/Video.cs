@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace UNTv.WP81.DataProviders.Models
 {
-    public class TvProgram
+    public class Video
     {
         [JsonProperty("id")]
         public virtual long Id { get; set; }
@@ -29,6 +24,5 @@ namespace UNTv.WP81.DataProviders.Models
 
         [JsonProperty("video_id")]
         public virtual string YoutubeVideoId { get; set; }
-
     }
 }

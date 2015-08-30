@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UNTv.WP81.DataProviders.Models
+namespace UNTv.WP81.Features.Radio
 {
-    class TvSchedule
+    class ProgramsSectionViewModel
     {
     }
 }

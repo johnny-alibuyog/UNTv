@@ -13,7 +13,7 @@ namespace UNTv.WP81.Features.News
     public class NewsSectionViewModel : ReactiveBase
     {
         private readonly RoutingState _router;
-        private readonly IWebTvService _service;
+        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> News { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -23,7 +23,7 @@ namespace UNTv.WP81.Features.News
         public NewsSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<IWebTvService>();
+            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());

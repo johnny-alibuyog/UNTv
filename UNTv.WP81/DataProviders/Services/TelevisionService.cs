@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace UNTv.WP81.DataProviders.Services
 {
-    public class WebTvService : IWebTvService //: BaseRestService, IWebTvService
+    public class TelevisionService : ITelevisionService //: BaseRestService, IWebTvService
     {
         private readonly int _pageItem = 20;
 
@@ -32,10 +32,22 @@ namespace UNTv.WP81.DataProviders.Services
             return await Get<NewsResponse>(query);
         }
 
-        public async Task<TvProgramResponse> Get(TvProgramRequest request)
+        public async Task<VideosResponse> Get(VideosRequest request)
         {
-            var query = string.Format("http://www.untvweb.com/api/programs/get_sorted_video_list/?sortby={0}&numposts={1}", request.SortBy.ToString().ToLower(), _pageItem);
-            return await Get<TvProgramResponse>(query);
+            var query = string.Format("/api/programs/get_sorted_video_list/?sortby={0}&numposts={1}", request.SortBy.ToString().ToLower(), _pageItem);
+            return await Get<VideosResponse>(query);
+        }
+
+        public async Task<TelevisionProgramsResponse> Get(TelevisionProgramsRequest request)
+        {
+            var query = string.Format("/api/programs/get_programs/?callback=?");
+            return await Get<TelevisionProgramsResponse>(query);
+        }
+
+        public async Task<TelevisionProgramSchedulesResponse> Get(TelevisionProgramSchedulesRequest request)
+        {
+            var query = string.Format("/api/programs/get_all_programs/?callback=?");
+            return await Get<TelevisionProgramSchedulesResponse>(query);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace UNTv.WP81.Features.Videos
     public class VideosSectionViewModel : ReactiveBase
     {
         private readonly RoutingState _router;
-        private readonly IWebTvService _service;
+        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> Videos { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -23,7 +23,7 @@ namespace UNTv.WP81.Features.Videos
         public VideosSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<IWebTvService>();
+            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -37,7 +37,7 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate()
         {
-            _service.Get(new TvProgramRequest(TvProgramRequest.Filter.Latest)).ContinueWith(
+            _service.Get(new VideosRequest(SortFilter.Latest)).ContinueWith(
                 continuationAction: x => this.Videos = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
