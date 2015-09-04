@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UNTv.WP81.DataProviders.Models;
-using UNTv.WP81.DataProviders.Services;
+using UNTv.WP81.DataProviders.Entities;
 
 namespace UNTv.WP81.DataProviders
 {
+    // TODO: For performance and offline usage, we will encorporate local data store soon
     public static class LocalData
     {
         private static object newsLock = new object();

@@ -5,9 +5,7 @@
     xmlns:local="using:UNTv.WP81.Features.Controls.ListItemControls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    d:DesignHeight="300"
-    d:DesignWidth="400">
+    mc:Ignorable="d" d:DesignHeight="70" d:DesignWidth="80">
 
     <Grid Margin="0,0,6,6" Width="80" Height="70">
         <Image Source="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=200}" Stretch="UniformToFill" />

@@ -1,0 +1,43 @@
+﻿?( {
+    "status": "ok",
+    "count": 1,
+    "count_total": 1,
+    "pages": 1,
+    "posts": [
+        {
+            "id": 13294,
+            "type": "streaming",
+            "slug": "untv",
+            "url": "http:\/\/www.untvweb.com\/streaming\/untv\/",
+            "status": "publish",
+            "title": "UNTV",
+            "title_plain": "UNTV",
+            "content": "<p>http:\/\/livestream01.untvweb.com:1935\/public\/untvwebstream\/playlist.m3u8<\/p>\n",
+            "excerpt": "http:\/\/livestream01.untvweb.com:1935\/public\/untvwebstream\/playlist.m3u8",
+            "date": "2013-02-25 23:01:45",
+            "modified": "2015-05-25 10:23:38",
+            "categories": [
+            ],
+            "tags": [
+            ],
+            "author": {
+                "id": 4,
+                "slug": "william",
+                "name": "william",
+                "first_name": "William",
+                "last_name": "Ragrag",
+                "nickname": "william",
+                "url": "",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "custom_fields": {
+            }
+        }
+    ]
+})

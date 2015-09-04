@@ -1,0 +1,48 @@
+﻿{
+    "status": "ok",
+    "count": 1,
+    "count_total": 1,
+    "pages": 1,
+    "posts": [
+        {
+            "id": 65031,
+            "type": "post",
+            "slug": "clinic-ni-kuya-schedule",
+            "url": "http:\/\/www.untvweb.com\/clinic-ni-kuya-schedule\/",
+            "status": "publish",
+            "title": "Clinic ni Kuya Schedule",
+            "title_plain": "Clinic ni Kuya Schedule",
+            "content": "<li data-role=\"list-divider\">Clinic ni Kuya Daniel (Main)<\/li>\n<li data-icon=\"false\"><a href=\"#\"><br \/>\n<h2>Monday<\/h2>\n<p>General Medicine (Adult), Dental (Extraction only), Optical and Ophthalmology<\/p>\n<p><em>4:30AM &#8211; 8:30AM<\/em><\/p>\n<p><\/a><\/li>\n<li data-icon=\"false\">\n                                <a href=\"#\"><br \/>\n<h2>Tuesday<\/h2>\n<p>General Medicine (adult), Physical Therapy, Ob\/gyn, Thyroid screening (Every 1st wk of the month only)<\/p>\n<p><em>4:30AM &#8211; 8:30AM<\/em><\/p>\n<p><\/a><\/li>\n<li data-icon=\"false\">\n                                <a href=\"#\"><br \/>\n<h2>Wednesday<\/h2>\n<p>General Medicine (Adult), Dental (extraction only), Optical and Ophthalmology, Prostate Consultation (Every last week of the month)<\/p>\n<p><em>4:30AM &#8211; 8:30AM<\/em><\/p>\n<p><\/a><\/li>\n<li data-icon=\"false\">\n                                <a href=\"#\"><br \/>\n<h2>Thursday<\/h2>\n<p>General Medicine (adult), Dental (Extraction only), Derma (Every 2nd and 3rd week of the month)<\/p>\n<p><em>4:30AM &#8211; 8:30AM<\/em><\/p>\n<p><\/a><\/li>\n<li data-icon=\"false\">\n                                <a href=\"#\"><br \/>\n<h2>Friday<\/h2>\n<p>General Medicine (Pedia), Dental Pedia (Extraction only)<\/p>\n<p><em>4:30AM &#8211; 8:30AM<\/em><\/p>\n<p><\/a><\/li>\n",
+            "excerpt": "Clinic ni Kuya Daniel (Main) Monday General Medicine (Adult), Dental (Extraction only), Optical and Ophthalmology 4:30AM &#8211; 8:30AM Tuesday General Medicine (adult), Physical Therapy, Ob\/gyn, Thyroid screening (Every 1st wk of the month only) 4:30AM &#8211; 8:30AM Wednesday General Medicine (Adult), Dental (extraction only), Optical and Ophthalmology, Prostate Consultation (Every last week of the month) [&hellip;]",
+            "date": "2015-06-06 18:57:35",
+            "modified": "2015-06-23 22:46:27",
+            "categories": [
+            ],
+            "tags": [
+            ],
+            "author": {
+                "id": 4,
+                "slug": "william",
+                "name": "william",
+                "first_name": "William",
+                "last_name": "Ragrag",
+                "nickname": "william",
+                "url": "",
+                "description": ""
+            },
+            "comments": [
+            ],
+            "attachments": [
+            ],
+            "comment_count": 0,
+            "comment_status": "open",
+            "custom_fields": {
+            }
+        }
+    ],
+    "query": {
+        "ignore_sticky_posts": true,
+        "id": "36239",
+        "callback": "?"
+    }
+}

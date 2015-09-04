@@ -1,0 +1,30 @@
+﻿<UserControl
+    x:Class="UNTv.WP81.Features.Controls.ListItemControls.PhotoColumns2View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UNTv.WP81.Features.Controls.ListItemControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignHeight="150" d:DesignWidth="160">
+
+    <!--
+    <Grid Margin="0,0,6,6" Width="160" Height="150">
+        <Image Source="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=150}" AutomationProperties.Name="{Binding Title}" Stretch="UniformToFill" />
+        <TextBlock Text="{Binding Title}" VerticalAlignment="Bottom" Margin="9.5,0,0,6.5" Style="{ThemeResource BaseTextBlockStyle}"/>
+    </Grid>
+    -->
+    <Grid Width="160" Height="150" Margin="0,0,6,6">
+        <Grid.Background>
+            <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=150}" 
+                        Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Top" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.6*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="1" VerticalAlignment="Stretch" Background="Black" Opacity="0.7" />
+        <StackPanel Grid.Row="1" Margin="6">
+            <TextBlock Style="{StaticResource ListViewItemContentTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxLines="2" TextWrapping="WrapWholeWords" />
+        </StackPanel>
+    </Grid>
+</UserControl>

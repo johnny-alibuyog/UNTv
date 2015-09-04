@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using MyToolkit.Multimedia;
 using ReactiveUI;
 using Splat;
-using UNTv.WP81.DataProviders.Services;
+using UNTv.WP81.DataProviders.Contracts.Messages;
+using UNTv.WP81.DataProviders.Contracts.Services;
+using UNTv.WP81.Features.Controls;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Features.Videos
@@ -53,9 +53,16 @@ namespace UNTv.WP81.Features.Videos
             );
         }
 
-        private void NavigateToVideosDetail(ItemViewModel newsItem)
+        private void NavigateToVideosDetail(ItemViewModel item)
         {
-            _router.Navigate.Execute(new VideoPlayerViewModel(value: newsItem));
+            var navigationPath = new VideoPlayerViewModel();
+
+            YouTube.GetVideoUriAsync(item.Content, YouTubeQuality.Quality480P).ContinueWith(
+                continuationAction: x => navigationPath.VideoUri = x.Result.Uri,
+                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+            );
+
+            _router.Navigate.Execute(navigationPath);
         }
     }
 }

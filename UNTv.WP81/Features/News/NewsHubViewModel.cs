@@ -2,8 +2,9 @@
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
-using UNTv.WP81.DataProviders.Models;
-using UNTv.WP81.DataProviders.Services;
+using UNTv.WP81.DataProviders.Contracts.Messages;
+using UNTv.WP81.DataProviders.Contracts.Services;
+using UNTv.WP81.DataProviders.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Features.News

@@ -29,7 +29,7 @@ namespace UNTv.WP81
     public sealed partial class App : Application
     {
         private TransitionCollection _transitions;
-        //private AutoSuspendHelper _autoSuspendHelper;
+        private AutoSuspendHelper _autoSuspendHelper;
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -40,7 +40,7 @@ namespace UNTv.WP81
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
-            //_autoSuspendHelper = new AutoSuspendHelper(this);
+            _autoSuspendHelper = new AutoSuspendHelper(this);
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
             Bootstrapper.Start();
 
@@ -113,9 +113,9 @@ namespace UNTv.WP81
         /// <param name="e">Details about the navigation event.</param>
         private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
         {
-            //var rootFrame = sender as Frame;
-            //rootFrame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
-            //rootFrame.Navigated -= this.RootFrame_FirstNavigated;
+            var rootFrame = sender as Frame;
+            rootFrame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
+            rootFrame.Navigated -= this.RootFrame_FirstNavigated;
         }
 
         /// <summary>

@@ -1,6 +1,10 @@
-﻿using ReactiveUI;
+﻿using System;
+using ReactiveUI;
+using Splat;
+using UNTv.WP81.Features.Controls;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace UNTv.WP81.Features
 {
@@ -15,6 +19,7 @@ namespace UNTv.WP81.Features
         {
             this.InitializeComponent();
             this.InitializeBindings();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         private void InitializeBindings()
@@ -23,22 +28,6 @@ namespace UNTv.WP81.Features
             {
 
             });
-
-            //this.Bind(ViewModel, x => x.Items, x => x.NewsSection.DataContext);
-
-            //this.WhenAnyValue(x => x.ViewModel.GetDataCommand)
-            //    .SelectMany(x => x.ExecuteAsync())
-            //    .Subscribe();
-            //this.DataContext = this.ViewModel;
-
-            //this.BindCommand(ViewModel, x => x.GoToBasicCommand, x => x.GoToBasicButton);
-            //this.Bind(ViewModel, x => x.Name, x => x.NameTextBlock.Text);
-            //this.Bind(ViewModel, x => x.Address, x => x.AddressTextBlock.Text);
-
-            //this.Bind(ViewModel, x => x.Name, x => x.NameTextBox.Text);
-            //this.Bind(ViewModel, x => x.Address, x => x.AddressTextBox.Text);
-
-            //this.OneWayBind(ViewModel, x => x.Items, x => x.NewsListView.ItemsSource);
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
@@ -54,6 +43,18 @@ namespace UNTv.WP81.Features
         {
             get { return ViewModel; }
             set { ViewModel = (MainHubViewModel)value; }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var router = Locator.CurrentMutable.GetService<RoutingState>();
+            var navigationRoute = new HlsPlayerViewModel();
+
+            navigationRoute.VideoUri = new Uri("http://devstreaming.apple.com/videos/wwdc/2015/105ncyldc6ofunvsgtan/105/hls_vod_mvp.m3u8");
+            //navigationRoute.VideoUri = new Uri("http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8");
+            //navigationRoute.VideoUri = new Uri("http://livestream01.untvweb.com:1935/public/untvwebstream/playlist.m3u8");
+            router.Navigate.Execute(navigationRoute);
+
         }
     }
 }

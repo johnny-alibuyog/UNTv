@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="UNTv.WP81.Features.Controls.HlsPlayerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UNTv.WP81.Features.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:smmp="using:SM.Media.MediaPlayer"
+    xmlns:mmppf="using:Microsoft.PlayerFramework"
+    xmlns:adaptive="using:Microsoft.PlayerFramework.Adaptive"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid ScrollViewer.VerticalScrollMode="Auto">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <mmppf:MediaPlayer x:Name="VideoPlayer" Source="{Binding VideoUri}" >
+            <mmppf:MediaPlayer.Plugins>
+                <smmp:StreamingMediaPlugin />
+            </mmppf:MediaPlayer.Plugins>
+        </mmppf:MediaPlayer>
+    </Grid>
+</Page>

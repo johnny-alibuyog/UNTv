@@ -12,41 +12,5 @@
     <Grid>
         <rxui:RoutedViewHost Router="{Binding Router}">
         </rxui:RoutedViewHost>
-        
-        <!--<StackPanel Name="HubTemplate" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="GoToBasicButton" Content="Go To Basic!" />
-            <TextBlock x:Name="ResultButton"  FontSize="16" />
-
-            <TextBlock Text="Your saved state GUID is:" FontSize="24" Margin="0,16,0,0"/>
-            <TextBlock x:Name="SavedGuid" FontSize="16" />
-        </StackPanel>-->
-        <!--<Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <StackPanel Name="HubTemplate" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="GoToBasicButton" Content="Go To Basic!" />
-            <TextBlock x:Name="ResultButton"  FontSize="16" />
-
-            <TextBlock Text="Your saved state GUID is:" FontSize="24" Margin="0,16,0,0"/>
-            <TextBlock x:Name="SavedGuid" FontSize="16" />
-        </StackPanel>
-
-        <Hub Name="Hub" x:Uid="Hub" Header="untv public service channel" Margin="0,32,0,0" >
-            <HubSection Name="HubSection" Width="360" IsHeaderInteractive="True" Header="NEWS" >
-                <DataTemplate>
-                </DataTemplate>                
-
-            </HubSection>
-            <HubSection Width="360" IsHeaderInteractive="True" Header="NEWS" >
-
-            </HubSection>
-        </Hub>-->
     </Grid>
 </Page>
