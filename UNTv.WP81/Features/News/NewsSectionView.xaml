@@ -25,7 +25,7 @@
             </Button.Background>
         </Button>-->
 
-        <Button Grid.Row="0" x:Name="NavigateToNewsHubButton" Content="More ..." HorizontalAlignment="Stretch" />
+        <Button Grid.Row="0" x:Name="NavigateToNewsHubButton" Content="More ..." />
 
         <ListView Grid.Row="1" x:Name="NewsListView"
             SelectionMode="Single"

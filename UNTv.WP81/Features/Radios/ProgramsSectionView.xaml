@@ -25,7 +25,7 @@
             </Button.Background>
         </Button>-->
 
-        <Button Grid.Row="0" x:Name="NavigateToSchedulesHubButton" Content="Schedules" HorizontalAlignment="Stretch" />
+        <Button Grid.Row="0" x:Name="NavigateToSchedulesHubButton" Content="Schedules" />
 
         <GridView Grid.Row="1" x:Name="ProgramsListView"
             SelectionMode="Single"

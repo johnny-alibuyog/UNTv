@@ -36,11 +36,6 @@
                 </DataTemplate>
             </HubSection>
 
-            <HubSection ScrollViewer.VerticalScrollMode="Enabled">
-                <DataTemplate>
-                    <news:NewsSectionView />
-                </DataTemplate>
-            </HubSection>
 
             <HubSection Header="NEWS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
