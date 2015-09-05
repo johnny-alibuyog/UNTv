@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UNTv.WP81.DataProviders.Contracts.Messages;
+using UNTv.WP81.Data.Contracts.Messages;
 
-namespace UNTv.WP81.DataProviders.Contracts.Services
+namespace UNTv.WP81.Data.Contracts.Services
 {
     public class RadioService : ServiceBase, IRadioService
     {
@@ -16,16 +16,16 @@ namespace UNTv.WP81.DataProviders.Contracts.Services
             this.BaseAddress = new Uri("http://www.untvradio.com/");
         }
 
-        public async Task<RadioProgramsResponse> Get(RadioProgramsRequest request)
+        public async Task<RadioProgramMessage.Response> Get(RadioProgramMessage.Request request)
         {
             var query = string.Format("/api/programs/get_programs/?callback=?");
-            return await Get<RadioProgramsResponse>(query);
+            return await Get<RadioProgramMessage.Response>(query, request.ToString());
         }
 
-        public async Task<RadioProgramSchedulesResponse> Get(RadioProgramSchedulesRequest request)
+        public async Task<RadioProgramScheduleMessage.Response> Get(RadioProgramScheduleMessage.Request request)
         {
             var query = string.Format("/api/programs/get_all_programs/?callback=?");
-            return await Get<RadioProgramSchedulesResponse>(query);
+            return await Get<RadioProgramScheduleMessage.Response>(query);
         }
     }
 }
