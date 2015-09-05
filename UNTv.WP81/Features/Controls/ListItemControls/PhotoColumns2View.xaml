@@ -23,8 +23,15 @@
             <RowDefinition Height="0.6*"/>
         </Grid.RowDefinitions>
         <Border Grid.Row="1" VerticalAlignment="Stretch" Background="Black" Opacity="0.7" />
+        <!--
+        <Border Grid.Row="1" VerticalAlignment="Stretch" >
+            <Border.Background>
+                <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
+            </Border.Background>
+        </Border>
+        -->
         <StackPanel Grid.Row="1" Margin="6">
-            <TextBlock Style="{StaticResource ListViewItemContentTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxLines="2" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemContentTextBlockStyle}" Text="{Binding Title, Converter={StaticResource PlainTextConverter}, ConverterParameter=140}" MaxLines="2" TextWrapping="WrapWholeWords" />
         </StackPanel>
     </Grid>
 </UserControl>

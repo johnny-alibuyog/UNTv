@@ -1,20 +1,21 @@
 ﻿using System;
-using System.Linq;
-using System.Reactive.Linq;
+using System.Net.NetworkInformation;
+using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
-using UNTv.WP81.DataProviders.Contracts.Messages;
-using UNTv.WP81.DataProviders.Contracts.Services;
-using UNTv.WP81.DataProviders.Entities;
+using UNTv.WP81.Data.Contracts.Messages;
+using UNTv.WP81.Data.Contracts.Services;
+using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Features.News
 {
     public class NewsSectionViewModel : ReactiveBase
     {
+        private readonly IStore _webStore;
+        private readonly IStore _localStore;
         private readonly RoutingState _router;
-        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> News { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -24,7 +25,8 @@ namespace UNTv.WP81.Features.News
         public NewsSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
+            _webStore = Locator.CurrentMutable.GetService<WebStore>();
+            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -38,7 +40,21 @@ namespace UNTv.WP81.Features.News
 
         private void Populate()
         {
-            _service.Get(new NewsRequest(Category.Headlines)).ContinueWith(
+            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            //if (!NetworkInterface.GetIsNetworkAvailable())
+            //    return;
+
+            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            Populate(_webStore);
+        }
+
+        private void Populate(IStore store)
+        {
+            store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
                 continuationAction: x => this.News = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );

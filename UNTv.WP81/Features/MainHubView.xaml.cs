@@ -26,7 +26,8 @@ namespace UNTv.WP81.Features
         {
             this.WhenActivated(block =>
             {
-
+                //this.DataContext = this.ViewModel;
+                //this.ViewModel.InitializeCommand.Execute(null);
             });
         }
 
@@ -50,9 +51,9 @@ namespace UNTv.WP81.Features
             var router = Locator.CurrentMutable.GetService<RoutingState>();
             var navigationRoute = new HlsPlayerViewModel();
 
-            navigationRoute.VideoUri = new Uri("http://devstreaming.apple.com/videos/wwdc/2015/105ncyldc6ofunvsgtan/105/hls_vod_mvp.m3u8");
+            //navigationRoute.VideoUri = new Uri("http://devstreaming.apple.com/videos/wwdc/2015/105ncyldc6ofunvsgtan/105/hls_vod_mvp.m3u8");
             //navigationRoute.VideoUri = new Uri("http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8");
-            //navigationRoute.VideoUri = new Uri("http://livestream01.untvweb.com:1935/public/untvwebstream/playlist.m3u8");
+            navigationRoute.VideoUri = new Uri("http://livestream01.untvweb.com:1935/public/untvwebstream/playlist.m3u8");
             router.Navigate.Execute(navigationRoute);
 
         }

@@ -19,7 +19,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" x:Name="NavigateToSchedulesHubButton" Content="Schedules" />
+        <!--<Button Grid.Row="0" x:Name="NavigateToSchedulesHubButton" Height="35" Content="Schedules" HorizontalAlignment="Stretch">
+            <Button.Background>
+                <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
+            </Button.Background>
+        </Button>-->
+
+        <Button Grid.Row="0" x:Name="NavigateToSchedulesHubButton" Content="Schedules" HorizontalAlignment="Stretch" />
+
         <GridView Grid.Row="1" x:Name="ProgramsListView"
             SelectionMode="Single"
             IsItemClickEnabled="True"

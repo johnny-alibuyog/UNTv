@@ -86,12 +86,12 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <None Include="app.config" />
-    <None Include="DataProviders\_JsonData\audio_streaming.json" />
-    <None Include="DataProviders\_JsonData\radio_programs.json" />
-    <None Include="DataProviders\_JsonData\radio_program_schedules.json" />
-    <None Include="DataProviders\_JsonData\video_streaming.json" />
-    <None Include="DataProviders\_JsonData\_resources.txt" />
-    <None Include="DataProviders\_JsonData\videos_popular.json" />
+    <None Include="Data\Json\audio_streaming.json" />
+    <None Include="Data\Json\radio_programs.json" />
+    <None Include="Data\Json\radio_program_schedules.json" />
+    <None Include="Data\Json\video_streaming.json" />
+    <None Include="Data\Json\_resources.txt" />
+    <None Include="Data\Json\videos_popular.json" />
     <Compile Include="Common\Converters\HtmlToXamlConverter.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -100,43 +100,42 @@
     <Compile Include="Common\Converters\ThumbnailConverter.cs" />
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
     <Compile Include="Common\Extentions\StringExtention.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\PublicServicesRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\PublicServicesResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\RadioProgramSchedulesRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\RadioProgramSchedulesResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\RadioProgramsRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\RadioProgramsResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Services\ServiceBase.cs" />
-    <Compile Include="DataProviders\Entities\PublicService.cs" />
-    <Compile Include="DataProviders\LocalData.cs" />
-    <Compile Include="DataProviders\Entities\Attachment.cs" />
-    <Compile Include="DataProviders\Entities\Author.cs" />
-    <Compile Include="DataProviders\Entities\Category.cs" />
-    <Compile Include="DataProviders\Entities\Comment.cs" />
-    <Compile Include="DataProviders\Entities\CommonField.cs" />
-    <Compile Include="DataProviders\Entities\Host.cs" />
-    <Compile Include="DataProviders\Entities\Image.cs" />
-    <Compile Include="DataProviders\Entities\ImageSize.cs" />
-    <Compile Include="DataProviders\Entities\Post.cs" />
-    <Compile Include="DataProviders\Entities\RadioProgram.cs" />
-    <Compile Include="DataProviders\Entities\RadioProgramSchedule.cs" />
-    <Compile Include="DataProviders\Entities\TelevisionProgram.cs" />
-    <Compile Include="DataProviders\Entities\Video.cs" />
-    <Compile Include="DataProviders\Entities\Slug.cs" />
-    <Compile Include="DataProviders\Entities\Tag.cs" />
-    <Compile Include="DataProviders\Entities\TelevisionProgramSchedule.cs" />
-    <Compile Include="DataProviders\Contracts\Services\IRadioService.cs" />
-    <Compile Include="DataProviders\Contracts\Services\ITelevisionService.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\NewsMessage.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\NewsResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Services\RadioService.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\TelevisionProgramSchedulesRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\TelevisionProgramSchedulesResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\TelevisionProgramsRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Services\TelevisionService.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\TelevisionProgramsResponse.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\VideosRequest.cs" />
-    <Compile Include="DataProviders\Contracts\Messages\VideosResponse.cs" />
+    <Compile Include="Common\IO\ITextReader.cs" />
+    <Compile Include="Common\IO\ITextWriter.cs" />
+    <Compile Include="Common\IO\TextReader.cs" />
+    <Compile Include="Common\IO\TextWriter.cs" />
+    <Compile Include="Data\Contracts\Messages\IReturn.cs" />
+    <Compile Include="Data\Contracts\Messages\PublicServiceMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\RadioProgramScheduleMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\RadioProgramMessage.cs" />
+    <Compile Include="Data\Contracts\Services\Builder.cs" />
+    <Compile Include="Data\Contracts\Services\IBuilder.cs" />
+    <Compile Include="Data\Contracts\Services\IStore.cs" />
+    <Compile Include="Data\Contracts\Services\LocalStore.cs" />
+    <Compile Include="Data\Contracts\Services\WebStore.cs" />
+    <Compile Include="Data\Provider.cs" />
+    <Compile Include="Data\Entities\Comment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Entities\PublicService.cs" />
+    <Compile Include="Data\Entities\Attachment.cs" />
+    <Compile Include="Data\Entities\Author.cs" />
+    <Compile Include="Data\Entities\Category.cs" />
+    <Compile Include="Data\Entities\CommonField.cs" />
+    <Compile Include="Data\Entities\Host.cs" />
+    <Compile Include="Data\Entities\Image.cs" />
+    <Compile Include="Data\Entities\ImageSize.cs" />
+    <Compile Include="Data\Entities\Post.cs" />
+    <Compile Include="Data\Entities\RadioProgram.cs" />
+    <Compile Include="Data\Entities\RadioProgramSchedule.cs" />
+    <Compile Include="Data\Entities\TelevisionProgram.cs" />
+    <Compile Include="Data\Entities\Video.cs" />
+    <Compile Include="Data\Entities\Tag.cs" />
+    <Compile Include="Data\Entities\TelevisionProgramSchedule.cs" />
+    <Compile Include="Data\Contracts\Messages\NewsMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\TelevisionProgramScheduleMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\TelevisionProgramMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\VideoMessage.cs" />
     <Compile Include="Features\Controls\HlsPlayerView.xaml.cs">
       <DependentUpon>HlsPlayerView.xaml</DependentUpon>
     </Compile>
@@ -200,6 +199,10 @@
     <Compile Include="Features\Radios\ScheduleHubViewModel.cs" />
     <Compile Include="Features\ReactiveBase.cs" />
     <Compile Include="Features\ReactiveRoutableBase.cs" />
+    <Compile Include="Features\Start\StartSectionView.xaml.cs">
+      <DependentUpon>StartSectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Start\StartSectionViewModel.cs" />
     <Compile Include="Features\Televisions\ProgramsSectionView.xaml.cs">
       <DependentUpon>ProgramsSectionView.xaml</DependentUpon>
     </Compile>
@@ -228,9 +231,15 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\appbar.transport.ff.rest.png" />
+    <Content Include="Assets\appbar.transport.pause.rest.png" />
+    <Content Include="Assets\appbar.transport.play.rest.png" />
+    <Content Include="Assets\appbar.transport.rew.rest.png" />
     <Content Include="Assets\DarkGray.png" />
     <Content Include="Assets\HubBackground.theme-dark.png" />
     <Content Include="Assets\HubBackground.theme-light.png" />
+    <Content Include="Assets\icon_radio.png" />
+    <Content Include="Assets\icon_tv.png" />
     <Content Include="Assets\LightGray.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\MediumGray.png" />
@@ -239,11 +248,11 @@
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
-    <None Include="DataProviders\_JsonData\television_program_schedules.json" />
-    <None Include="DataProviders\_JsonData\public_services.json" />
-    <None Include="DataProviders\_JsonData\public_service_schedules.json" />
-    <None Include="DataProviders\_JsonData\videos_latest.json" />
-    <None Include="DataProviders\_JsonData\videos_featured.json" />
+    <None Include="Data\Json\television_program_schedules.json" />
+    <None Include="Data\Json\public_services.json" />
+    <None Include="Data\Json\public_service_schedules.json" />
+    <None Include="Data\Json\videos_latest.json" />
+    <None Include="Data\Json\videos_featured.json" />
     <Content Include="FodyWeavers.xml" />
     <Content Include="ReadMe.txt" />
   </ItemGroup>
@@ -252,6 +261,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\Themes\AppTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Features\Controls\HlsPlayerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -309,6 +322,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Features\Radios\ScheduleHubView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\Start\StartSectionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -448,9 +465,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataProviders\_JsonData\hosts.json" />
-    <None Include="DataProviders\_JsonData\news.json" />
-    <None Include="DataProviders\_JsonData\television_programs.json" />
+    <None Include="Data\Json\hosts.json" />
+    <None Include="Data\Json\news.json" />
+    <None Include="Data\Json\television_programs.json" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -460,6 +477,7 @@
       <Name>Microsoft Player Framework</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

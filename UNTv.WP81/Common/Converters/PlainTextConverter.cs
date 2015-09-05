@@ -8,7 +8,7 @@ using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Common.Converters
 {
-    public class TextPlainConverter : IValueConverter
+    public class PlainTextConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
@@ -36,7 +36,7 @@ namespace UNTv.WP81.Common.Converters
             catch (Exception ex)
             {
                 // TODO: Log here or something
-                //AppLogs.WriteError("TextPlainConverter.Convert", ex);
+                //AppLogs.WriteError("PlainTextConverter.Convert", ex);
             }
             return plainText;
         }

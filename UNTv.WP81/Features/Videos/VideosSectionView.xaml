@@ -19,7 +19,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Content="More ..." />
+        <!--<Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Height="35" Content="More ..." HorizontalAlignment="Stretch">
+            <Button.Background>
+                <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
+            </Button.Background>
+        </Button>-->
+
+        <Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Content="More ..." HorizontalAlignment="Stretch" />
+
         <ListView Grid.Row="1" x:Name="VideosListView"
             SelectionMode="Single"
             IsItemClickEnabled="True"

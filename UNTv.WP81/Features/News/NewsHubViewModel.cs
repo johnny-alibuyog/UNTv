@@ -1,38 +1,58 @@
 ﻿using System;
+using System.Net.NetworkInformation;
+using System.Reactive.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
-using UNTv.WP81.DataProviders.Contracts.Messages;
-using UNTv.WP81.DataProviders.Contracts.Services;
-using UNTv.WP81.DataProviders.Entities;
+using UNTv.WP81.Data.Contracts.Messages;
+using UNTv.WP81.Data.Contracts.Services;
+using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Features.News
 {
     public class NewsHubViewModel : ReactiveRoutableBase
     {
+        private readonly IStore _webStore;
+        private readonly IStore _localStore;
         private readonly RoutingState _router;
-        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> Headlines { get; set; }
+
         public virtual ReactiveList<ItemViewModel> WorldNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> SportsNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> HealthNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> PoliticalNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> EducationNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> TechnologyNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> GovernmentNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> ProvincialNews { get; set; }
+
         public virtual ReactiveList<ItemViewModel> ScienceNews { get; set; }
+
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
+
+        //public virtual ReactiveCommand<object> PopulateWithLocalDataCommand { get; set; }
+
+        //public virtual ReactiveCommand<object> PopulateWithWebDataCommand { get; set; }
+
         public virtual ReactiveCommand<object> NavigateToNewsDetailCommand { get; private set; }
 
 
-        public NewsHubViewModel(IScreen hostScreen = null, ITelevisionService service = null)
+        public NewsHubViewModel(IScreen hostScreen = null)
             : base(hostScreen)
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
+            _webStore = Locator.CurrentMutable.GetService<WebStore>();
+            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -43,52 +63,66 @@ namespace UNTv.WP81.Features.News
 
         private void Populate()
         {
-            _service.Get(new NewsRequest(Category.Headlines)).ContinueWith(
+            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            //if (!NetworkInterface.GetIsNetworkAvailable())
+            //    return;
+
+            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            Populate(_webStore);
+        }
+
+        private void Populate(IStore store)
+        {
+            store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
                 continuationAction: x => this.Headlines = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.World)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.World)).ContinueWith(
                 continuationAction: x => this.WorldNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Sports)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Sports)).ContinueWith(
                 continuationAction: x => this.SportsNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Health)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Health)).ContinueWith(
                 continuationAction: x => this.HealthNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Political)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Political)).ContinueWith(
                 continuationAction: x => this.PoliticalNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Education)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Education)).ContinueWith(
                 continuationAction: x => this.EducationNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Technology)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Technology)).ContinueWith(
                 continuationAction: x => this.TechnologyNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.Government)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.Government)).ContinueWith(
                 continuationAction: x => this.GovernmentNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.ProvincialNews)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.ProvincialNews)).ContinueWith(
                 continuationAction: x => this.ProvincialNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );
 
-            _service.Get(new NewsRequest(Category.ScienceAndEnvironment)).ContinueWith(
+            store.Get(new NewsMessage.Request(Category.ScienceAndEnvironment)).ContinueWith(
                 continuationAction: x => this.ScienceNews = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );

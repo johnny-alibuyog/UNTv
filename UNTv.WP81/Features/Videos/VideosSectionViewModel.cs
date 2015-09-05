@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Net.NetworkInformation;
+using System.Threading;
 using System.Threading.Tasks;
 using MyToolkit.Multimedia;
 using ReactiveUI;
 using Splat;
-using UNTv.WP81.DataProviders.Contracts.Messages;
-using UNTv.WP81.DataProviders.Contracts.Services;
+using UNTv.WP81.Data.Contracts.Messages;
+using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls;
 using UNTv.WP81.Features.Controls.ListItemControls;
 
@@ -12,8 +14,9 @@ namespace UNTv.WP81.Features.Videos
 {
     public class VideosSectionViewModel : ReactiveBase
     {
+        private readonly IStore _webStore;
+        private readonly IStore _localStore;
         private readonly RoutingState _router;
-        private readonly ITelevisionService _service;
 
         public virtual ReactiveList<ItemViewModel> Videos { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -23,7 +26,8 @@ namespace UNTv.WP81.Features.Videos
         public VideosSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _service = Locator.CurrentMutable.GetService<ITelevisionService>();
+            _webStore = Locator.CurrentMutable.GetService<WebStore>();
+            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -37,7 +41,21 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate()
         {
-            _service.Get(new VideosRequest(SortFilter.Latest)).ContinueWith(
+            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            //if (!NetworkInterface.GetIsNetworkAvailable())
+            //    return;
+
+            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
+            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+
+            Populate(_webStore);
+        }
+
+        private void Populate(IStore store)
+        {
+            store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
                 continuationAction: x => this.Videos = x.Result.AsItems(),
                 scheduler: TaskScheduler.FromCurrentSynchronizationContext()
             );

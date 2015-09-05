@@ -10,14 +10,18 @@
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
                     <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
+                    <!--<ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png" Opacity="0.4" />-->
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="HighContrast">
                     <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Assets/Themes/AppTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
             <converters:LowerCaseConverter x:Key="LowerCaseConverter" />
             <converters:UpperCaseConverter x:Key="UpperCaseConverter" />
-            <converters:TextPlainConverter x:Key="TextPlainConverter" />
+            <converters:PlainTextConverter x:Key="PlainTextConverter" />
             <converters:ThumbnailConverter x:Key="ThumbnailConverter" />
         </ResourceDictionary>
     </Application.Resources>

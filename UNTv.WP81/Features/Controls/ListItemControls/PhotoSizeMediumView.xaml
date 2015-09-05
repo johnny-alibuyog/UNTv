@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
         <Border Grid.Row="1" VerticalAlignment="Stretch" Background="Black" Opacity="0.7" />
         <StackPanel Grid.Row="1" Margin="8">
-            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxHeight="40" TextWrapping="WrapWholeWords" />
-            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource TextPlainConverter}, ConverterParameter=280}" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource PlainTextConverter}, ConverterParameter=140}" MaxHeight="40" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource PlainTextConverter}, ConverterParameter=280}" TextWrapping="WrapWholeWords" />
         </StackPanel>
     </Grid>
 </UserControl>

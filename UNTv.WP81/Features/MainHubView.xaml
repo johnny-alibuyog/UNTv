@@ -5,8 +5,9 @@
     xmlns:local="using:UNTv.WP81.Features"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:data="using:UNTv.WP81.DataProviders"
+    xmlns:data="using:UNTv.WP81.Data"
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
+    xmlns:start="using:UNTv.WP81.Features.Start"
     xmlns:news="using:UNTv.WP81.Features.News"
     xmlns:radios="using:UNTv.WP81.Features.Radios"
     xmlns:videos="using:UNTv.WP81.Features.Videos"
@@ -31,10 +32,16 @@
 
             <HubSection ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <Button Content="Stream men" Click="Button_Click" />
+                    <start:StartSectionView />
                 </DataTemplate>
             </HubSection>
-            
+
+            <HubSection ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <news:NewsSectionView />
+                </DataTemplate>
+            </HubSection>
+
             <HubSection Header="NEWS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
                     <news:NewsSectionView />

@@ -29,8 +29,8 @@
             </Border.Background>
         </Border>
         <StackPanel Grid.Row="1" Margin="12">
-            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource TextPlainConverter}, ConverterParameter=140}" MaxLines="1" TextWrapping="WrapWholeWords" />
-            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource TextPlainConverter}, ConverterParameter=280}" MaxLines="4" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource PlainTextConverter}, ConverterParameter=140}" MaxLines="1" TextWrapping="WrapWholeWords" />
+            <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource PlainTextConverter}, ConverterParameter=280}" MaxLines="4" TextWrapping="WrapWholeWords" />
         </StackPanel>
     </Grid>
 </UserControl>
