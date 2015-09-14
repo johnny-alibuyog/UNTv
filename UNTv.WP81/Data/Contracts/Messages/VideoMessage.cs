@@ -72,7 +72,7 @@ namespace UNTv.WP81.Data.Contracts.Messages
                      Subtitle = x.ProgramTitle,
                      Category = "Videos",
                      ImageUri = !string.IsNullOrWhiteSpace(x.ImageUri)
-                        ? x.ImageUri : "/Assets/LightGray.png",
+                        ? x.ImageUri : "/Assets/Images/LightGray.png",
                      Content = x.YoutubeVideoId
                  });
 

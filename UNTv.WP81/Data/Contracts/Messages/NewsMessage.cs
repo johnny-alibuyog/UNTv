@@ -61,7 +61,7 @@ namespace UNTv.WP81.Data.Contracts.Messages
                         Description = x.Excerpt,
                         ImageUri = x.Attachments.Any()
                             ? x.Attachments.First().Images[ImageSize.Full].Uri
-                            : "/Assets/LightGray.png",
+                            : "/Assets/Images/LightGray.png",
                         Content = x.Content
                     });
 

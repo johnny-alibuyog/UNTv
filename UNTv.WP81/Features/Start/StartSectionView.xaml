@@ -75,7 +75,7 @@
                 <!--<Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            --><!--<Image Source="Assets/icon_radio.png" />--><!--
+                            --><!--<Image Source="Assets/Images/icon_radio.png" />--><!--
                             <TextBlock VerticalAlignment="Center">Live Video Streaming</TextBlock>
                         </StackPanel>
                     </DataTemplate>
@@ -88,7 +88,7 @@
                 <!--<Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Assets/icon_radio.png" />
+                            <Image Source="Assets/Images/Iicon_radio.png" />
                             <TextBlock VerticalAlignment="Center">Live Audio Streaming</TextBlock>
                         </StackPanel>
                     </DataTemplate>

@@ -16,9 +16,6 @@
                     <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Assets/Themes/AppTheme.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
             <converters:LowerCaseConverter x:Key="LowerCaseConverter" />
             <converters:UpperCaseConverter x:Key="UpperCaseConverter" />
             <converters:PlainTextConverter x:Key="PlainTextConverter" />

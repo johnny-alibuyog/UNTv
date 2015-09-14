@@ -96,7 +96,7 @@ namespace UNTv.WP81.Data.Contracts.Messages
                 Func<RadioProgramSchedule, string> ChoseFromImages = (x) =>
                     ValidateUri(x.ThumbnailUri) ? x.ThumbnailUri :
                     ValidateUri(x.BannerThumbnailUri) ? x.BannerThumbnailUri :
-                    ValidateUri(x.BannerUri) ? x.BannerUri : "/Assets/LightGray.png";
+                    ValidateUri(x.BannerUri) ? x.BannerUri : "/Assets/Images/LightGray.png";
 
                 var items = GetPrograms()
                  .Select(x => new ItemViewModel()
