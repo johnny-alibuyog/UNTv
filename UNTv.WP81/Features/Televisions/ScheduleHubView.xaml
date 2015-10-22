@@ -5,17 +5,16 @@
     xmlns:local="using:UNTv.WP81.Features.Televisions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
 
-    <Grid>
+    <Grid Background="{StaticResource ContentPageBackgroundBrush}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Pivot x:Name="NewsPivot" Title="TELEVISION PROGRAMS" >
+        <Pivot x:Name="NewsPivot" Title="TELEVISION PROGRAMS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
             <!--
             <Pivot.ItemTemplate>
                 <DataTemplate>

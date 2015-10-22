@@ -5,10 +5,9 @@
     xmlns:local="using:UNTv.WP81.Features.Controls.ListItemControls"
     xmlns:converters="using:UNTv.WP81.Common.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
 
-    <Grid ScrollViewer.VerticalScrollMode="Auto">
+    <Grid ScrollViewer.VerticalScrollMode="Auto" Background="{StaticResource ContentPageBackgroundBrush}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -21,12 +20,14 @@
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock x:Name="CategoryTextBlock" Text="{Binding Category, Converter={StaticResource UpperCaseConverter}}" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,0" />
-            <TextBlock x:Name="TitleTextBlock" Text="{Binding Title, Converter={StaticResource PlainTextConverter}}" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,0" />
-        </StackPanel>
+        <Grid Grid.Row="0" Background="{StaticResource ContentPageHeaderBackgroundBrush}">
+            <StackPanel Margin="19,0,0,0">
+                <TextBlock x:Name="CategoryTextBlock" Text="{Binding Category, Converter={StaticResource UpperCaseConverter}}" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,0" />
+                <TextBlock x:Name="TitleTextBlock" Text="{Binding Title, Converter={StaticResource PlainTextConverter}}" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,0" />
+            </StackPanel>
+        </Grid>
 
-        <!-- Content Container-->
+        <!-- Content Container -->
         <ScrollViewer Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <RichTextBlock Style="{ThemeResource BaseRichTextBlockStyle}" x:Name="ContentGridView" converters:Properties.Html="{Binding Content}" />
         </ScrollViewer>

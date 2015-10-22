@@ -4,18 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
 
-    <Grid>
+    <Grid Background="{StaticResource ContentPageBackgroundBrush}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Pivot x:Name="VideosPivot" Title="Videos" >
-
+        <Pivot x:Name="VideosPivot" Title="VIDEOS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
             <!-- headlines -->
             <PivotItem x:Name="LatestVideosPivotItem" Header="latest">
                 <ListView Grid.Row="1" x:Name="LatestVideosListView"

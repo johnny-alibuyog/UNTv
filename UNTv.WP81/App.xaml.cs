@@ -42,10 +42,6 @@ namespace UNTv.WP81
 
             _autoSuspendHelper = new AutoSuspendHelper(this);
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
-            Bootstrapper.Start();
-
-            //RxApp.SuspensionHost.CreateNewAppState = () => new MainViewModel(); 
-            //RxApp.SuspensionHost.SetupDefaultSuspendResume(); 
         }
 
         /// <summary>
@@ -56,6 +52,8 @@ namespace UNTv.WP81
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            Bootstrapper.Start(); // let all resource load first before creating objects
+
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {

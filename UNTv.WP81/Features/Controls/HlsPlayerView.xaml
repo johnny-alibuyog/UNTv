@@ -7,8 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:smmp="using:SM.Media.MediaPlayer"
     xmlns:mmppf="using:Microsoft.PlayerFramework"
-    xmlns:adaptive="using:Microsoft.PlayerFramework.Adaptive"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:adaptive="using:Microsoft.PlayerFramework.Adaptive">
 
     <Grid ScrollViewer.VerticalScrollMode="Auto">
         <Grid.ChildrenTransitions>

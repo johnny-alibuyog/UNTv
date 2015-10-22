@@ -5,9 +5,7 @@
     xmlns:local="using:UNTv.WP81"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:rxui="using:ReactiveUI"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:rxui="using:ReactiveUI">
 
     <Grid>
         <rxui:RoutedViewHost Router="{Binding Router}">

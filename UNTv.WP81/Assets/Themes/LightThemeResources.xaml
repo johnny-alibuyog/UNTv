@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <BitmapImage x:Key="BackgroundImage4" UriSource="/Assets/Images/Light/Background4.png"/>
+
+    <BitmapImage x:Key="TelerikLogo" UriSource="/Assets/Images/Light/Telerik.png"/>
+    <BitmapImage x:Key="TelerikLogoSmall" UriSource="/Assets/Images/Light/TelerikLogoSmall.png"/>
+
+    <BitmapImage x:Key="NavigationMenuBottomLine" UriSource="/Assets/Images/Light/NavigationMenuBottom.png"/>
+    <BitmapImage x:Key="NavigationMenuArrowLeft" UriSource="/Assets/Images/Light/NavigationMenuArrowLeft.png"/>
+
+    <BitmapImage x:Key="PageBackground" UriSource="/Assets/Images/Light/PageBackground.png"/>
+    <ImageBrush x:Key="PageBackgroundBrush" Stretch="None" AlignmentX="Left" ImageSource="{StaticResource PageBackground}"/>
+
+    <BitmapImage x:Key="ContentPageHeaderBackground" UriSource="/Assets/Images/ContentPageHeader.png"/>
+    <ImageBrush x:Key="ContentPageHeaderBackgroundBrush" Stretch="None" AlignmentY="Top" AlignmentX="Left" ImageSource="{StaticResource ContentPageHeaderBackground}"/>
+
+    <BitmapImage x:Key="ContentPageBackground" UriSource="/Assets/Images/Light/ContentPageBackground.png"/>
+    <ImageBrush x:Key="ContentPageBackgroundBrush" Stretch="None" AlignmentY="Top" AlignmentX="Left" ImageSource="{StaticResource ContentPageBackground}"/>
+
+    <BitmapImage x:Key="AboutPageBackground" UriSource="/Assets/Images/Light/AboutPageBackground.png"/>
+    <ImageBrush x:Key="AboutPageBackgroundBrush" Stretch="UniformToFill" AlignmentY="Top" AlignmentX="Left" ImageSource="{StaticResource AboutPageBackground}"/>
+
+    <Style TargetType="Path" x:Key="BackgroundPathStyle">
+        <Setter Property="Fill" Value="#F0F0F0"/>
+    </Style>
+    <SolidColorBrush x:Key="PhoneSubtleBrush" Color="#4f4f4f"/>
+    <SolidColorBrush x:Key="ConfiguratorBackground" Color="#dddddd"/>
+    <SolidColorBrush x:Key="DetailsPageBackgroundBrush" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="TelerikSecondaryForegroundBrush" Color="#99000000"/>
+</ResourceDictionary>

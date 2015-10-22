@@ -35,13 +35,13 @@ namespace UNTv.WP81.Features.Videos
                         .Subscribe(x => this.ViewModel.NavigateToVideosDetailCommand.Execute(x));
                 };
 
-                block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
+                //block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
+                //block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
+                //block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
 
-                BindClickEvent(this.LatestVideosListView);
-                BindClickEvent(this.FeaturedVideosListView);
-                BindClickEvent(this.PopularVideosListView);
+                //BindClickEvent(this.LatestVideosListView);
+                //BindClickEvent(this.FeaturedVideosListView);
+                //BindClickEvent(this.PopularVideosListView);
 
                 this.ViewModel.PopulateCommand.Execute(null);
 
