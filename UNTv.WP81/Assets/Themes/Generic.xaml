@@ -1,0 +1,25 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mscorlib="clr-namespace:System;assembly=mscorlib"
+	xmlns:local="using:QSF"
+    xmlns:localControls="using:QSF.Controls">
+
+    <Style TargetType="localControls:CodeViewer">
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="localControls:CodeViewer">
+                    <ScrollViewer x:Name="Scroller" 
+                                  VerticalAlignment="Stretch" 
+                                  HorizontalAlignment="Stretch"
+                                  HorizontalScrollBarVisibility="{TemplateBinding HScrollVisibility}"
+                                  VerticalScrollBarVisibility="{TemplateBinding VScrollVisibility}">
+                        <StackPanel x:Name="Panel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
