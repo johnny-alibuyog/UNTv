@@ -44,15 +44,19 @@ namespace UNTv.WP81.Features.PublicServices
             //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
             //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
 
+            //Populate(_localStore);
             Populate(_webStore);
         }
         
         private void Populate(IStore store)
         {
-            store.Get(new PublicServiceMessage.Request()).ContinueWith(
-                continuationAction: x => this.Programs = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.Programs == null || this.Programs.Count == 0)
+            {
+                store.Get(new PublicServiceMessage.Request()).ContinueWith(
+                    continuationAction: x => this.Programs = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void NavigateToNewsDetail(ItemViewModel newsItem)

@@ -14,7 +14,7 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <Pivot x:Name="NewsPivot" Title="RADIO PROGRAMS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
+        <Pivot x:Name="SchedulePivot" Title="RADIO PROGRAMS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
             <!--
             <Pivot.ItemTemplate>
                 <DataTemplate>

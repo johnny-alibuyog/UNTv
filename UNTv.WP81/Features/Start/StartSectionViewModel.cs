@@ -17,6 +17,8 @@ namespace UNTv.WP81.Features.Start
 
         public virtual ItemViewModel FeaturedProgram { get; set; }
 
+        public virtual ReactiveList<ItemViewModel> Programs { get; set; }
+
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
 
         public virtual ReactiveCommand<object> NavigateToAudioSreamingCommand { get; private set; }
@@ -55,22 +57,32 @@ namespace UNTv.WP81.Features.Start
             //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
             //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
 
+            //Populate(_localStore);
             Populate(_webStore);
         }
 
         private void Populate(IStore store)
         {
-            store.Get(new TelevisionProgramMessage.Request()).ContinueWith(
-                continuationAction: x => this.FeaturedProgram = GetRandomProgam(x.Result.AsItems()),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.Programs == null || this.Programs.Count == 0)
+            {
+                store.Get(new TelevisionProgramMessage.Request()).ContinueWith(
+                    continuationAction: x => PopulatePrograms(x.Result.AsItems()),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
-        private ItemViewModel GetRandomProgam(ReactiveList<ItemViewModel> programs)
+        private void PopulatePrograms(ReactiveList<ItemViewModel> programs)
+        {
+            this.Programs = programs;
+            this.FeaturedProgram = GetRandomProgam();
+        }
+
+        private ItemViewModel GetRandomProgam()
         {
             var random = new Random();
-            var index = random.Next(0, programs.Count - 1);
-            return programs[index];
+            var index = random.Next(0, this.Programs.Count - 1);
+            return this.Programs[index];
         }
 
         private void NavigateToAudioSreaming()

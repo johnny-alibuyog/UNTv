@@ -63,6 +63,9 @@ namespace UNTv.WP81.Features.Televisions
                 BindClickEvent(this.SaturdayProgramsListView);
                 BindClickEvent(this.SundayProgramsListView);
 
+                this.SchedulePivot.Events().SelectionChanged
+                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
+
                 this.ViewModel.PopulateCommand.Execute(null);
 
                 _isActivated = true;

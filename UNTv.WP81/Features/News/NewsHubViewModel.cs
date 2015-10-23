@@ -40,10 +40,6 @@ namespace UNTv.WP81.Features.News
 
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
 
-        //public virtual ReactiveCommand<object> PopulateWithLocalDataCommand { get; set; }
-
-        //public virtual ReactiveCommand<object> PopulateWithWebDataCommand { get; set; }
-
         public virtual ReactiveCommand<object> NavigateToNewsDetailCommand { get; private set; }
 
 
@@ -59,6 +55,12 @@ namespace UNTv.WP81.Features.News
 
             this.NavigateToNewsDetailCommand = ReactiveCommand.Create();
             this.NavigateToNewsDetailCommand.Subscribe(x => NavigateToNewsDetail((ItemViewModel)x));
+
+            //this.WhenNavigatedTo(() =>
+            //{
+            //    Populate();
+            //    return null;
+            //});
         }
 
         private void Populate()
@@ -72,60 +74,91 @@ namespace UNTv.WP81.Features.News
             //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
             //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
 
+            //Populate(_localStore);
             Populate(_webStore);
         }
 
         private void Populate(IStore store)
         {
-            store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
-                continuationAction: x => this.Headlines = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.Headlines == null || this.Headlines.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
+                    continuationAction: x => this.Headlines = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.World)).ContinueWith(
-                continuationAction: x => this.WorldNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.WorldNews == null || this.WorldNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.World)).ContinueWith(
+                    continuationAction: x => this.WorldNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Sports)).ContinueWith(
-                continuationAction: x => this.SportsNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.SportsNews == null || this.SportsNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Sports)).ContinueWith(
+                    continuationAction: x => this.SportsNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Health)).ContinueWith(
-                continuationAction: x => this.HealthNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.HealthNews == null || this.HealthNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Health)).ContinueWith(
+                    continuationAction: x => this.HealthNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Political)).ContinueWith(
-                continuationAction: x => this.PoliticalNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.PoliticalNews == null || this.PoliticalNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Political)).ContinueWith(
+                    continuationAction: x => this.PoliticalNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Education)).ContinueWith(
-                continuationAction: x => this.EducationNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.EducationNews == null || this.EducationNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Education)).ContinueWith(
+                    continuationAction: x => this.EducationNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Technology)).ContinueWith(
-                continuationAction: x => this.TechnologyNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.TechnologyNews == null || this.TechnologyNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Technology)).ContinueWith(
+                    continuationAction: x => this.TechnologyNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.Government)).ContinueWith(
-                continuationAction: x => this.GovernmentNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.GovernmentNews == null || this.GovernmentNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.Government)).ContinueWith(
+                    continuationAction: x => this.GovernmentNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.ProvincialNews)).ContinueWith(
-                continuationAction: x => this.ProvincialNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.ProvincialNews == null || this.ProvincialNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.ProvincialNews)).ContinueWith(
+                    continuationAction: x => this.ProvincialNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new NewsMessage.Request(Category.ScienceAndEnvironment)).ContinueWith(
-                continuationAction: x => this.ScienceNews = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.ScienceNews == null || this.ScienceNews.Count == 0)
+            {
+                store.Get(new NewsMessage.Request(Category.ScienceAndEnvironment)).ContinueWith(
+                    continuationAction: x => this.ScienceNews = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void NavigateToNewsDetail(ItemViewModel newsItem)

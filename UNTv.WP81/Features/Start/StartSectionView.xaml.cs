@@ -23,12 +23,9 @@ namespace UNTv.WP81.Features.Start
                 if (_isActivated)
                     return;
 
-                this.ViewModel = new StartSectionViewModel();
-                this.DataContext = this.ViewModel;
-
+                this.BindCommand(ViewModel, x => x.NavigateToAudioSreamingCommand, x => x.AudioStreamingButton);
+                this.BindCommand(ViewModel, x => x.NavigateToVideoSreamingCommand, x => x.VideoStreamingButton);
                 block(this.OneWayBind(ViewModel, x => x.FeaturedProgram, x => x.FeaturedProgramContainer.DataContext));
-                block(this.BindCommand(ViewModel, x => x.NavigateToAudioSreamingCommand, x => x.AudioStreamingButton));
-                block(this.BindCommand(ViewModel, x => x.NavigateToVideoSreamingCommand, x => x.VideoStreamingButton));
 
                 this.FeaturedProgramContainer.Events().Tapped
                     .Select(x => x.OriginalSource)

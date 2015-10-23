@@ -24,22 +24,23 @@ namespace UNTv.WP81
             RxApp.SuspensionHost.CreateNewAppState = () => Locator.CurrentMutable.GetService<IScreen>();
             RxApp.SuspensionHost.SetupDefaultSuspendResume();
 
-            var router = new RoutingState();
-            Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
-            Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
-
             // IO
             Locator.CurrentMutable.Register(() => new TextWriter(), typeof(ITextWriter));
             Locator.CurrentMutable.Register(() => new TextReader(), typeof(ITextReader));
 
             // Services
             Locator.CurrentMutable.Register(() => new Builder(), typeof(IBuilder));
-            Locator.CurrentMutable.Register(() => new WebStore(), typeof(WebStore));
-            Locator.CurrentMutable.Register(() => new LocalStore(), typeof(LocalStore));
+            Locator.CurrentMutable.RegisterConstant(new WebStore(), typeof(WebStore));
+            Locator.CurrentMutable.RegisterConstant(new LocalStore(), typeof(LocalStore));
+
+            // Shell
+            var router = new RoutingState();
+            Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
+            Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
  
             // Pages
-            Locator.CurrentMutable.Register(() => new ShellView(), typeof(IViewFor<ShellViewModel>));
-            Locator.CurrentMutable.Register(() => new MainHubView(), typeof(IViewFor<MainHubViewModel>));
+            Locator.CurrentMutable.RegisterConstant(new ShellView(), typeof(IViewFor<ShellViewModel>));
+            Locator.CurrentMutable.RegisterConstant(new MainHubView(), typeof(IViewFor<MainHubViewModel>));
             Locator.CurrentMutable.RegisterConstant(new NewsHubView(), typeof(IViewFor<NewsHubViewModel>));
             Locator.CurrentMutable.RegisterConstant(new NewsSectionView(), typeof(IViewFor<NewsSectionViewModel>));
             Locator.CurrentMutable.RegisterConstant(new VideosHubView(), typeof(IViewFor<VideosHubViewModel>));

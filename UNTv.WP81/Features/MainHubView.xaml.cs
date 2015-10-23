@@ -26,7 +26,10 @@ namespace UNTv.WP81.Features
         {
             this.WhenActivated(block =>
             {
-                //this.DataContext = this.ViewModel;
+                //this.SectionHub.Events().SectionsInViewChanged
+                //    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
+
+                this.DataContext = this.ViewModel;
                 //this.ViewModel.InitializeCommand.Execute(null);
             });
         }

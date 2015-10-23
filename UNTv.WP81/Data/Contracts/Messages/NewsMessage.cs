@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using ReactiveUI;
@@ -49,6 +50,25 @@ namespace UNTv.WP81.Data.Contracts.Messages
 
             public virtual ReactiveList<ItemViewModel> AsItems()
             {
+                Func<Attachment[], string> GetImageUri = (attachments) =>
+                {
+                    var attachment = attachments.FirstOrDefault();
+                    if (attachment == null)
+                        return "/Assets/Images/LightGray.png";
+
+                    var images = attachment.Images;
+                    if (images.Count == 0)
+                        return "/Assets/Images/LightGray.png";
+
+                    if (images.ContainsKey(ImageSize.Full))
+                        return images[ImageSize.Full].Uri;
+
+                    if (images.ContainsKey(ImageSize.Large))
+                        return images[ImageSize.Large].Uri;
+
+                    return images.First().Value.Uri;
+                };
+
                 var items = this.Posts
                     .Select(x => new ItemViewModel()
                     {
@@ -59,9 +79,7 @@ namespace UNTv.WP81.Data.Contracts.Messages
                             : x.TitlePlain,
                         Category = this.Category.Title,
                         Description = x.Excerpt,
-                        ImageUri = x.Attachments.Any()
-                            ? x.Attachments.First().Images[ImageSize.Full].Uri
-                            : "/Assets/Images/LightGray.png",
+                        ImageUri = GetImageUri(x.Attachments),
                         Content = x.Content
                     });
 

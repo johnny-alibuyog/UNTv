@@ -4,6 +4,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using ReactiveUI;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using System.Diagnostics;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -58,6 +59,9 @@ namespace UNTv.WP81.Features.News
                 BindClickEvent(this.GovernmentNewsListView);
                 BindClickEvent(this.ProvincialNewsListView);
                 BindClickEvent(this.ScienceNewsListView);
+
+                this.NewsPivot.Events().SelectionChanged
+                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
 
                 this.ViewModel.PopulateCommand.Execute(null);
 

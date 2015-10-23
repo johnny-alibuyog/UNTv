@@ -25,9 +25,7 @@ namespace UNTv.WP81.Features.Videos
                 if (_isActivated)
                     return;
 
-                this.ViewModel = new VideosSectionViewModel();
-
-                block(this.BindCommand(ViewModel, x => x.NavigateToVideosHubCommand, x => x.NavigateToVideosHubButton));
+                this.BindCommand(ViewModel, x => x.NavigateToVideosHubCommand, x => x.NavigateToVideosHubButton);
                 block(this.OneWayBind(ViewModel, x => x.Videos, x => x.VideosListView.ItemsSource));
 
                 this.VideosListView.Events().ItemClick

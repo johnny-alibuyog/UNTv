@@ -24,8 +24,6 @@ namespace UNTv.WP81.Features.PublicServices
                 if (_isActivated)
                     return;
 
-                this.ViewModel = new PublicServicesSectionViewModel();
-
                 block(this.OneWayBind(ViewModel, x => x.Programs, x => x.ProgramsListView.ItemsSource));
 
                 this.ProgramsListView.Events().ItemClick
