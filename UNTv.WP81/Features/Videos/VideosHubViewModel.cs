@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MyToolkit.Multimedia;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls;
@@ -45,7 +46,7 @@ namespace UNTv.WP81.Features.Videos
             //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
 
             //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
+            //    return;`
 
             //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
             //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
@@ -55,20 +56,29 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate(IStore store)
         {
-            store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
-                continuationAction: x => this.LatestVideos = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.LatestVideos.IsNullOrEmpty())
+            {
+                store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
+                    continuationAction: x => this.LatestVideos = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new VideoMessage.Request(SortFilter.Featured)).ContinueWith(
-                continuationAction: x => this.FeaturedVideos = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.FeaturedVideos.IsNullOrEmpty())
+            {
+                store.Get(new VideoMessage.Request(SortFilter.Featured)).ContinueWith(
+                    continuationAction: x => this.FeaturedVideos = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
 
-            store.Get(new VideoMessage.Request(SortFilter.Popular)).ContinueWith(
-                continuationAction: x => this.PopularVideos = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.PopularVideos.IsNullOrEmpty())
+            {
+                store.Get(new VideoMessage.Request(SortFilter.Popular)).ContinueWith(
+                    continuationAction: x => this.PopularVideos = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void NavigateToVideosDetail(ItemViewModel item)

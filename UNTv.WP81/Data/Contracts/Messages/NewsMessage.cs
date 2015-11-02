@@ -69,6 +69,9 @@ namespace UNTv.WP81.Data.Contracts.Messages
                     return images.First().Value.Uri;
                 };
 
+                if (this.Posts == null || this.Posts.Count() == 0)
+                    return null;
+
                 var items = this.Posts
                     .Select(x => new ItemViewModel()
                     {

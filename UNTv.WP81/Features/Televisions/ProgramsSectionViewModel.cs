@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls.ListItemControls;
@@ -53,10 +54,13 @@ namespace UNTv.WP81.Features.Televisions
 
         private void Populate(IStore store)
         {
-            store.Get(new TelevisionProgramMessage.Request()).ContinueWith(
-                continuationAction: x => this.Programs = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.Programs.IsNullOrEmpty())
+            {
+                store.Get(new TelevisionProgramMessage.Request()).ContinueWith(
+                    continuationAction: x => this.Programs = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void NavigateToSchedulesHub()

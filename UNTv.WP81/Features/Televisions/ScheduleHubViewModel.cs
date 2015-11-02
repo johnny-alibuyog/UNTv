@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Net.NetworkInformation;
-using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls.ListItemControls;
@@ -56,10 +55,22 @@ namespace UNTv.WP81.Features.Televisions
 
         private void Populate(IStore store)
         {
-            store.Get(new TelevisionProgramScheduleMessage.Request()).ContinueWith(
-                continuationAction: x => this.ParseResult(x.Result),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            var needsToPopulate =
+                this.MondayPrograms.IsNullOrEmpty() ||
+                this.TuesdayPrograms.IsNullOrEmpty() ||
+                this.WednesdayPrograms.IsNullOrEmpty() ||
+                this.ThursdayPrograms.IsNullOrEmpty() ||
+                this.FridayPrograms.IsNullOrEmpty() ||
+                this.SaturdayPrograms.IsNullOrEmpty() ||
+                this.SundayPrograms.IsNullOrEmpty();
+
+            if (needsToPopulate)
+            {
+                store.Get(new TelevisionProgramScheduleMessage.Request()).ContinueWith(
+                    continuationAction: x => this.ParseResult(x.Result),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void ParseResult(TelevisionProgramScheduleMessage.Response result)

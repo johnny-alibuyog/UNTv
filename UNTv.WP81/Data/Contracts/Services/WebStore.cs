@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -21,20 +22,28 @@ namespace UNTv.WP81.Data.Contracts.Services
 
         public async Task<TResponse> Get<TResponse>(IReturn<TResponse> request) where TResponse : class
         {
-            var client = new HttpClient();
-            var uri = _builder.BuildUri(request);
-            var response = await client.GetAsync(uri);
-            response.EnsureSuccessStatusCode();
+            try
+            {
+                var client = new HttpClient();
+                var uri = _builder.BuildUri(request);
+                var response = await client.GetAsync(uri);
+                response.EnsureSuccessStatusCode();
 
-            var jsonResult = await response.Content.ReadAsStringAsync();
-            if (jsonResult.StartsWith("?"))
-                jsonResult = jsonResult.Substring(2, jsonResult.Length - 3);
+                var jsonResult = await response.Content.ReadAsStringAsync();
+                if (jsonResult.StartsWith("?"))
+                    jsonResult = jsonResult.Substring(2, jsonResult.Length - 3);
 
-            //var filename = _builder.BuildFilename(request);
-            //if (!string.IsNullOrWhiteSpace(filename))
-            //    await _textWriter.Write(filename, jsonResult);
+                //var filename = _builder.BuildFilename(request);
+                //if (!string.IsNullOrWhiteSpace(filename))
+                //    await _textWriter.Write(filename, jsonResult);
 
-            return JsonConvert.DeserializeObject<TResponse>(jsonResult);
+                return JsonConvert.DeserializeObject<TResponse>(jsonResult);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.ToString()); // TODO: do some logging here
+                return Activator.CreateInstance<TResponse>();
+            }
         }
     }
 }

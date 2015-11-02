@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Splat;
@@ -20,14 +21,22 @@ namespace UNTv.WP81.Data.Contracts.Services
 
         public async Task<TResponse> Get<TResponse>(IReturn<TResponse> request) where TResponse : class
         {
-            var filename = _builder.BuildFilename(request);
-            var jsonResult = await _textReader.Read(filename);
-            var response = Activator.CreateInstance<TResponse>();
+            try
+            {
+                var filename = _builder.BuildFilename(request);
+                var jsonResult = await _textReader.Read(filename);
+                var response = Activator.CreateInstance<TResponse>();
 
-            if (!string.IsNullOrWhiteSpace(jsonResult))
-                response = JsonConvert.DeserializeObject<TResponse>(jsonResult);
+                if (!string.IsNullOrWhiteSpace(jsonResult))
+                    response = JsonConvert.DeserializeObject<TResponse>(jsonResult);
 
-            return response;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString()); // TODO: do some logging here
+                return Activator.CreateInstance<TResponse>();
+            }
         }
     }
 }

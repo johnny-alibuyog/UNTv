@@ -61,7 +61,12 @@ namespace UNTv.WP81.Features.News
                 BindClickEvent(this.ScienceNewsListView);
 
                 this.NewsPivot.Events().SelectionChanged
-                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
+                    .Where(x => this.ViewModel.HasEmptyFields)
+                    .Subscribe(x => 
+                    {
+                        Debug.WriteLine("Has Empty Field is {0}", this.ViewModel.HasEmptyFields);
+                        this.ViewModel.PopulateCommand.Execute(null);
+                    });
 
                 this.ViewModel.PopulateCommand.Execute(null);
 

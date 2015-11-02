@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MyToolkit.Multimedia;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls;
@@ -55,10 +56,13 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate(IStore store)
         {
-            store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
-                continuationAction: x => this.Videos = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.Videos.IsNullOrEmpty())
+            {
+                store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
+                    continuationAction: x => this.Videos = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                ); 
+            }
         }
 
         private void NavigateToVideosHub()

@@ -98,8 +98,11 @@ namespace UNTv.WP81.Data.Contracts.Messages
                     ValidateUri(x.ThumbnailUri) ? x.ThumbnailUri :
                     ValidateUri(x.BannerThumbnailUri) ? x.BannerThumbnailUri : "/Assets/Images/LightGray.png";
 
-                var items = GetPrograms()
-                 .Select(x => new ItemViewModel()
+                var programs = GetPrograms();
+                if (programs == null || programs.Count() == 0)
+                    return null;
+
+                var items = programs.Select(x => new ItemViewModel()
                  {
                      Id = x.Id,
                      Title = x.Title,

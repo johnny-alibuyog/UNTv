@@ -64,6 +64,9 @@ namespace UNTv.WP81.Data.Contracts.Messages
 
             public virtual ReactiveList<ItemViewModel> AsItems()
             {
+                if (this.Videos == null || this.Videos.Count() == 0)
+                    return null;
+
                 var items = this.Videos
                  .Select(x => new ItemViewModel()
                  {

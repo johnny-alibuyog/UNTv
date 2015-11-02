@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Data.Entities;
@@ -57,10 +58,13 @@ namespace UNTv.WP81.Features.News
 
         private void Populate(IStore store)
         {
-            store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
-                continuationAction: x => this.News = x.Result.AsItems(),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            if (this.News.IsNullOrEmpty())
+            {
+                store.Get(new NewsMessage.Request(Category.Headlines)).ContinueWith(
+                    continuationAction: x => this.News = x.Result.AsItems(),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void NavigateToNewsHub()

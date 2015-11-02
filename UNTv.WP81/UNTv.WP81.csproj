@@ -101,6 +101,7 @@
     <Compile Include="Common\Converters\PlainTextConverter.cs" />
     <Compile Include="Common\Converters\ThumbnailConverter.cs" />
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
+    <Compile Include="Common\Extentions\CollectionExtention.cs" />
     <Compile Include="Common\Extentions\StringExtention.cs" />
     <Compile Include="Common\IO\ITextReader.cs" />
     <Compile Include="Common\IO\ITextWriter.cs" />

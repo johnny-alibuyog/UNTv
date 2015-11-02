@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls.ListItemControls;
@@ -56,10 +57,22 @@ namespace UNTv.WP81.Features.Radios
 
         private void Populate(IStore store)
         {
-            store.Get(new RadioProgramScheduleMessage.Request()).ContinueWith(
-                continuationAction: x => this.ParseResult(x.Result),
-                scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            );
+            var needsToPopulate =
+               this.MondayPrograms.IsNullOrEmpty() ||
+               this.TuesdayPrograms.IsNullOrEmpty() ||
+               this.WednesdayPrograms.IsNullOrEmpty() ||
+               this.ThursdayPrograms.IsNullOrEmpty() ||
+               this.FridayPrograms.IsNullOrEmpty() ||
+               this.SaturdayPrograms.IsNullOrEmpty() ||
+               this.SundayPrograms.IsNullOrEmpty();
+
+            if (needsToPopulate)
+            {
+                store.Get(new RadioProgramScheduleMessage.Request()).ContinueWith(
+                    continuationAction: x => this.ParseResult(x.Result),
+                    scheduler: TaskScheduler.FromCurrentSynchronizationContext()
+                );
+            }
         }
 
         private void ParseResult(RadioProgramScheduleMessage.Response result)

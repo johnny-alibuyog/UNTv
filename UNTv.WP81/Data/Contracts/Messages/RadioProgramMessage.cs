@@ -49,6 +49,9 @@ namespace UNTv.WP81.Data.Contracts.Messages
                     ValidateUri(x.ThumbnailUri) ? x.ThumbnailUri :
                     ValidateUri(x.BannerUri) ? x.BannerUri : "/Assets/Images/LightGray.png";
 
+                if (this.Programs == null || this.Programs.Count() == 0)
+                    return null;
+
                 var items = this.Programs
                  .Select(x => new ItemViewModel()
                  {

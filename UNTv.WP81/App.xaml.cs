@@ -123,9 +123,6 @@ namespace UNTv.WP81
         /// <param name="e"></param>
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            //var frame = Window.Current.Content as Frame;
-            //frame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
-            
             var router = Locator.CurrentMutable.GetService<IScreen>().Router;
             if (router.NavigateBack.CanExecute(null))
             {

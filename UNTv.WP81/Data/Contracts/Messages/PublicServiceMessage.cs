@@ -44,6 +44,9 @@ namespace UNTv.WP81.Data.Contracts.Messages
 
                 Func<string, string> CreateImageTag = (uri) => string.Format("<img src=\"{0}\" height=\"132\" width=\"300\" \\> <br \\>", uri);
 
+                if (this.Programs == null || this.Programs.Count() == 0)
+                    return null;
+
                 var items = this.Programs
                  .Select(x => new ItemViewModel()
                  {

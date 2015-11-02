@@ -30,15 +30,15 @@ namespace UNTv.WP81
 
             // Services
             Locator.CurrentMutable.Register(() => new Builder(), typeof(IBuilder));
-            Locator.CurrentMutable.RegisterConstant(new WebStore(), typeof(WebStore));
-            Locator.CurrentMutable.RegisterConstant(new LocalStore(), typeof(LocalStore));
+            Locator.CurrentMutable.Register(() => new WebStore(), typeof(WebStore));
+            Locator.CurrentMutable.Register(() => new LocalStore(), typeof(LocalStore));
 
             // Shell
             var router = new RoutingState();
             Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
             Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
  
-            // Pages
+            // Views
             Locator.CurrentMutable.RegisterConstant(new ShellView(), typeof(IViewFor<ShellViewModel>));
             Locator.CurrentMutable.RegisterConstant(new MainHubView(), typeof(IViewFor<MainHubViewModel>));
             Locator.CurrentMutable.RegisterConstant(new NewsHubView(), typeof(IViewFor<NewsHubViewModel>));
@@ -51,6 +51,19 @@ namespace UNTv.WP81
             Locator.CurrentMutable.RegisterConstant(new Radio.ProgramsSectionView(), typeof(IViewFor<Radio.ProgramsSectionViewModel>));
             Locator.CurrentMutable.RegisterConstant(new Television.ScheduleHubView(), typeof(IViewFor<Television.ScheduleHubViewModel>));
             Locator.CurrentMutable.RegisterConstant(new Television.ProgramsSectionView(), typeof(IViewFor<Television.ProgramsSectionViewModel>));
+
+            // View Model
+            Locator.CurrentMutable.RegisterConstant(new NewsHubViewModel(), typeof(NewsHubViewModel));
+            Locator.CurrentMutable.RegisterConstant(new NewsSectionViewModel(), typeof(NewsSectionViewModel));
+            Locator.CurrentMutable.RegisterConstant(new VideosHubViewModel(), typeof(VideosHubViewModel));
+            Locator.CurrentMutable.RegisterConstant(new VideosSectionViewModel(), typeof(VideosSectionViewModel));
+            Locator.CurrentMutable.RegisterConstant(new StartSectionViewModel(), typeof(StartSectionViewModel));
+            Locator.CurrentMutable.RegisterConstant(new PublicServicesSectionViewModel(), typeof(PublicServicesSectionViewModel));
+            Locator.CurrentMutable.RegisterConstant(new Radio.ScheduleHubViewModel(), typeof(Radio.ScheduleHubViewModel));
+            Locator.CurrentMutable.RegisterConstant(new Radio.ProgramsSectionViewModel(), typeof(Radio.ProgramsSectionViewModel));
+            Locator.CurrentMutable.RegisterConstant(new Television.ScheduleHubViewModel(), typeof(Television.ScheduleHubViewModel));
+            Locator.CurrentMutable.RegisterConstant(new Television.ProgramsSectionViewModel(), typeof(Television.ProgramsSectionViewModel));
+
 
             // Controls
             Locator.CurrentMutable.Register(() => new DetailView(), typeof(IViewFor<DetailViewModel>));
