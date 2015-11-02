@@ -11,6 +11,8 @@
     xmlns:news="using:UNTv.WP81.Features.News"
     xmlns:radios="using:UNTv.WP81.Features.Radios"
     xmlns:videos="using:UNTv.WP81.Features.Videos"
+    xmlns:about="using:UNTv.WP81.Features.About"
+    xmlns:contact_us="using:UNTv.WP81.Features.ContactUs"
     xmlns:televisions="using:UNTv.WP81.Features.Televisions"
     xmlns:public_services="using:UNTv.WP81.Features.PublicServices"
     Background="{StaticResource DetailsPageBackgroundBrush}">
@@ -63,6 +65,18 @@
             <HubSection Header="RADIO PROGRAMS" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
                     <radios:ProgramsSectionView ViewModel="{Binding RadioProgramSection}" />
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="ABOUT" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <about:AboutSectionView ViewModel="{Binding AboutSection}" />
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="CONTACT US" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <contact_us:ContactUsSectionView ViewModel="{Binding ContactUsSection}" />
                 </DataTemplate>
             </HubSection>
         </Hub>

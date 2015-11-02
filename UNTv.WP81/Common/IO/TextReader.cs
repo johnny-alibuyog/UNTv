@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Windows.ApplicationModel;
 using Windows.Storage;
 
 namespace UNTv.WP81.Common.IO
@@ -14,22 +16,43 @@ namespace UNTv.WP81.Common.IO
             return files.Any(x => x.Name == fileName);
         }
 
-        public async Task<string> Read(string filename)
+        public async Task<string> Read(string filename, string path = null)
         {
-            var content = (string)null;
-            var local = ApplicationData.Current.LocalFolder;
-
-            var exists = await FileExists(local, filename);
-            if (!exists)
-                return null;
-
-            var stream = await local.OpenStreamForReadAsync(filename);
-            using (var reader = new StreamReader(stream))
+            try
             {
-                content = reader.ReadToEnd();
+
+                var root = Package.Current.InstalledLocation.Path;
+
+                var folder = !string.IsNullOrEmpty(path)
+                    ? await StorageFolder.GetFolderFromPathAsync(root + path)
+                    : ApplicationData.Current.LocalFolder; //Package.Current.InstalledLocation; 
+
+                var file = await folder.GetFileAsync(filename);
+
+                var content = await FileIO.ReadTextAsync(file);
+
+                return content;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.ToString()); // TODO: Log error
+                return null;
             }
 
-            return content;
+            //var content = (string)null;
+            //var folder = ApplicationData.Current.LocalFolder;
+
+            //var exists = await FileExists(folder, filename);
+            //if (!exists)
+            //    return null;
+
+            //var stream = await folder.OpenStreamForReadAsync(filename);
+            //using (var reader = new StreamReader(stream))
+            //{
+            //    content = reader.ReadToEnd();
+            //}
+
+            //return content;
         }
     }
 }
