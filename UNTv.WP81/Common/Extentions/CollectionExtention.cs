@@ -9,6 +9,11 @@ namespace UNTv.WP81.Common.Extentions
 {
     public static class CollectionExtention
     {
+        public static bool IsNull(this IEnumerable items)
+        {
+            return items == null;
+        }
+
         public static bool IsNullOrEmpty(this IEnumerable items)
         {
             if (items == null)

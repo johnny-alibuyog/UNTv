@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
@@ -38,13 +39,20 @@ namespace UNTv.WP81.Features.Videos
                 block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
+                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
 
                 BindClickEvent(this.LatestVideosListView);
                 BindClickEvent(this.FeaturedVideosListView);
                 BindClickEvent(this.PopularVideosListView);
 
                 this.VideosPivot.Events().SelectionChanged
-                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
+                    .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
+                    .Where(pivotItem => pivotItem != null)
+                    .Subscribe(x => 
+                        {
+                            Debug.WriteLine(x.Header);
+                            this.ViewModel.CurrentSection = x.Header.ToString();
+                        });
 
                 this.ViewModel.PopulateCommand.Execute(null);
 

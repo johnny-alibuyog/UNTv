@@ -4,7 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
+    xmlns:videos="using:UNTv.WP81.Features.Videos"
+    xmlns:messages="using:UNTv.WP81.Data.Contracts.Messages">
 
     <Grid Background="{StaticResource ContentPageBackgroundBrush}">
         <Grid.ChildrenTransitions>
@@ -13,9 +15,29 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
+        <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" />
+
         <Pivot x:Name="VideosPivot" Title="VIDEOS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
+            <!--<Pivot.TitleTemplate>
+                <DataTemplate>
+                    <ContentControl Content="VIDEOS" />
+                </DataTemplate>
+            </Pivot.TitleTemplate>
+
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <ContentControl Content="{Binding SortFilter, Converter={StaticResource LowerCaseConverter}}" />
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+
+            <Pivot.ItemTemplate>
+                <DataTemplate>
+                    <videos:VideosHubItemView />
+                </DataTemplate>
+            </Pivot.ItemTemplate>-->
+
             <!-- headlines -->
-            <PivotItem x:Name="LatestVideosPivotItem" Header="latest">
+            <PivotItem x:Name="LatestVideosPivotItem" Header="headlines">
                 <ListView Grid.Row="1" x:Name="LatestVideosListView"
                         SelectionMode="Single"
                         IsItemClickEnabled="True"

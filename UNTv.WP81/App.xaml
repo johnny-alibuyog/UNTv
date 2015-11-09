@@ -22,6 +22,7 @@
                     </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
             <converters:LowerCaseConverter x:Key="LowerCaseConverter" />
             <converters:UpperCaseConverter x:Key="UpperCaseConverter" />
             <converters:PlainTextConverter x:Key="PlainTextConverter" />

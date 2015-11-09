@@ -7,13 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
 
-    <!--<UserControl.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Assets/Themes/AppTheme.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </UserControl.Resources>-->
     <Grid>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -22,43 +15,6 @@
         </Grid.ChildrenTransitions>
 
         <StackPanel>
-            <!--<Grid x:Name="LatestNewsGrid" Margin="0, 10" MinWidth="340" Height="340">
-                <Grid.Background>
-                    <ImageBrush ImageSource="{Binding ImageUri, Converter={StaticResource ThumbnailConverter}, ConverterParameter=340}" 
-                        Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" />
-                </Grid.Background>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="1.1*"/>
-                </Grid.RowDefinitions>
-                <Border Grid.RowSpan="2">
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
-                            <GradientStop Offset="0.0" Color="#22000000" />
-                            <GradientStop Offset="0.4" Color="#44000000" />
-                            <GradientStop Offset="0.6" Color="#aa000000" />
-                            <GradientStop Offset="1.0" Color="#FF000000" />
-                        </LinearGradientBrush>
-                    </Border.Background>
-                </Border>
-                <StackPanel Grid.Row="1" Margin="12">
-                    <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource PlainTextConverter}, ConverterParameter=140}" MaxLines="1" TextWrapping="WrapWholeWords" />
-                    <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource PlainTextConverter}, ConverterParameter=280}" MaxLines="4" TextWrapping="WrapWholeWords" />
-                </StackPanel>
-            </Grid>-->
-
-            <!--<ListView Grid.Row="1" x:Name="HeadlinesListView"
-                SelectionMode="Single"
-                IsItemClickEnabled="True"
-                ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
-                ScrollViewer.VerticalScrollMode="Auto">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <controls:PhotoSizeLargeView />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
-
             <ContentControl x:Name="FeaturedProgramContainer" >
                 <ContentControl.Template>
                     <ControlTemplate>
@@ -66,7 +22,6 @@
                     </ControlTemplate>
                 </ContentControl.Template>
             </ContentControl>
-            
 
             <Button x:Name="VideoStreamingButton" Height="35" HorizontalAlignment="Stretch" Content="Live Video Streaming">
                 <!--<Button.Background>

@@ -26,6 +26,5 @@ namespace UNTv.WP81.Features.Controls.ListItemControls
             get { return ViewModel; }
             set { ViewModel = (PhotoLeftViewModel)value; }
         }
-
     }
 }

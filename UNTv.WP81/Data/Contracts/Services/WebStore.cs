@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Splat;
@@ -22,11 +24,13 @@ namespace UNTv.WP81.Data.Contracts.Services
 
         public async Task<TResponse> Get<TResponse>(IReturn<TResponse> request) where TResponse : class
         {
+            var cancellationSource = new CancellationTokenSource();
             try
             {
                 var client = new HttpClient();
+                client.Timeout = TimeSpan.FromMinutes(2);
                 var uri = _builder.BuildUri(request);
-                var response = await client.GetAsync(uri);
+                var response = await client.GetAsync(uri, cancellationSource.Token);
                 response.EnsureSuccessStatusCode();
 
                 var jsonResult = await response.Content.ReadAsStringAsync();
@@ -39,9 +43,29 @@ namespace UNTv.WP81.Data.Contracts.Services
 
                 return JsonConvert.DeserializeObject<TResponse>(jsonResult);
             }
-            catch(Exception ex)
+            catch (WebException ex)
             {
-                Debug.WriteLine(ex.ToString()); // TODO: do some logging here
+                Debug.WriteLine("Web Exception: " + ex.ToString()); // TODO: do some logging here
+                return Activator.CreateInstance<TResponse>();
+            }
+            catch (TaskCanceledException ex)
+            {
+                if (ex.CancellationToken == cancellationSource.Token)
+                {
+                    // a real cancellation, triggered by the caller
+                    Debug.WriteLine("Request Cancelled: " + ex.ToString()); // TODO: do some logging here
+                    return Activator.CreateInstance<TResponse>();
+                }
+                else
+                {
+                    // a web request timeout (possibly other things!?)
+                    Debug.WriteLine("Request Timeout: " + ex.ToString()); // TODO: do some logging here
+                    return Activator.CreateInstance<TResponse>();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("General Exception:" + ex != null ? ex.ToString() : string.Empty); // TODO: do some logging here
                 return Activator.CreateInstance<TResponse>();
             }
         }

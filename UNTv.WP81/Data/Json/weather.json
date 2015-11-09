@@ -1,0 +1,623 @@
+﻿{
+    "response": {
+        "version": "0.1",
+        "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+        "features": {
+            "conditions": 1,
+            "forecast": 1,
+            "geolookup": 1
+        }
+    },
+    "location": {
+        "type": "INTLCITY",
+        "country": "PH",
+        "country_iso3166": "PH",
+        "country_name": "Philippines",
+        "state": "",
+        "city": "Maynila",
+        "tz_short": "PHT",
+        "tz_long": "Asia/Manila",
+        "lat": "14.530000",
+        "lon": "121.040000",
+        "zip": "00000",
+        "magic": "1",
+        "wmo": "98429",
+        "l": "/q/zmw:00000.1.98429",
+        "requesturl": "global/stations/98429.html",
+        "wuiurl": "http://www.wunderground.com/global/stations/98429.html",
+        "nearby_weather_stations": {
+            "airport": {
+                "station": [
+                    {
+                        "city": "Ninoy Aquino Inter-National Airport",
+                        "state": "",
+                        "country": "Philippines",
+                        "icao": "RPLL",
+                        "lat": "14.50694370",
+                        "lon": "121.00416565"
+                    },
+                    {
+                        "city": "Manila",
+                        "state": "",
+                        "country": "PH",
+                        "icao": "RPLL",
+                        "lat": "14.50694370",
+                        "lon": "121.00416565"
+                    },
+                    {
+                        "city": "Subic Bay",
+                        "state": "",
+                        "country": "PH",
+                        "icao": "RPLB",
+                        "lat": "14.79444981",
+                        "lon": "120.27136230"
+                    },
+                    {
+                        "city": "Angeles / Pampanga",
+                        "state": "",
+                        "country": "PH",
+                        "icao": "RPLC",
+                        "lat": "15.18598938",
+                        "lon": "120.56032562"
+                    }
+                ]
+            },
+            "pws": {
+                "station": [
+                    {
+                        "neighborhood": "Dasmariñas",
+                        "city": "Makati",
+                        "state": "",
+                        "country": "PH",
+                        "id": "IMAKATI7",
+                        "lat": 14.533517,
+                        "lon": 121.025215,
+                        "distance_km": 1,
+                        "distance_mi": 0
+                    },
+                    {
+                        "neighborhood": "Taft Avenue, Manila",
+                        "city": "2401 Taft Avenue",
+                        "state": "Manila",
+                        "country": "PHILIPPINES",
+                        "id": "IMETROMA8",
+                        "lat": 14.566957,
+                        "lon": 120.992523,
+                        "distance_km": 6,
+                        "distance_mi": 3
+                    },
+                    {
+                        "neighborhood": "Cupang",
+                        "city": "Parañaque",
+                        "state": "",
+                        "country": "PH",
+                        "id": "IPARAAQU2",
+                        "lat": 14.438314,
+                        "lon": 121.027596,
+                        "distance_km": 10,
+                        "distance_mi": 6
+                    },
+                    {
+                        "neighborhood": "Ayala Alabang",
+                        "city": "Muntinlupa",
+                        "state": "",
+                        "country": "PH",
+                        "id": "IMUNTINL4",
+                        "lat": 14.410392,
+                        "lon": 121.026047,
+                        "distance_km": 13,
+                        "distance_mi": 8
+                    },
+                    {
+                        "neighborhood": "Canumay",
+                        "city": "Valenzuela",
+                        "state": "METRO MANILA",
+                        "country": "PHILIPPINES",
+                        "id": "IMETROMA20",
+                        "lat": 14.713394,
+                        "lon": 120.990921,
+                        "distance_km": 21,
+                        "distance_mi": 12
+                    },
+                    {
+                        "neighborhood": "Integrated Weather Assessment Service- Dasma",
+                        "city": "Dasmariñas",
+                        "state": "CALABARZON",
+                        "country": "PHILIPPINES",
+                        "id": "ICALABAR16",
+                        "lat": 14.347730,
+                        "lon": 120.944710,
+                        "distance_km": 22,
+                        "distance_mi": 13
+                    },
+                    {
+                        "neighborhood": "San Lorenzo Road",
+                        "city": "Pililla",
+                        "state": "RIZAL",
+                        "country": "PHILIPPINES",
+                        "id": "IRIZALPI2",
+                        "lat": 14.496243,
+                        "lon": 121.311462,
+                        "distance_km": 29,
+                        "distance_mi": 17
+                    },
+                    {
+                        "neighborhood": "Pandi Bulacan",
+                        "city": "San Roque",
+                        "state": "BULACAN",
+                        "country": "PHILIPPINES",
+                        "id": "IBULACAN2",
+                        "lat": 14.855423,
+                        "lon": 120.954842,
+                        "distance_km": 37,
+                        "distance_mi": 22
+                    }
+                ]
+            }
+        }
+    },
+    "current_observation": {
+        "image": {
+            "url": "http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+            "title": "Weather Underground",
+            "link": "http://www.wunderground.com"
+        },
+        "display_location": {
+            "full": "Maynila, Philippines",
+            "city": "Maynila",
+            "state": "",
+            "state_name": "Philippines",
+            "country": "PH",
+            "country_iso3166": "PH",
+            "zip": "00000",
+            "magic": "1",
+            "wmo": "98429",
+            "latitude": "14.530000",
+            "longitude": "121.040000",
+            "elevation": "21.00000000"
+        },
+        "observation_location": {
+            "full": "Taft Avenue, Manila, 2401 Taft Avenue, Manila",
+            "city": "Taft Avenue, Manila, 2401 Taft Avenue",
+            "state": "Manila",
+            "country": "PHILIPPINES",
+            "country_iso3166": "PH",
+            "latitude": "14.566957",
+            "longitude": "120.992523",
+            "elevation": "276 ft"
+        },
+        "estimated": { 
+        },
+        "station_id": "IMETROMA8",
+        "observation_time": "Last Updated on November 2, 6:30 PM PHT",
+        "observation_time_rfc822": "Mon, 02 Nov 2015 18:30:05 +0800",
+        "observation_epoch": "1446460205",
+        "local_time_rfc822": "Mon, 02 Nov 2015 18:34:12 +0800",
+        "local_epoch": "1446460452",
+        "local_tz_short": "PHT",
+        "local_tz_long": "Asia/Manila",
+        "local_tz_offset": "+0800",
+        "weather": "Scattered Clouds",
+        "temperature_string": "82.2 F (27.9 C)",
+        "temp_f": 82.2,
+        "temp_c": 27.9,
+        "relative_humidity": "84%",
+        "wind_string": "Calm",
+        "wind_dir": "NNE",
+        "wind_degrees": 21,
+        "wind_mph": 0.0,
+        "wind_gust_mph": 0,
+        "wind_kph": 0,
+        "wind_gust_kph": 0,
+        "pressure_mb": "1011",
+        "pressure_in": "29.86",
+        "pressure_trend": "0",
+        "dewpoint_string": "77 F (25 C)",
+        "dewpoint_f": 77,
+        "dewpoint_c": 25,
+        "heat_index_string": "90 F (32 C)",
+        "heat_index_f": 90,
+        "heat_index_c": 32,
+        "windchill_string": "NA",
+        "windchill_f": "NA",
+        "windchill_c": "NA",
+        "feelslike_string": "90 F (32 C)",
+        "feelslike_f": "90",
+        "feelslike_c": "32",
+        "visibility_mi": "6.2",
+        "visibility_km": "10.0",
+        "solarradiation": "0",
+        "UV": "0.0",
+        "precip_1hr_string": "0.00 in ( 0 mm)",
+        "precip_1hr_in": "0.00",
+        "precip_1hr_metric": " 0",
+        "precip_today_string": "0.00 in (0 mm)",
+        "precip_today_in": "0.00",
+        "precip_today_metric": "0",
+        "icon": "partlycloudy",
+        "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+        "forecast_url": "http://www.wunderground.com/global/stations/98429.html",
+        "history_url": "http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IMETROMA8",
+        "ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=14.566957,120.992523",
+        "nowcast": ""
+    },
+    "forecast": {
+        "txt_forecast": {
+            "date": "5:05 PM PHT",
+            "forecastday": [
+                {
+                    "period": 0,
+                    "icon": "clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+                    "title": "Monday",
+                    "fcttext": "Mainly clear. Lows overnight in the mid 70s.",
+                    "fcttext_metric": "Mainly clear. Low 24C.",
+                    "pop": "10"
+                },
+                {
+                    "period": 1,
+                    "icon": "nt_clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+                    "title": "Monday Night",
+                    "fcttext": "Mainly clear. Low around 75F. Winds ENE at 5 to 10 mph.",
+                    "fcttext_metric": "Mainly clear. Low 24C. Winds ENE at 10 to 15 km/h.",
+                    "pop": "10"
+                },
+                {
+                    "period": 2,
+                    "icon": "partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                    "title": "Tuesday",
+                    "fcttext": "Partly cloudy. High 89F. Winds E at 10 to 15 mph.",
+                    "fcttext_metric": "Sunshine and clouds mixed. High 32C. Winds E at 15 to 25 km/h.",
+                    "pop": "10"
+                },
+                {
+                    "period": 3,
+                    "icon": "nt_partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+                    "title": "Tuesday Night",
+                    "fcttext": "Considerable clouds early. Some decrease in clouds late. Low around 75F. Winds E at 5 to 10 mph.",
+                    "fcttext_metric": "Mostly cloudy skies early will become partly cloudy late. Low 24C. Winds E at 10 to 15 km/h.",
+                    "pop": "10"
+                },
+                {
+                    "period": 4,
+                    "icon": "partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                    "title": "Wednesday",
+                    "fcttext": "Partly to mostly cloudy. High 91F. Winds E at 10 to 15 mph.",
+                    "fcttext_metric": "Partly to mostly cloudy. High 33C. Winds E at 15 to 25 km/h.",
+                    "pop": "10"
+                },
+                {
+                    "period": 5,
+                    "icon": "nt_partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+                    "title": "Wednesday Night",
+                    "fcttext": "Partly cloudy skies. Low around 75F. Winds E at 5 to 10 mph.",
+                    "fcttext_metric": "Partly cloudy. Low 24C. Winds E at 10 to 15 km/h.",
+                    "pop": "20"
+                },
+                {
+                    "period": 6,
+                    "icon": "clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+                    "title": "Thursday",
+                    "fcttext": "Sunshine along with some cloudy intervals. High 91F. Winds E at 10 to 15 mph.",
+                    "fcttext_metric": "Sunshine along with some cloudy intervals. High 33C. Winds E at 15 to 25 km/h.",
+                    "pop": "20"
+                },
+                {
+                    "period": 7,
+                    "icon": "nt_clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+                    "title": "Thursday Night",
+                    "fcttext": "Mostly clear skies. Low around 75F. Winds E at 5 to 10 mph.",
+                    "fcttext_metric": "Mostly clear skies. Low 24C. Winds light and variable.",
+                    "pop": "20"
+                }
+            ]
+        },
+        "simpleforecast": {
+            "forecastday": [
+                {
+                    "date": {
+                        "epoch": "1446462000",
+                        "pretty": "7:00 PM PHT on November 02, 2015",
+                        "day": 2,
+                        "month": 11,
+                        "year": 2015,
+                        "yday": 305,
+                        "hour": 19,
+                        "min": "00",
+                        "sec": 0,
+                        "isdst": "0",
+                        "monthname": "November",
+                        "monthname_short": "Nov",
+                        "weekday_short": "Mon",
+                        "weekday": "Monday",
+                        "ampm": "PM",
+                        "tz_short": "PHT",
+                        "tz_long": "Asia/Manila"
+                    },
+                    "period": 1,
+                    "high": {
+                        "fahrenheit": "90",
+                        "celsius": "32"
+                    },
+                    "low": {
+                        "fahrenheit": "75",
+                        "celsius": "24"
+                    },
+                    "conditions": "Clear",
+                    "icon": "clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+                    "skyicon": "",
+                    "pop": 10,
+                    "qpf_allday": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_day": {
+                        "in": null,
+                        "mm": null
+                    },
+                    "qpf_night": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "snow_allday": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_day": {
+                        "in": null,
+                        "cm": null
+                    },
+                    "snow_night": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "maxwind": {
+                        "mph": 0,
+                        "kph": 0,
+                        "dir": "",
+                        "degrees": 0
+                    },
+                    "avewind": {
+                        "mph": 0,
+                        "kph": 0,
+                        "dir": "South",
+                        "degrees": 180
+                    },
+                    "avehumidity": 82,
+                    "maxhumidity": 0,
+                    "minhumidity": 0
+                },
+                {
+                    "date": {
+                        "epoch": "1446548400",
+                        "pretty": "7:00 PM PHT on November 03, 2015",
+                        "day": 3,
+                        "month": 11,
+                        "year": 2015,
+                        "yday": 306,
+                        "hour": 19,
+                        "min": "00",
+                        "sec": 0,
+                        "isdst": "0",
+                        "monthname": "November",
+                        "monthname_short": "Nov",
+                        "weekday_short": "Tue",
+                        "weekday": "Tuesday",
+                        "ampm": "PM",
+                        "tz_short": "PHT",
+                        "tz_long": "Asia/Manila"
+                    },
+                    "period": 2,
+                    "high": {
+                        "fahrenheit": "89",
+                        "celsius": "32"
+                    },
+                    "low": {
+                        "fahrenheit": "75",
+                        "celsius": "24"
+                    },
+                    "conditions": "Partly Cloudy",
+                    "icon": "partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                    "skyicon": "",
+                    "pop": 10,
+                    "qpf_allday": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_day": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_night": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "snow_allday": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_day": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_night": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "maxwind": {
+                        "mph": 15,
+                        "kph": 24,
+                        "dir": "E",
+                        "degrees": 89
+                    },
+                    "avewind": {
+                        "mph": 12,
+                        "kph": 19,
+                        "dir": "E",
+                        "degrees": 89
+                    },
+                    "avehumidity": 69,
+                    "maxhumidity": 0,
+                    "minhumidity": 0
+                },
+                {
+                    "date": {
+                        "epoch": "1446634800",
+                        "pretty": "7:00 PM PHT on November 04, 2015",
+                        "day": 4,
+                        "month": 11,
+                        "year": 2015,
+                        "yday": 307,
+                        "hour": 19,
+                        "min": "00",
+                        "sec": 0,
+                        "isdst": "0",
+                        "monthname": "November",
+                        "monthname_short": "Nov",
+                        "weekday_short": "Wed",
+                        "weekday": "Wednesday",
+                        "ampm": "PM",
+                        "tz_short": "PHT",
+                        "tz_long": "Asia/Manila"
+                    },
+                    "period": 3,
+                    "high": {
+                        "fahrenheit": "91",
+                        "celsius": "33"
+                    },
+                    "low": {
+                        "fahrenheit": "75",
+                        "celsius": "24"
+                    },
+                    "conditions": "Partly Cloudy",
+                    "icon": "partlycloudy",
+                    "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                    "skyicon": "",
+                    "pop": 10,
+                    "qpf_allday": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_day": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_night": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "snow_allday": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_day": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_night": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "maxwind": {
+                        "mph": 15,
+                        "kph": 24,
+                        "dir": "E",
+                        "degrees": 85
+                    },
+                    "avewind": {
+                        "mph": 12,
+                        "kph": 19,
+                        "dir": "E",
+                        "degrees": 85
+                    },
+                    "avehumidity": 68,
+                    "maxhumidity": 0,
+                    "minhumidity": 0
+                },
+                {
+                    "date": {
+                        "epoch": "1446721200",
+                        "pretty": "7:00 PM PHT on November 05, 2015",
+                        "day": 5,
+                        "month": 11,
+                        "year": 2015,
+                        "yday": 308,
+                        "hour": 19,
+                        "min": "00",
+                        "sec": 0,
+                        "isdst": "0",
+                        "monthname": "November",
+                        "monthname_short": "Nov",
+                        "weekday_short": "Thu",
+                        "weekday": "Thursday",
+                        "ampm": "PM",
+                        "tz_short": "PHT",
+                        "tz_long": "Asia/Manila"
+                    },
+                    "period": 4,
+                    "high": {
+                        "fahrenheit": "91",
+                        "celsius": "33"
+                    },
+                    "low": {
+                        "fahrenheit": "75",
+                        "celsius": "24"
+                    },
+                    "conditions": "Clear",
+                    "icon": "clear",
+                    "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+                    "skyicon": "",
+                    "pop": 20,
+                    "qpf_allday": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_day": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "qpf_night": {
+                        "in": 0.00,
+                        "mm": 0
+                    },
+                    "snow_allday": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_day": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "snow_night": {
+                        "in": 0.0,
+                        "cm": 0.0
+                    },
+                    "maxwind": {
+                        "mph": 15,
+                        "kph": 24,
+                        "dir": "E",
+                        "degrees": 88
+                    },
+                    "avewind": {
+                        "mph": 12,
+                        "kph": 19,
+                        "dir": "E",
+                        "degrees": 88
+                    },
+                    "avehumidity": 66,
+                    "maxhumidity": 0,
+                    "minhumidity": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reactive;
+using System.Reactive.Linq;
 using ReactiveUI;
 using Splat;
 using UNTv.WP81.Features.Controls;
@@ -26,11 +30,15 @@ namespace UNTv.WP81.Features
         {
             this.WhenActivated(block =>
             {
+                Func<IEnumerable<ReactiveBase>> GetVisibleSections = () => this.SectionHub.SectionsInView.Select(x => x.DataContext as ReactiveBase);
+
+                // capture SectionInViewChanged event
                 this.SectionHub.Events().SectionsInViewChanged
-                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
+                    .Where(x => GetVisibleSections().Count() == 2)
+                    .Subscribe(x => this.ViewModel.CurrentSection = GetVisibleSections().First());
 
                 this.DataContext = this.ViewModel;
-                //this.ViewModel.InitializeCommand.Execute(null);
+                this.ViewModel.PopulateCommand.Execute(null);
             });
         }
 

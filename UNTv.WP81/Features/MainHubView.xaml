@@ -16,7 +16,7 @@
     xmlns:televisions="using:UNTv.WP81.Features.Televisions"
     xmlns:public_services="using:UNTv.WP81.Features.PublicServices"
     Background="{StaticResource DetailsPageBackgroundBrush}">
-    
+
     <Grid x:Name="LayoutRoot">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -24,59 +24,63 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
+
         <Hub x:Name="SectionHub" x:Uid="Hub" Background="{StaticResource HubBackgroundBrush}">
             <Hub.Header>
-                <StackPanel Orientation="Horizontal">
-                    <Image Grid.Row="0" Height="80" Margin="5,5,5,0" Stretch="Fill" Source="{StaticResource HubLogo}" VerticalAlignment="Bottom" />
-                    <TextBlock Grid.Row="1" Text="public service channel"/>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Grid.Row="0" Height="80" Margin="5,5,5,0" Stretch="Fill" Source="{StaticResource HubLogo}" VerticalAlignment="Bottom" />
+                        <TextBlock Grid.Row="1" Text="public service channel"/>
+                    </StackPanel>
+                    <ProgressBar IsIndeterminate="{Binding IsLoading}" />
                 </StackPanel>
             </Hub.Header>
 
-            <HubSection ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection DataContext="{Binding StartSection}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <start:StartSectionView ViewModel="{Binding StartSection}" />
+                    <start:StartSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="NEWS" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="NEWS" DataContext="{Binding NewsSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <news:NewsSectionView ViewModel="{Binding NewsSection}" />
+                    <news:NewsSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="VIDEOS" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="VIDEOS" DataContext="{Binding VideosSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <videos:VideosSectionView ViewModel="{Binding VideosSection}" />
+                    <videos:VideosSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="PUBLIC SERVICES" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="PUBLIC SERVICES" DataContext="{Binding PublicServicesSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <public_services:PublicServicesSectionView ViewModel="{Binding PublicServicesSection}" />
+                    <public_services:PublicServicesSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="TELEVISION PROGRAMS" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="TELEVISION PROGRAMS" DataContext="{Binding TelevisionProgramSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <televisions:ProgramsSectionView ViewModel="{Binding TelevisionProgramSection}" />
+                    <televisions:ProgramsSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="RADIO PROGRAMS" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="RADIO PROGRAMS" DataContext="{Binding RadioProgramSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <radios:ProgramsSectionView ViewModel="{Binding RadioProgramSection}" />
+                    <radios:ProgramsSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="ABOUT" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="ABOUT" DataContext="{Binding AboutSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <about:AboutSectionView ViewModel="{Binding AboutSection}" />
+                    <about:AboutSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 
-            <HubSection Header="CONTACT US" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+            <HubSection Header="CONTACT US" DataContext="{Binding ContactUsSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
-                    <contact_us:ContactUsSectionView ViewModel="{Binding ContactUsSection}" />
+                    <contact_us:ContactUsSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
         </Hub>

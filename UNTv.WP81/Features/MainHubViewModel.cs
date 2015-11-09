@@ -1,5 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
+using System.Reactive;
+using System.Reactive.Linq;
 using ReactiveUI;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Features.About;
 using UNTv.WP81.Features.ContactUs;
 using UNTv.WP81.Features.News;
@@ -11,6 +16,8 @@ namespace UNTv.WP81.Features
 {
     public class MainHubViewModel : ReactiveRoutableBase
     {
+        public virtual bool IsLoading { get; set; }
+        public virtual ReactiveBase CurrentSection { get; set; }
         public virtual StartSectionViewModel StartSection { get; set; }
         public virtual NewsSectionViewModel NewsSection { get; set; }
         public virtual VideosSectionViewModel VideosSection { get; set; }
@@ -40,28 +47,115 @@ namespace UNTv.WP81.Features
             //this.InitializeCommand.Subscribe(x => Initialize());
 
             this.PopulateCommand = ReactiveCommand.Create();
-            this.PopulateCommand.Subscribe(x => Populate());
+            this.PopulateCommand.Subscribe(x => Populate(x));
+
+            this.CurrentSection = this.StartSection;
+            this.WhenAnyValue(x => x.CurrentSection)
+                .Subscribe(x => this.PopulateCommand.Execute(x));
+
+            this.CurrentSection = this.StartSection;
+
+            // Setup progress bar
+            this.StartSection.WhenAnyValue(x => x.Programs)
+                .Where(x => this.CurrentSection == this.StartSection)
+                .Select(programs => programs == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.NewsSection.WhenAnyValue(x => x.News)
+                .Where(x => this.CurrentSection == this.NewsSection)
+                .Select(news => news == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.VideosSection.WhenAnyValue(x => x.Videos)
+                .Where(x => this.CurrentSection == this.VideosSection)
+                .Select(videos => videos == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.PublicServicesSection.WhenAnyValue(x => x.Programs)
+                .Where(x => this.CurrentSection == this.PublicServicesSection)
+                .Select(programs => programs == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.RadioProgramSection.WhenAnyValue(x => x.Programs)
+                .Where(x => this.CurrentSection == this.RadioProgramSection)
+                .Select(programs => programs == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.TelevisionProgramSection.WhenAnyValue(x => x.Programs)
+                .Where(x => this.CurrentSection == this.TelevisionProgramSection)
+                .Select(programs => programs == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.AboutSection.WhenAnyValue(x => x.Content)
+                .Where(x => this.CurrentSection == this.AboutSection)
+                .Select(content => content == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
+
+            this.ContactUsSection.WhenAnyValue(x => x.Content)
+                .Where(x => this.CurrentSection == this.ContactUsSection)
+                .Select(content => content == null)
+                .Subscribe(x => this.IsLoading = x);
+                //.ToProperty(this, x => x.IsLoading);
         }
 
-        private void Populate()
+        private void Populate(object section)
         {
-            this.StartSection.PopulateCommand.Execute(null);
-            this.NewsSection.PopulateCommand.Execute(null);
-            this.VideosSection.PopulateCommand.Execute(null);
-            this.PublicServicesSection.PopulateCommand.Execute(null);
-            this.RadioProgramSection.PopulateCommand.Execute(null);
-            this.TelevisionProgramSection.PopulateCommand.Execute(null);
-            this.AboutSection.PopulateCommand.Execute(null);
-            this.ContactUsSection.PopulateCommand.Execute(null);
-        }
+            this.RaisePropertyChanged("IsLoading");
 
-        //public void Initialize()
-        //{
-        //    //this.NewsSection = new NewsSectionViewModel();
-        //    //this.VideosSection = new VideosSectionViewModel();
-        //    //this.PublicServicesSection = new PublicServicesSectionViewModel();
-        //    //this.RadioProgramSection = new Radios.ProgramsSectionViewModel();
-        //    //this.TelevisionProgramSection = new Televisions.ProgramsSectionViewModel();
-        //}
+            if (section == null || section == this.StartSection)
+            {
+                this.IsLoading = this.StartSection.Programs.IsNullOrEmpty();
+                this.StartSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.NewsSection)
+            {
+                this.IsLoading = this.NewsSection.News.IsNullOrEmpty();
+                this.NewsSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.VideosSection)
+            {
+                this.IsLoading = this.VideosSection.Videos.IsNullOrEmpty();
+                this.VideosSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.PublicServicesSection)
+            {
+                this.IsLoading = this.PublicServicesSection.Programs.IsNullOrEmpty();
+                this.PublicServicesSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.RadioProgramSection)
+            {
+                this.IsLoading = this.RadioProgramSection.Programs.IsNullOrEmpty();
+                this.RadioProgramSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.TelevisionProgramSection)
+            {
+                this.IsLoading = this.TelevisionProgramSection.Programs.IsNullOrEmpty();
+                this.TelevisionProgramSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.AboutSection)
+            {
+                this.IsLoading = string.IsNullOrEmpty(this.AboutSection.Content);
+                this.AboutSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.ContactUsSection)
+            {
+                this.IsLoading = string.IsNullOrEmpty(this.ContactUsSection.Content);
+                this.ContactUsSection.PopulateCommand.Execute(null);
+            }
+        }
     }
 }
