@@ -19,11 +19,8 @@ namespace UNTv.WP81.Features.News
         private readonly RoutingState _router;
 
         public virtual ReactiveList<ItemViewModel> News { get; set; }
-
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
-
         public virtual ReactiveCommand<object> NavigateToNewsHubCommand { get; private set; }
-
         public virtual ReactiveCommand<object> NavigateToNewsDetailCommand { get; private set; }
 
         public NewsSectionViewModel()

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reactive;
+using System.Reactive.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using ReactiveUI;
 using Windows.Foundation;
@@ -13,9 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using System.Reactive;
-using System.Reactive.Linq;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Features.Televisions
 {
@@ -29,10 +30,10 @@ namespace UNTv.WP81.Features.Televisions
         public ScheduleHubView()
         {
             this.InitializeComponent();
-            this.InitializeBindint();
+            this.InitializeBinding();
         }
 
-        private void InitializeBindint()
+        private void InitializeBinding()
         {
             this.WhenActivated(block =>
             {
@@ -47,6 +48,21 @@ namespace UNTv.WP81.Features.Televisions
                         .Subscribe(x => this.ViewModel.NavigateToProgramsDetailCommand.Execute(x));
                 };
 
+                Action<PivotItem> SetCurrentSection = (pivotItem) =>
+                {
+                    var stringValue = pivotItem.Header.ToString().ToProperCase();
+                    var enumValue = default(DayOfWeek);
+
+                    if (Enum.TryParse<DayOfWeek>(stringValue, out enumValue))
+                        this.ViewModel.CurrentSection = enumValue;
+                };
+
+                this.SchedulePivot.Events().SelectionChanged
+                    .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
+                    .Where(pivotItem => pivotItem != null)
+                    .Subscribe(x => SetCurrentSection(x));
+
+                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
                 block(this.OneWayBind(ViewModel, x => x.MondayPrograms, x => x.MondayProgramsListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.TuesdayPrograms, x => x.TuesdayProgramsListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.WednesdayPrograms, x => x.WednesdayProgramsListView.ItemsSource));
@@ -62,9 +78,6 @@ namespace UNTv.WP81.Features.Televisions
                 BindClickEvent(this.FridayProgramsListView);
                 BindClickEvent(this.SaturdayProgramsListView);
                 BindClickEvent(this.SundayProgramsListView);
-
-                this.SchedulePivot.Events().SelectionChanged
-                    .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
 
                 this.ViewModel.PopulateCommand.Execute(null);
 

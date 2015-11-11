@@ -4,6 +4,8 @@ using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
+using UNTv.WP81.Common.Extentions;
+using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -36,23 +38,28 @@ namespace UNTv.WP81.Features.Videos
                         .Subscribe(x => this.ViewModel.NavigateToVideosDetailCommand.Execute(x));
                 };
 
-                block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
+                Action<PivotItem> SetCurrentSection = (pivotItem) =>
+                {
+                    var stringValue = pivotItem.Header.ToString().ToProperCase();
+                    var enumValue = default(SortFilter);
 
-                BindClickEvent(this.LatestVideosListView);
-                BindClickEvent(this.FeaturedVideosListView);
-                BindClickEvent(this.PopularVideosListView);
+                    if (Enum.TryParse<SortFilter>(stringValue, out enumValue))
+                        this.ViewModel.CurrentSection = enumValue;
+                };
 
                 this.VideosPivot.Events().SelectionChanged
                     .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
                     .Where(pivotItem => pivotItem != null)
-                    .Subscribe(x => 
-                        {
-                            Debug.WriteLine(x.Header);
-                            this.ViewModel.CurrentSection = x.Header.ToString();
-                        });
+                    .Subscribe(x => SetCurrentSection(x));
+
+                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
+                block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
+                block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
+                block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
+
+                BindClickEvent(this.LatestVideosListView);
+                BindClickEvent(this.FeaturedVideosListView);
+                BindClickEvent(this.PopularVideosListView);
 
                 this.ViewModel.PopulateCommand.Execute(null);
 

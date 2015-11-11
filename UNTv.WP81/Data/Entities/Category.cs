@@ -18,6 +18,8 @@ namespace UNTv.WP81.Data.Entities
         [JsonProperty("title")]
         public virtual string Title { get; set; }
 
+        public virtual string Header { get; set; }
+
         [JsonProperty("description")]
         public virtual string Description { get; set; }
 
@@ -29,11 +31,12 @@ namespace UNTv.WP81.Data.Entities
 
         public Category() { }
 
-        public Category(long id = 0, string slug = "", string title = "", string description = "", long parent = 0, long postCount = 0)
+        public Category(long id = 0, string slug = "", string title = "", string header = "", string description = "", long parent = 0, long postCount = 0)
         {
             this.Id = id;
             this.Slug = slug;
             this.Title = title;
+            this.Header = header;
             this.Description = description;
             this.Parent = parent;
             this.PostCount = postCount;
@@ -85,15 +88,34 @@ namespace UNTv.WP81.Data.Entities
 
         #endregion
 
-        public static readonly Category World = new Category(id: 7, slug: "world", title: "World");
-        public static readonly Category Sports = new Category(id: 8, slug: "sports", title: "Sports");
-        public static readonly Category Health = new Category(id: 327, slug: "health", title: "Health");
-        public static readonly Category Headlines = new Category(id: 18, slug: "headlines", title: "Headlines");
-        public static readonly Category Political = new Category(id: 25, slug: "political", title: "Political");
-        public static readonly Category Education = new Category(id: 22, slug: "education", title: "Education");
-        public static readonly Category Technology = new Category(id: 15, slug: "technology", title: "Technology");
-        public static readonly Category Government = new Category(id: 24, slug: "government", title: "Government");
-        public static readonly Category ProvincialNews = new Category(id: 6532, slug: "provincial-news", title: "Provincial News");
-        public static readonly Category ScienceAndEnvironment = new Category(id: 23, slug: "science-and-environment", title: "Science and Environment");
+        public static readonly Category World = new Category(id: 7, slug: "world", title: "World", header: "world");
+        public static readonly Category Sports = new Category(id: 8, slug: "sports", title: "Sports", header: "sports");
+        public static readonly Category Health = new Category(id: 327, slug: "health", title: "Health", header: "health");
+        public static readonly Category Headlines = new Category(id: 18, slug: "headlines", title: "Headlines", header: "headlines");
+        public static readonly Category Political = new Category(id: 25, slug: "political", title: "Political", header: "political");
+        public static readonly Category Education = new Category(id: 22, slug: "education", title: "Education", header: "education");
+        public static readonly Category Technology = new Category(id: 15, slug: "technology", title: "Technology", header: "technology");
+        public static readonly Category Government = new Category(id: 24, slug: "government", title: "Government", header: "government");
+        public static readonly Category ProvincialNews = new Category(id: 6532, slug: "provincial-news", title: "Provincial News", header: "provincial");
+        public static readonly Category ScienceAndEnvironment = new Category(id: 23, slug: "science-and-environment", title: "Science and Environment", header: "science");
+
+        public static readonly IEnumerable<Category> All = new Category[]
+        {
+            Category.World,
+            Category.Sports,
+            Category.Health,
+            Category.Headlines,
+            Category.Political,
+            Category.Education,
+            Category.Technology,
+            Category.Government,
+            Category.ProvincialNews,
+            Category.ScienceAndEnvironment
+        };
+
+        public static Category GetByHeader(string header)
+        {
+            return Category.All.FirstOrDefault(x => x.Header == header);
+        }
     }
 }

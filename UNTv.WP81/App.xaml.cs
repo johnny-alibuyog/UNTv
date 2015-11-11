@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Features;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
@@ -28,8 +20,8 @@ namespace UNTv.WP81
     /// </summary>
     public sealed partial class App : Application
     {
-        private TransitionCollection _transitions;
         private AutoSuspendHelper _autoSuspendHelper;
+        private TransitionCollection _transitions;
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -37,6 +29,9 @@ namespace UNTv.WP81
         /// </summary>
         public App()
         {
+            //var xxx = "the   quick    bRown fOX".ToTitleCase();
+            //System.Diagnostics.Debug.WriteLine(xxx);
+
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
@@ -129,19 +124,6 @@ namespace UNTv.WP81
                 router.NavigateBack.Execute(null);
                 e.Handled = true;
             }
-
-            //var frame = Window.Current.Content as Frame;
-            //frame.ContentTransitions = this._transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
-            //if (frame == null)
-            //{
-            //    return;
-            //}
-
-            //if (frame.CanGoBack)
-            //{
-            //    frame.GoBack();
-            //    e.Handled = true;
-            //}
         }
 
         /// <summary>

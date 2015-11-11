@@ -14,6 +14,8 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
+        <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" />
+
         <Pivot x:Name="NewsPivot" Title="NEWS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
             <!--
             <Pivot.ItemTemplate>

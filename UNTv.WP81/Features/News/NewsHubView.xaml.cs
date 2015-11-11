@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Linq;
+using System.Reactive;
 using System.Reactive.Linq;
+using ReactiveUI;
+using UNTv.WP81.Common.Extentions;
+using UNTv.WP81.Data.Entities;
+using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using ReactiveUI;
-using UNTv.WP81.Features.Controls.ListItemControls;
-using System.Diagnostics;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -38,6 +42,18 @@ namespace UNTv.WP81.Features.News
                         .Subscribe(x => this.ViewModel.NavigateToNewsDetailCommand.Execute(x));
                 };
 
+
+                Action<PivotItem> SetCurrentSection = (pivotItem) => 
+                {
+                    this.ViewModel.CurrentSection = Category.GetByHeader(pivotItem.Header.ToString());
+                };
+
+                this.NewsPivot.Events().SelectionChanged
+                    .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
+                    .Where(pivotItem => pivotItem != null)
+                    .Subscribe(x => SetCurrentSection(x));
+
+                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
                 block(this.OneWayBind(ViewModel, x => x.Headlines, x => x.HeadlinesListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.WorldNews, x => x.WorldNewsListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.SportsNews, x => x.SportsNewsListView.ItemsSource));
@@ -60,15 +76,7 @@ namespace UNTv.WP81.Features.News
                 BindClickEvent(this.ProvincialNewsListView);
                 BindClickEvent(this.ScienceNewsListView);
 
-                this.NewsPivot.Events().SelectionChanged
-                    .Where(x => this.ViewModel.HasEmptyFields)
-                    .Subscribe(x => 
-                    {
-                        Debug.WriteLine("Has Empty Field is {0}", this.ViewModel.HasEmptyFields);
-                        this.ViewModel.PopulateCommand.Execute(null);
-                    });
-
-                this.ViewModel.PopulateCommand.Execute(null);
+                //this.ViewModel.PopulateCommand.Execute(null);
 
                 _isActivated = true;
             });

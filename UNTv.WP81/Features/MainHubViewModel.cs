@@ -107,8 +107,6 @@ namespace UNTv.WP81.Features
 
         private void Populate(object section)
         {
-            this.RaisePropertyChanged("IsLoading");
-
             if (section == null || section == this.StartSection)
             {
                 this.IsLoading = this.StartSection.Programs.IsNullOrEmpty();

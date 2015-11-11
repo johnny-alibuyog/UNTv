@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Reactive.Linq;
 using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Features.Radios
 {
@@ -35,6 +37,21 @@ namespace UNTv.WP81.Features.Radios
                         .Subscribe(x => this.ViewModel.NavigateToProgramsDetailCommand.Execute(x));
                 };
 
+                Action<PivotItem> SetCurrentSection = (pivotItem) =>
+                {
+                    var stringValue = pivotItem.Header.ToString().ToProperCase();
+                    var enumValue = default(DayOfWeek);
+
+                    if (Enum.TryParse<DayOfWeek>(stringValue, out enumValue))
+                        this.ViewModel.CurrentSection = enumValue;
+                };
+
+                this.SchedulePivot.Events().SelectionChanged
+                    .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
+                    .Where(pivotItem => pivotItem != null)
+                    .Subscribe(x => SetCurrentSection(x));
+
+                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
                 block(this.OneWayBind(ViewModel, x => x.MondayPrograms, x => x.MondayProgramsListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.TuesdayPrograms, x => x.TuesdayProgramsListView.ItemsSource));
                 block(this.OneWayBind(ViewModel, x => x.WednesdayPrograms, x => x.WednesdayProgramsListView.ItemsSource));

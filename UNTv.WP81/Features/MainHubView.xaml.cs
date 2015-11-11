@@ -38,6 +38,7 @@ namespace UNTv.WP81.Features
                     .Subscribe(x => this.ViewModel.CurrentSection = GetVisibleSections().First());
 
                 this.DataContext = this.ViewModel;
+
                 this.ViewModel.PopulateCommand.Execute(null);
             });
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -10,6 +11,30 @@ namespace UNTv.WP81.Common.Extentions
 {
     public static class StringExtention
     {
+        public static string ToTitleCase(this string value)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                return value;
+
+            var words = value.Trim().ToLower().Split(' ')
+                .Where(x => !string.IsNullOrWhiteSpace(x))
+                .Select(x => x.ToProperCase())
+                .ToList();
+
+            return string.Join(" ", words);
+        }
+
+        public static string ToProperCase(this string value)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                return value;
+
+            var workingCopy = value.Trim().ToLower();
+            var firstCharacter = char.ToUpper(workingCopy.First());
+            var succedingCharacters = workingCopy.Substring(1);
+            return firstCharacter + succedingCharacters;
+        }
+
         public static bool EqualNoCase(this string value, string content)
         {
             if (value != null)

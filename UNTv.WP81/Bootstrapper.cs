@@ -1,4 +1,8 @@
-﻿using ReactiveUI;
+﻿using System;
+using System.Linq;
+using System.Reactive;
+using System.Reactive.Linq;
+using ReactiveUI;
 using Splat;
 using UNTv.WP81.Common.Converters;
 using UNTv.WP81.Common.IO;
@@ -17,9 +21,13 @@ namespace UNTv.WP81
 {
     public static class Bootstrapper
     {
+        private static bool _isInitialized;
+
         public static void Start()
         {
             //Locator.CurrentMutable = DependencyResolverFactory.Create();
+            if (_isInitialized)
+                return;
 
             RxApp.SuspensionHost.CreateNewAppState = () => Locator.CurrentMutable.GetService<IScreen>();
             RxApp.SuspensionHost.SetupDefaultSuspendResume();
@@ -37,7 +45,7 @@ namespace UNTv.WP81
             var router = new RoutingState();
             Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
             Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
- 
+
             // Views
             Locator.CurrentMutable.RegisterConstant(new ShellView(), typeof(IViewFor<ShellViewModel>));
             Locator.CurrentMutable.RegisterConstant(new MainHubView(), typeof(IViewFor<MainHubViewModel>));
@@ -81,6 +89,8 @@ namespace UNTv.WP81
             Locator.CurrentMutable.Register(() => new PlainTextConverter(), typeof(PlainTextConverter));
             Locator.CurrentMutable.Register(() => new ThumbnailConverter(), typeof(ThumbnailConverter));
             Locator.CurrentMutable.Register(() => new UpperCaseConverter(), typeof(UpperCaseConverter));
+
+            _isInitialized = true;
         }
     }
 }
