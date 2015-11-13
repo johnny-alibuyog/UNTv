@@ -51,14 +51,14 @@ namespace UNTv.WP81.Features.Radios
                     .Where(pivotItem => pivotItem != null)
                     .Subscribe(x => SetCurrentSection(x));
 
-                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
-                block(this.OneWayBind(ViewModel, x => x.MondayPrograms, x => x.MondayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.TuesdayPrograms, x => x.TuesdayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.WednesdayPrograms, x => x.WednesdayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.ThursdayPrograms, x => x.ThursdayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.FridayPrograms, x => x.FridayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.SaturdayPrograms, x => x.SaturdayProgramsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.SundayPrograms, x => x.SundayProgramsListView.ItemsSource));
+                this.Bind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate);
+                this.Bind(ViewModel, x => x.MondayPrograms, x => x.MondayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.TuesdayPrograms, x => x.TuesdayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.WednesdayPrograms, x => x.WednesdayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.ThursdayPrograms, x => x.ThursdayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.FridayPrograms, x => x.FridayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.SaturdayPrograms, x => x.SaturdayProgramsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.SundayPrograms, x => x.SundayProgramsListView.ItemsSource);
 
                 BindClickEvent(this.MondayProgramsListView);
                 BindClickEvent(this.TuesdayProgramsListView);

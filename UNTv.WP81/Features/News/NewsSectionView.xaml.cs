@@ -25,7 +25,7 @@ namespace UNTv.WP81.Features.News
                     return;
 
                 this.BindCommand(ViewModel, x => x.NavigateToNewsHubCommand, x => x.NavigateToNewsHubButton);
-                block(this.OneWayBind(ViewModel, x => x.News, x => x.NewsListView.ItemsSource));
+                this.Bind(ViewModel, x => x.News, x => x.NewsListView.ItemsSource);
 
                 this.NewsListView.Events().ItemClick
                     .Select(x => x.ClickedItem as ItemViewModel)

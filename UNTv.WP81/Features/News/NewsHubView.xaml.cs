@@ -53,17 +53,17 @@ namespace UNTv.WP81.Features.News
                     .Where(pivotItem => pivotItem != null)
                     .Subscribe(x => SetCurrentSection(x));
 
-                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
-                block(this.OneWayBind(ViewModel, x => x.Headlines, x => x.HeadlinesListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.WorldNews, x => x.WorldNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.SportsNews, x => x.SportsNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.HealthNews, x => x.HealthNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.PoliticalNews, x => x.PoliticalNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.EducationNews, x => x.EducationNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.TechnologyNews, x => x.TechnologyNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.GovernmentNews, x => x.GovernmentNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.ProvincialNews, x => x.ProvincialNewsListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.ScienceNews, x => x.ScienceNewsListView.ItemsSource));
+                this.Bind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate);
+                this.Bind(ViewModel, x => x.Headlines, x => x.HeadlinesListView.ItemsSource);
+                this.Bind(ViewModel, x => x.WorldNews, x => x.WorldNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.SportsNews, x => x.SportsNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.HealthNews, x => x.HealthNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.PoliticalNews, x => x.PoliticalNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.EducationNews, x => x.EducationNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.TechnologyNews, x => x.TechnologyNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.GovernmentNews, x => x.GovernmentNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.ProvincialNews, x => x.ProvincialNewsListView.ItemsSource);
+                this.Bind(ViewModel, x => x.ScienceNews, x => x.ScienceNewsListView.ItemsSource);
 
                 BindClickEvent(this.HeadlinesListView);
                 BindClickEvent(this.WorldNewsListView);
@@ -76,7 +76,7 @@ namespace UNTv.WP81.Features.News
                 BindClickEvent(this.ProvincialNewsListView);
                 BindClickEvent(this.ScienceNewsListView);
 
-                //this.ViewModel.PopulateCommand.Execute(null);
+                this.ViewModel.PopulateCommand.Execute(null);
 
                 _isActivated = true;
             });

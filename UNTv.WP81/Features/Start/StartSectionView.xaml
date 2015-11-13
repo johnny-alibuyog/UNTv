@@ -15,13 +15,30 @@
         </Grid.ChildrenTransitions>
 
         <StackPanel>
-            <ContentControl x:Name="FeaturedProgramContainer" >
+
+            <!--<ContentControl x:Name="FeaturedProgramContainer" >
+                <ContentControl.Template>
+                    <ControlTemplate>
+                        <FlipView x:Name="ProgramsFlipView" ItemsSource="{Binding}">
+                            <FlipView.ItemTemplate>
+                                <DataTemplate>
+                                    <controls:PhotoSizeLargeView DataContext="{Binding}" />
+                                </DataTemplate>
+                            </FlipView.ItemTemplate>
+                        </FlipView>
+                    </ControlTemplate>
+                </ContentControl.Template>
+            </ContentControl>-->
+            
+            <!--<ContentControl x:Name="FeaturedProgramContainer" >
                 <ContentControl.Template>
                     <ControlTemplate>
                         <controls:PhotoSizeLargeView DataContext="{Binding}" />
                     </ControlTemplate>
                 </ContentControl.Template>
-            </ContentControl>
+            </ContentControl>-->
+
+            <controls:PhotoSizeLargeView x:Name="FeaturedProgramPhoto" />
 
             <Button x:Name="VideoStreamingButton" Height="35" HorizontalAlignment="Stretch" Content="Live Video Streaming">
                 <!--<Button.Background>
@@ -49,11 +66,6 @@
                     </DataTemplate>
                 </Button.ContentTemplate>-->
             </Button>
-            <!--<Button x:Name="VideoStreamingButton"  HorizontalAlignment="Stretch">
-                <Button.Background>
-                    <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
-                </Button.Background>
-            </Button>-->
         </StackPanel>
     </Grid>
 </UserControl>

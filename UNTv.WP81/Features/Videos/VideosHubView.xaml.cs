@@ -52,10 +52,10 @@ namespace UNTv.WP81.Features.Videos
                     .Where(pivotItem => pivotItem != null)
                     .Subscribe(x => SetCurrentSection(x));
 
-                block(this.OneWayBind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate));
-                block(this.OneWayBind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource));
-                block(this.OneWayBind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource));
+                this.Bind(ViewModel, x => x.IsLoading, x => x.ProgressBar.IsIndeterminate);
+                this.Bind(ViewModel, x => x.LatestVideos, x => x.LatestVideosListView.ItemsSource);
+                this.Bind(ViewModel, x => x.FeaturedVideos, x => x.FeaturedVideosListView.ItemsSource);
+                this.Bind(ViewModel, x => x.PopularVideos, x => x.PopularVideosListView.ItemsSource);
 
                 BindClickEvent(this.LatestVideosListView);
                 BindClickEvent(this.FeaturedVideosListView);

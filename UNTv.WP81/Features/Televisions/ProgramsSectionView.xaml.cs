@@ -25,7 +25,7 @@ namespace UNTv.WP81.Features.Televisions
                     return;
 
                 this.BindCommand(ViewModel, x => x.NavigateToSchedulesHubCommand, x => x.NavigateToSchedulesHubButton);
-                block(this.OneWayBind(ViewModel, x => x.Programs, x => x.ProgramsListView.ItemsSource));
+                this.Bind(ViewModel, x => x.Programs, x => x.ProgramsListView.ItemsSource);
 
                 this.ProgramsListView.Events().ItemClick
                     .Select(x => x.ClickedItem as ItemViewModel)

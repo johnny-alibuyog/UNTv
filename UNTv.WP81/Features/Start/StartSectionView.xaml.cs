@@ -9,6 +9,7 @@ namespace UNTv.WP81.Features.Start
     public sealed partial class StartSectionView : UserControl, IViewFor<StartSectionViewModel>
     {
         private bool _isActivated;
+        private DispatcherTimer _timer;
 
         public StartSectionView()
         {
@@ -18,6 +19,7 @@ namespace UNTv.WP81.Features.Start
 
         private void InitializeBinding()
         {
+
             this.WhenActivated(block =>
             {
                 if (_isActivated)
@@ -25,14 +27,23 @@ namespace UNTv.WP81.Features.Start
 
                 this.BindCommand(ViewModel, x => x.NavigateToAudioStreamingCommand, x => x.AudioStreamingButton);
                 this.BindCommand(ViewModel, x => x.NavigateToVideoStreamingCommand, x => x.VideoStreamingButton);
-                block(this.OneWayBind(ViewModel, x => x.FeaturedProgram, x => x.FeaturedProgramContainer.DataContext));
+                this.Bind(ViewModel, x => x.FeaturedProgram, x => x.FeaturedProgramPhoto.DataContext);
 
-                this.FeaturedProgramContainer.Events().Tapped
+                this.FeaturedProgramPhoto.Events().Tapped
                     .Select(x => x.OriginalSource)
                     .Where(x => this.ViewModel.NavigateToFeaturedProgramCommand.CanExecute(null))
                     .Subscribe(x => this.ViewModel.NavigateToFeaturedProgramCommand.Execute(null));
 
                 this.ViewModel.PopulateCommand.Execute(null);
+
+                _timer = new DispatcherTimer();
+                _timer.Tick += (sender, args) =>
+                {
+                    if (this.ViewModel.ChangeFeaturedProgramCommand.CanExecute(null))
+                        this.ViewModel.ChangeFeaturedProgramCommand.Execute(null);
+                };
+                _timer.Interval = new TimeSpan(0, 0, 6);
+                _timer.Start();
 
                 _isActivated = true;
             });
