@@ -3,6 +3,7 @@ using System.Reactive.Linq;
 using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Features.Start
 {
@@ -34,19 +35,26 @@ namespace UNTv.WP81.Features.Start
                     .Where(x => this.ViewModel.NavigateToFeaturedProgramCommand.CanExecute(null))
                     .Subscribe(x => this.ViewModel.NavigateToFeaturedProgramCommand.Execute(null));
 
-                this.ViewModel.PopulateCommand.Execute(null);
+                this.ViewModel.WhenAnyValue(x => x.Programs)
+                    .Where(x => !x.IsNullOrEmpty() && _timer == null)
+                    .Subscribe(x => SetupImageRandomizer());
 
-                _timer = new DispatcherTimer();
-                _timer.Tick += (sender, args) =>
-                {
-                    if (this.ViewModel.ChangeFeaturedProgramCommand.CanExecute(null))
-                        this.ViewModel.ChangeFeaturedProgramCommand.Execute(null);
-                };
-                _timer.Interval = new TimeSpan(0, 0, 6);
-                _timer.Start();
+                this.ViewModel.PopulateCommand.Execute(null);
 
                 _isActivated = true;
             });
+        }
+
+        private void SetupImageRandomizer()
+        {
+            _timer = new DispatcherTimer();
+            _timer.Tick += (sender, args) =>
+            {
+                if (this.ViewModel.ChangeFeaturedProgramCommand.CanExecute(null))
+                    this.ViewModel.ChangeFeaturedProgramCommand.Execute(null);
+            };
+            _timer.Interval = new TimeSpan(0, 0, 6);
+            _timer.Start();
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty

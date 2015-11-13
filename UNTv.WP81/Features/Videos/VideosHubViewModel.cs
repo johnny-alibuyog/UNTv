@@ -19,9 +19,8 @@ namespace UNTv.WP81.Features.Videos
 {
     public class VideosHubViewModel : ReactiveRoutableBase
     {
-        private readonly IStore _webStore;
-        private readonly IStore _localStore;
         private readonly RoutingState _router;
+        private readonly IDataService _service;
 
         public virtual bool IsLoading { get; set; }
         public virtual SortFilter CurrentSection { get; set; }
@@ -36,8 +35,7 @@ namespace UNTv.WP81.Features.Videos
             : base(hostScreen)
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _webStore = Locator.CurrentMutable.GetService<WebStore>();
-            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
+            _service = Locator.CurrentMutable.GetService<IDataService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate(x as Nullable<SortFilter>));
@@ -65,25 +63,11 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate(Nullable<SortFilter> section = null)
         {
-            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
-
-            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            Populate(_webStore, section);
-        }
-
-        private void Populate(IStore store, Nullable<SortFilter> section = null)
-        {
             Action<SortFilter, ReactiveList<ItemViewModel>, Action<ReactiveList<ItemViewModel>>> EvaluateThenPopulate = (sortFilter, items, callback) =>
             {
                 if ((section == null || section == sortFilter) && (this.IsLoading = items.IsNullOrEmpty()))
                 {
-                    store.Get(new VideoMessage.Request(sortFilter)).ContinueWith(
+                    _service.Get(new VideoMessage.Request(sortFilter)).ContinueWith(
                         continuationAction: x => callback(x.Result.AsItems()),
                         scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                     );
@@ -93,39 +77,6 @@ namespace UNTv.WP81.Features.Videos
             EvaluateThenPopulate(SortFilter.Latest, this.LatestVideos, result => this.LatestVideos = result);
             EvaluateThenPopulate(SortFilter.Featured, this.FeaturedVideos, result => this.FeaturedVideos = result);
             EvaluateThenPopulate(SortFilter.Popular, this.PopularVideos, result => this.PopularVideos = result);
-
-            //if (section == null || section == SortFilter.Latest)
-            //{
-            //    if (this.IsLoading = this.LatestVideos.IsNullOrEmpty())
-            //    {
-            //        store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
-            //            continuationAction: x => this.LatestVideos = x.Result.AsItems(),
-            //            scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            //        );
-            //    }
-            //}
-
-            //if (section == null || section == SortFilter.Featured)
-            //{
-            //    if (this.IsLoading = this.FeaturedVideos.IsNullOrEmpty())
-            //    {
-            //        store.Get(new VideoMessage.Request(SortFilter.Featured)).ContinueWith(
-            //            continuationAction: x => this.FeaturedVideos = x.Result.AsItems(),
-            //            scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            //        );
-            //    }
-            //}
-
-            //if (section == null || section == SortFilter.Popular)
-            //{
-            //    if (this.IsLoading = this.PopularVideos.IsNullOrEmpty())
-            //    {
-            //        store.Get(new VideoMessage.Request(SortFilter.Popular)).ContinueWith(
-            //            continuationAction: x => this.PopularVideos = x.Result.AsItems(),
-            //            scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-            //        );
-            //    }
-            //}
         }
 
         private void NavigateToVideosDetail(ItemViewModel item)

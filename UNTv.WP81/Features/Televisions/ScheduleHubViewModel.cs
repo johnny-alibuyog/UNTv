@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reactive;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,8 @@ namespace UNTv.WP81.Features.Televisions
 {
     public class ScheduleHubViewModel : ReactiveRoutableBase
     {
-        private readonly IStore _webStore;
-        private readonly IStore _localStore;
         private readonly RoutingState _router;
+        private readonly IDataService _service;
 
         public virtual bool IsLoading { get; set; }
         public virtual Nullable<DayOfWeek> CurrentSection { get; set; }
@@ -34,8 +34,7 @@ namespace UNTv.WP81.Features.Televisions
             : base(hostScreen)
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _webStore = Locator.CurrentMutable.GetService<WebStore>();
-            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
+            _service = Locator.CurrentMutable.GetService<IDataService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate(x as Nullable<DayOfWeek>));
@@ -79,20 +78,6 @@ namespace UNTv.WP81.Features.Televisions
 
         private void Populate(Nullable<DayOfWeek> section = null)
         {
-            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
-
-            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            Populate(_webStore, section);
-        }
-
-        private void Populate(IStore store, Nullable<DayOfWeek> section = null)
-        {
             var needsToPopulate =
                 ((section == null || section == DayOfWeek.Monday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
                 ((section == null || section == DayOfWeek.Tuesday) && (this.IsLoading = this.TuesdayPrograms.IsNullOrEmpty())) ||
@@ -104,7 +89,7 @@ namespace UNTv.WP81.Features.Televisions
 
             if (needsToPopulate)
             {
-                store.Get(new TelevisionProgramScheduleMessage.Request()).ContinueWith(
+                _service.Get(new TelevisionProgramScheduleMessage.Request()).ContinueWith(
                     continuationAction: x => this.ParseResult(x.Result),
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );

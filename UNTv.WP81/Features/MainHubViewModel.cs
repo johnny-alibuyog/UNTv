@@ -43,9 +43,6 @@ namespace UNTv.WP81.Features
             this.AboutSection = new AboutSectionViewModel();
             this.ContactUsSection = new ContactUsSectionViewModel();
 
-            //this.InitializeCommand = ReactiveCommand.Create();
-            //this.InitializeCommand.Subscribe(x => Initialize());
-
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate(x));
 
@@ -58,51 +55,35 @@ namespace UNTv.WP81.Features
             // Setup progress bar
             this.StartSection.WhenAnyValue(x => x.Programs)
                 .Where(x => this.CurrentSection == this.StartSection)
-                .Select(programs => programs == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.NewsSection.WhenAnyValue(x => x.News)
                 .Where(x => this.CurrentSection == this.NewsSection)
-                .Select(news => news == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.VideosSection.WhenAnyValue(x => x.Videos)
                 .Where(x => this.CurrentSection == this.VideosSection)
-                .Select(videos => videos == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.PublicServicesSection.WhenAnyValue(x => x.Programs)
                 .Where(x => this.CurrentSection == this.PublicServicesSection)
-                .Select(programs => programs == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.RadioProgramSection.WhenAnyValue(x => x.Programs)
                 .Where(x => this.CurrentSection == this.RadioProgramSection)
-                .Select(programs => programs == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.TelevisionProgramSection.WhenAnyValue(x => x.Programs)
                 .Where(x => this.CurrentSection == this.TelevisionProgramSection)
-                .Select(programs => programs == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.AboutSection.WhenAnyValue(x => x.Content)
                 .Where(x => this.CurrentSection == this.AboutSection)
-                .Select(content => content == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
 
             this.ContactUsSection.WhenAnyValue(x => x.Content)
                 .Where(x => this.CurrentSection == this.ContactUsSection)
-                .Select(content => content == null)
-                .Subscribe(x => this.IsLoading = x);
-                //.ToProperty(this, x => x.IsLoading);
+                .Subscribe(x => this.IsLoading = x == null);
         }
 
         private void Populate(object section)

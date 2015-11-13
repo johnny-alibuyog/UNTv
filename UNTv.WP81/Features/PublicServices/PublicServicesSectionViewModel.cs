@@ -12,9 +12,8 @@ namespace UNTv.WP81.Features.PublicServices
 {
     public class PublicServicesSectionViewModel: ReactiveBase
     {
-        private readonly IStore _webStore;
-        private readonly IStore _localStore;
         private readonly RoutingState _router;
+        private readonly IDataService _service;
 
         public virtual ReactiveList<ItemViewModel> Programs { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -23,8 +22,7 @@ namespace UNTv.WP81.Features.PublicServices
         public PublicServicesSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _webStore = Locator.CurrentMutable.GetService<WebStore>();
-            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
+            _service = Locator.CurrentMutable.GetService<IDataService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -35,24 +33,9 @@ namespace UNTv.WP81.Features.PublicServices
 
         private void Populate()
         {
-            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
-
-            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //Populate(_localStore);
-            Populate(_webStore);
-        }
-        
-        private void Populate(IStore store)
-        {
             if (this.Programs == null || this.Programs.Count == 0)
             {
-                store.Get(new PublicServiceMessage.Request()).ContinueWith(
+                _service.Get(new PublicServiceMessage.Request()).ContinueWith(
                     continuationAction: x => this.Programs = x.Result.AsItems(),
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );

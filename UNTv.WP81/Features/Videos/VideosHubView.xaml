@@ -15,7 +15,7 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" />
+        <ProgressBar x:Name="ProgressBar" IsIndeterminate="False" />
 
         <Pivot x:Name="VideosPivot" Title="VIDEOS" Style="{StaticResource CustomPivotStyle}" BorderBrush="{StaticResource PhoneChromeBrush}">
             <!--<Pivot.TitleTemplate>

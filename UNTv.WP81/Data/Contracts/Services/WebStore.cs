@@ -18,8 +18,8 @@ namespace UNTv.WP81.Data.Contracts.Services
 
         public WebStore()
         {
-            _textWriter = Locator.CurrentMutable.GetService<ITextWriter>();
             _builder = Locator.CurrentMutable.GetService<IBuilder>();
+            _textWriter = Locator.CurrentMutable.GetService<ITextWriter>();
         }
 
         public async Task<TResponse> Get<TResponse>(IReturn<TResponse> request) where TResponse : class
@@ -37,11 +37,15 @@ namespace UNTv.WP81.Data.Contracts.Services
                 if (jsonResult.StartsWith("?"))
                     jsonResult = jsonResult.Substring(2, jsonResult.Length - 3);
 
-                //var filename = _builder.BuildFilename(request);
-                //if (!string.IsNullOrWhiteSpace(filename))
-                //    await _textWriter.Write(filename, jsonResult);
+                // make sure json string is serializable before saving it to local storage
+                var result = JsonConvert.DeserializeObject<TResponse>(jsonResult);
 
-                return JsonConvert.DeserializeObject<TResponse>(jsonResult);
+                // save to local storage
+                var filename = _builder.BuildFilename(request);
+                if (!string.IsNullOrWhiteSpace(filename))
+                    await _textWriter.Write(filename, jsonResult);
+
+                return result;
             }
             catch (WebException ex)
             {
@@ -68,6 +72,12 @@ namespace UNTv.WP81.Data.Contracts.Services
                 Debug.WriteLine("General Exception:" + ex != null ? ex.ToString() : string.Empty); // TODO: do some logging here
                 return Activator.CreateInstance<TResponse>();
             }
+        }
+
+
+        public Task<TResponse> Put<TResponse>(IReturn<TResponse> request, string data) where TResponse : class
+        {
+            throw new NotImplementedException();
         }
     }
 }

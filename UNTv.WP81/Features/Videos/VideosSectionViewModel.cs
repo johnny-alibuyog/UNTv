@@ -15,9 +15,8 @@ namespace UNTv.WP81.Features.Videos
 {
     public class VideosSectionViewModel : ReactiveBase
     {
-        private readonly IStore _webStore;
-        private readonly IStore _localStore;
         private readonly RoutingState _router;
+        private readonly IDataService _service;
 
         public virtual ReactiveList<ItemViewModel> Videos { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
@@ -27,8 +26,7 @@ namespace UNTv.WP81.Features.Videos
         public VideosSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _webStore = Locator.CurrentMutable.GetService<WebStore>();
-            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
+            _service = Locator.CurrentMutable.GetService<IDataService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -42,32 +40,18 @@ namespace UNTv.WP81.Features.Videos
 
         private void Populate()
         {
-            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
-
-            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            Populate(_webStore);
-        }
-
-        private void Populate(IStore store)
-        {
             if (this.Videos.IsNullOrEmpty())
             {
-                store.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
+                _service.Get(new VideoMessage.Request(SortFilter.Latest)).ContinueWith(
                     continuationAction: x => this.Videos = x.Result.AsItems(),
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
-                ); 
+                );
             }
         }
 
         private void NavigateToVideosHub()
         {
-            _router.Navigate.Execute(new VideosHubViewModel());
+            _router.Navigate.Execute(Locator.CurrentMutable.GetService<VideosHubViewModel>());
         }
 
         private void NavigateToVideosDetail(ItemViewModel item)

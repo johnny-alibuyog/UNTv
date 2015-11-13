@@ -101,6 +101,7 @@
     <Compile Include="Common\Converters\ThumbnailConverter.cs" />
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
     <Compile Include="Common\Extentions\CollectionExtention.cs" />
+    <Compile Include="Common\Extentions\IOExtention.cs" />
     <Compile Include="Common\Extentions\StringExtention.cs" />
     <Compile Include="Common\IO\ITextReader.cs" />
     <Compile Include="Common\IO\ITextWriter.cs" />
@@ -111,10 +112,13 @@
     <Compile Include="Data\Contracts\Messages\RadioProgramScheduleMessage.cs" />
     <Compile Include="Data\Contracts\Messages\RadioProgramMessage.cs" />
     <Compile Include="Data\Contracts\Services\Builder.cs" />
+    <Compile Include="Data\Contracts\Services\IDataService.cs" />
+    <Compile Include="Data\Contracts\Services\DataService.cs" />
+    <Compile Include="Data\Stores\SessionDataStore.cs" />
+    <Compile Include="Data\Contracts\Services\HttpClientFacade.cs" />
     <Compile Include="Data\Contracts\Services\IBuilder.cs" />
-    <Compile Include="Data\Contracts\Services\IStore.cs" />
-    <Compile Include="Data\Contracts\Services\LocalStore.cs" />
-    <Compile Include="Data\Contracts\Services\WebStore.cs" />
+    <Compile Include="Data\Stores\IDataStore.cs" />
+    <Compile Include="Data\Stores\LocalDataStore.cs" />
     <Compile Include="Data\Provider.cs" />
     <Compile Include="Data\Entities\Comment.cs">
       <SubType>Code</SubType>

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
 using UNTv.WP81.Common.IO;
+using Windows.ApplicationModel;
 
 namespace UNTv.WP81.Features.About
 {
@@ -21,8 +22,9 @@ namespace UNTv.WP81.Features.About
         {
             if (string.IsNullOrEmpty(this.Content))
             {
+                var path = Package.Current.InstalledLocation.Path + @"\Features\About";
                 var reader = Locator.CurrentMutable.GetService<ITextReader>();
-                reader.Read("AboutSectionContent.html", @"\Features\About").ContinueWith(
+                reader.Read("AboutSectionContent.html", path).ContinueWith(
                     continuationAction: x => this.Content = x.Result,
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );

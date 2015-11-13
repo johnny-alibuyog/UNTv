@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reactive;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
@@ -15,9 +16,9 @@ namespace UNTv.WP81.Features.Start
 {
     public class StartSectionViewModel : ReactiveBase
     {
-        private readonly IStore _webStore;
-        private readonly IStore _localStore;
+        private Nullable<bool> _isDataLocal;
         private readonly RoutingState _router;
+        private readonly IDataService _service;
 
         public virtual ItemViewModel FeaturedProgram { get; set; }
         public virtual ReactiveList<ItemViewModel> Programs { get; set; }
@@ -30,8 +31,7 @@ namespace UNTv.WP81.Features.Start
         public StartSectionViewModel()
         {
             _router = Locator.CurrentMutable.GetService<RoutingState>();
-            _webStore = Locator.CurrentMutable.GetService<WebStore>();
-            _localStore = Locator.CurrentMutable.GetService<LocalStore>();
+            _service = Locator.CurrentMutable.GetService<IDataService>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate());
@@ -51,24 +51,9 @@ namespace UNTv.WP81.Features.Start
 
         private void Populate()
         {
-            //Task.Factory.StartNew(() => Populate(_localStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //if (!NetworkInterface.GetIsNetworkAvailable())
-            //    return;
-
-            //Task.Factory.StartNew(() => Populate(_webStore), CancellationToken.None,
-            //    TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
-
-            //Populate(_localStore);
-            Populate(_webStore);
-        }
-
-        private void Populate(IStore store)
-        {
             if (this.Programs.IsNullOrEmpty())
             {
-                store.Get(new TelevisionProgramMessage.Request()).ContinueWith(
+                _service.Get(new TelevisionProgramMessage.Request()).ContinueWith(
                     continuationAction: x => PopulateProgram(x.Result.AsItems()),
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );
@@ -99,7 +84,6 @@ namespace UNTv.WP81.Features.Start
 
         private void NavigateToAudioSreaming()
         {
-            //_router.Navigate.Execute(new NewsHubViewModel());
         }
 
         private void NavigateToVideoSreaming()

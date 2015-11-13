@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
 using UNTv.WP81.Common.IO;
+using Windows.ApplicationModel;
 
 namespace UNTv.WP81.Features.ContactUs
 {
@@ -24,8 +25,9 @@ namespace UNTv.WP81.Features.ContactUs
         {
             if (string.IsNullOrEmpty(this.Content))
             {
+                var path = Package.Current.InstalledLocation.Path + @"\Features\ContactUs";
                 var reader = Locator.CurrentMutable.GetService<ITextReader>();
-                reader.Read("ContactUsSectionContent.html", @"\Features\ContactUs").ContinueWith(
+                reader.Read("ContactUsSectionContent.html", path).ContinueWith(
                     continuationAction: x => this.Content = x.Result,
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );

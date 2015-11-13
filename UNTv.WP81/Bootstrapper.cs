@@ -1,12 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Reactive;
-using System.Reactive.Linq;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Splat;
 using UNTv.WP81.Common.Converters;
 using UNTv.WP81.Common.IO;
 using UNTv.WP81.Data.Contracts.Services;
+using UNTv.WP81.Data.Stores;
 using UNTv.WP81.Features;
 using UNTv.WP81.Features.Controls;
 using UNTv.WP81.Features.Controls.ListItemControls;
@@ -38,8 +35,11 @@ namespace UNTv.WP81
 
             // Services
             Locator.CurrentMutable.Register(() => new Builder(), typeof(IBuilder));
-            Locator.CurrentMutable.Register(() => new WebStore(), typeof(WebStore));
-            Locator.CurrentMutable.Register(() => new LocalStore(), typeof(LocalStore));
+
+            Locator.CurrentMutable.Register(() => new DataService(), typeof(IDataService));
+            Locator.CurrentMutable.Register(() => new HttpClientFacade(), typeof(HttpClientFacade));
+            Locator.CurrentMutable.Register(() => new SessionDataStore(), typeof(SessionDataStore));
+            Locator.CurrentMutable.Register(() => new LocalDataStore(), typeof(LocalDataStore));
 
             // Shell
             var router = new RoutingState();
