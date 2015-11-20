@@ -43,6 +43,11 @@ namespace UNTv.WP81
             Locator.CurrentMutable.Register(() => new SessionDataStore(), typeof(SessionDataStore));
             Locator.CurrentMutable.Register(() => new LocalDataStore(), typeof(LocalDataStore));
 
+            // Router
+            var router = new RoutingState();
+            Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
+            //Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
+
             // Views
             Locator.CurrentMutable.RegisterConstant(new ShellView(), typeof(IViewFor<ShellViewModel>));
             Locator.CurrentMutable.RegisterConstant(new MainHubView(), typeof(IViewFor<MainHubViewModel>));
@@ -76,8 +81,8 @@ namespace UNTv.WP81
             Locator.CurrentMutable.RegisterConstant(new Television.ProgramsSectionViewModel(), typeof(Television.ProgramsSectionViewModel));
 
             // Shell
-            var router = new RoutingState();
-            Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
+            //var router = new RoutingState();
+            //Locator.CurrentMutable.RegisterConstant(router, typeof(RoutingState));
             Locator.CurrentMutable.RegisterConstant(new ShellViewModel(router), typeof(IScreen));
 
             // Controls
