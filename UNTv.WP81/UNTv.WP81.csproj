@@ -86,6 +86,7 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <None Include="app.config" />
+    <None Include="Data\Json\37.8267,-122.json" />
     <None Include="Data\Json\audio_streaming.json" />
     <None Include="Data\Json\radio_programs.json" />
     <None Include="Data\Json\radio_program_schedules.json" />
@@ -101,6 +102,7 @@
     <Compile Include="Common\Converters\ThumbnailConverter.cs" />
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
     <Compile Include="Common\Extentions\CollectionExtention.cs" />
+    <Compile Include="Common\Extentions\DateTimeExtention.cs" />
     <Compile Include="Common\Extentions\IOExtention.cs" />
     <Compile Include="Common\Extentions\NetworkExtention.cs" />
     <Compile Include="Common\Extentions\StringExtention.cs" />
@@ -112,9 +114,13 @@
     <Compile Include="Data\Contracts\Messages\PublicServiceMessage.cs" />
     <Compile Include="Data\Contracts\Messages\RadioProgramScheduleMessage.cs" />
     <Compile Include="Data\Contracts\Messages\RadioProgramMessage.cs" />
+    <Compile Include="Data\Contracts\Messages\WeatherMessage.cs" />
     <Compile Include="Data\Contracts\Services\Builder.cs" />
     <Compile Include="Data\Contracts\Services\IDataService.cs" />
     <Compile Include="Data\Contracts\Services\DataService.cs" />
+    <Compile Include="Data\Entities\Forecast.cs" />
+    <Compile Include="Data\Entities\Location.cs" />
+    <Compile Include="Data\Entities\Weather.cs" />
     <Compile Include="Data\Stores\SessionDataStore.cs" />
     <Compile Include="Data\Contracts\Services\HttpClientFacade.cs" />
     <Compile Include="Data\Contracts\Services\IBuilder.cs" />
@@ -234,6 +240,10 @@
       <DependentUpon>VideosSectionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Features\Videos\VideosSectionViewModel.cs" />
+    <Compile Include="Features\Weather\WeatherSectionView.xaml.cs">
+      <DependentUpon>WeatherSectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Weather\WeatherSectionViewModel.cs" />
     <Compile Include="ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -453,6 +463,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Features\Videos\VideosSectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\Weather\WeatherSectionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

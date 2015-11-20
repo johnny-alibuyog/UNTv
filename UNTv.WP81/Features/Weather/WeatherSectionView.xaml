@@ -1,0 +1,40 @@
+﻿<UserControl
+    x:Class="UNTv.WP81.Features.Weather.WeatherSectionView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UNTv.WP81.Features.Weather"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
+
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--<Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Height="35" Content="More ..." HorizontalAlignment="Stretch">
+            <Button.Background>
+                <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
+            </Button.Background>
+        </Button>-->
+
+        <ListView Grid.Row="1" x:Name="ForecastListView"
+            SelectionMode="Single"
+            IsItemClickEnabled="True"
+            ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+            ScrollViewer.VerticalScrollMode="Auto">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <controls:PhotoLeftView />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</UserControl>

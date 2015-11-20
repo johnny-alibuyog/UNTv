@@ -12,6 +12,7 @@
     xmlns:radios="using:UNTv.WP81.Features.Radios"
     xmlns:videos="using:UNTv.WP81.Features.Videos"
     xmlns:about="using:UNTv.WP81.Features.About"
+    xmlns:weather="using:UNTv.WP81.Features.Weather"
     xmlns:contact_us="using:UNTv.WP81.Features.ContactUs"
     xmlns:televisions="using:UNTv.WP81.Features.Televisions"
     xmlns:public_services="using:UNTv.WP81.Features.PublicServices"
@@ -51,6 +52,12 @@
             <HubSection Header="VIDEOS" DataContext="{Binding VideosSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
                 <DataTemplate>
                     <videos:VideosSectionView ViewModel="{Binding}" />
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="WEATHER" DataContext="{Binding WeatherSection}" HeaderTemplate="{ThemeResource HubItemHeaderTemplate}" ScrollViewer.VerticalScrollMode="Enabled">
+                <DataTemplate>
+                    <weather:WeatherSectionView ViewModel="{Binding}" />
                 </DataTemplate>
             </HubSection>
 

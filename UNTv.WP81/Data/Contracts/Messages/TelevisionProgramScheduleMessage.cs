@@ -87,6 +87,9 @@ namespace UNTv.WP81.Data.Contracts.Messages
 
                 Predicate<string> ValidateUri = (stringUri) =>
                 {
+                    if (string.IsNullOrWhiteSpace(stringUri))
+                        return false;
+
                     var outUri = (Uri)null;
                     return Uri.TryCreate(stringUri, UriKind.Absolute, out outUri);
                 };

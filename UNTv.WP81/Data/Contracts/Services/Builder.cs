@@ -25,6 +25,12 @@ namespace UNTv.WP81.Data.Contracts.Services
             public static string ProgramShcedules = _baseUri + "/api/programs/get_all_programs/?callback=?";
         }
 
+        private class WeatherUri
+        {
+            public static string WUKey = "64b984ed41d048ec";
+            public static string Forecast = "http://api.wunderground.com/api/{0}/conditions/forecast/geolookup/q/{1},{2}.json";
+        }
+
         public string BuildUri<T>(IReturn<T> request) where T : class
         {
             if (request is NewsMessage.Request)
@@ -51,6 +57,9 @@ namespace UNTv.WP81.Data.Contracts.Services
             if (request is VideoMessage.Request)
                 return TelevisionUri.Videos;
 
+            if (request is WeatherMessage.Request)
+                return string.Format(WeatherUri.Forecast, WeatherUri.WUKey, ((WeatherMessage.Request)request).Latitude, ((WeatherMessage.Request)request).Longitude);
+
             return null;
         }
 
@@ -76,6 +85,9 @@ namespace UNTv.WP81.Data.Contracts.Services
 
             if (request is TelevisionProgramScheduleMessage.Request)
                 return "television_program_schedules.json";
+
+            if (request is WeatherMessage.Request)
+                return "weather_forcast.json";
 
             return null;
         }

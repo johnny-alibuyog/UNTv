@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
 using ReactiveUI;
+using Splat;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Features.About;
 using UNTv.WP81.Features.ContactUs;
@@ -11,6 +12,7 @@ using UNTv.WP81.Features.News;
 using UNTv.WP81.Features.PublicServices;
 using UNTv.WP81.Features.Start;
 using UNTv.WP81.Features.Videos;
+using UNTv.WP81.Features.Weather;
 
 namespace UNTv.WP81.Features
 {
@@ -21,6 +23,7 @@ namespace UNTv.WP81.Features
         public virtual StartSectionViewModel StartSection { get; set; }
         public virtual NewsSectionViewModel NewsSection { get; set; }
         public virtual VideosSectionViewModel VideosSection { get; set; }
+        public virtual WeatherSectionViewModel WeatherSection { get; set; }
         public virtual PublicServicesSectionViewModel PublicServicesSection { get; set; }
         public virtual Radios.ProgramsSectionViewModel RadioProgramSection { get; set; }
         public virtual Televisions.ProgramsSectionViewModel TelevisionProgramSection { get; set; }
@@ -34,14 +37,15 @@ namespace UNTv.WP81.Features
         public MainHubViewModel(IScreen hostScreen = null)
             : base(hostScreen)
         {
-            this.StartSection = new StartSectionViewModel();
-            this.NewsSection = new NewsSectionViewModel();
-            this.VideosSection = new VideosSectionViewModel();
-            this.PublicServicesSection = new PublicServicesSectionViewModel();
-            this.RadioProgramSection = new Radios.ProgramsSectionViewModel();
-            this.TelevisionProgramSection = new Televisions.ProgramsSectionViewModel();
-            this.AboutSection = new AboutSectionViewModel();
-            this.ContactUsSection = new ContactUsSectionViewModel();
+            this.StartSection = Locator.CurrentMutable.GetService<StartSectionViewModel>();
+            this.NewsSection = Locator.CurrentMutable.GetService<NewsSectionViewModel>();
+            this.VideosSection = Locator.CurrentMutable.GetService<VideosSectionViewModel>();
+            this.WeatherSection = Locator.CurrentMutable.GetService<WeatherSectionViewModel>();
+            this.PublicServicesSection = Locator.CurrentMutable.GetService<PublicServicesSectionViewModel>();
+            this.RadioProgramSection = Locator.CurrentMutable.GetService<Radios.ProgramsSectionViewModel>();
+            this.TelevisionProgramSection = Locator.CurrentMutable.GetService<Televisions.ProgramsSectionViewModel>();
+            this.AboutSection = Locator.CurrentMutable.GetService<AboutSectionViewModel>();
+            this.ContactUsSection = Locator.CurrentMutable.GetService<ContactUsSectionViewModel>();
 
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate(x));
@@ -63,6 +67,10 @@ namespace UNTv.WP81.Features
 
             this.VideosSection.WhenAnyValue(x => x.Videos)
                 .Where(x => this.CurrentSection == this.VideosSection)
+                .Subscribe(x => this.IsLoading = x == null);
+
+            this.WeatherSection.WhenAnyValue(x => x.Forecast)
+                .Where(x => this.CurrentSection == this.WeatherSection)
                 .Subscribe(x => this.IsLoading = x == null);
 
             this.PublicServicesSection.WhenAnyValue(x => x.Programs)
@@ -104,6 +112,13 @@ namespace UNTv.WP81.Features
             {
                 this.IsLoading = this.VideosSection.Videos.IsNullOrEmpty();
                 this.VideosSection.PopulateCommand.Execute(null);
+            }
+
+            if (section == null || section == this.WeatherSection)
+            {
+                this.IsLoading = this.WeatherSection.Forecast.IsNullOrEmpty();
+                if (this.WeatherSection.PopulateCommand.CanExecute(null))
+                    this.WeatherSection.PopulateCommand.Execute(null);
             }
 
             if (section == null || section == this.PublicServicesSection)
