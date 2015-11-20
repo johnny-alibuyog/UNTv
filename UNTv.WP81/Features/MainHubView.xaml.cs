@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
+using System.Threading.Tasks;
 using ReactiveUI;
 using Splat;
+using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Features.Controls;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -18,12 +21,14 @@ namespace UNTv.WP81.Features
     public sealed partial class MainHubView : Page, IViewFor<MainHubViewModel>
     {
         //private static int _currentHubIndex;
+        private static bool _hasNotifiedWithOfflineMode;
 
         public MainHubView()
         {
             this.InitializeComponent();
             this.InitializeBindings();
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            this.Loaded += (sender, args) => CheckInternetAccess();
         }
 
         private void InitializeBindings()
@@ -40,6 +45,7 @@ namespace UNTv.WP81.Features
                 this.DataContext = this.ViewModel;
 
                 this.ViewModel.PopulateCommand.Execute(null);
+
             });
         }
 
@@ -56,6 +62,18 @@ namespace UNTv.WP81.Features
         {
             get { return ViewModel; }
             set { ViewModel = (MainHubViewModel)value; }
+        }
+
+        private async Task CheckInternetAccess()
+        {
+            if (_hasNotifiedWithOfflineMode)
+                return;
+
+            if (NetworkExtention.HasInternetConnection())
+                return;
+
+            await new MessageDialog("No internet connection is avaliable. UNTv App will run on off-line mode.").ShowAsync();
+            _hasNotifiedWithOfflineMode = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

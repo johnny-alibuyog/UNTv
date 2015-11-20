@@ -11,6 +11,7 @@ using Splat;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Stores;
+using Windows.Networking.Connectivity;
 
 namespace UNTv.WP81.Data.Contracts.Services
 {
@@ -44,7 +45,7 @@ namespace UNTv.WP81.Data.Contracts.Services
                 }
                 else
                 {
-                    if (NetworkInterface.GetIsNetworkAvailable())
+                    if (NetworkExtention.HasInternetConnection())
                     {
                         json = await _web.Get(uri);
                         if (!string.IsNullOrWhiteSpace(json))

@@ -102,6 +102,7 @@
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
     <Compile Include="Common\Extentions\CollectionExtention.cs" />
     <Compile Include="Common\Extentions\IOExtention.cs" />
+    <Compile Include="Common\Extentions\NetworkExtention.cs" />
     <Compile Include="Common\Extentions\StringExtention.cs" />
     <Compile Include="Common\IO\ITextReader.cs" />
     <Compile Include="Common\IO\ITextWriter.cs" />
