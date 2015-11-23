@@ -9,11 +9,11 @@
     <SolidColorBrush x:Key="InvertedForegroundBrush" Color="White"/>
     <SolidColorBrush x:Key="ItemInvertedBackgroundBrush" Color="#FF0066B3"/>
     <SolidColorBrush x:Key="MainForegroundBrush" Color="#4f4f4f"/>
-
     <SolidColorBrush x:Key="MainBackgroundBrush" Color="White"/>
     <SolidColorBrush x:Key="MainBorderBrush" Color="#FFB2B2B2"/>
     <SolidColorBrush x:Key="ItemBackgroundBrush" Color="WhiteSmoke"/>
-
+    <SolidColorBrush x:Key="ItemSeparatorBrush" Color="WhiteSmoke"/>
+    <SolidColorBrush x:Key="PhotoOverlayBrush" Color="Black"/> <!-- Color="#CC0066b3" -->
     <SolidColorBrush x:Key="TelerikSelectedBrush" Color="#FF006AC1"/>
 
 

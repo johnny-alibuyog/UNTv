@@ -14,28 +14,31 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace UNTv.WP81.Features.Controls.ListItemControls
+// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
+
+namespace UNTv.WP81.Features.Weather
 {
-    public sealed partial class PhotoColumns2View : UserControl, IViewFor<PhotoColumns2ViewModel>
+    public sealed partial class ForecastItemView : UserControl, IViewFor<ForecastItemViewModel>
     {
-        public PhotoColumns2View()
+        public ForecastItemView()
         {
             this.InitializeComponent();
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
-                 .Register("ViewModel", typeof(PhotoColumns2ViewModel), typeof(PhotoColumns2View), new PropertyMetadata(null));
+                 .Register("ViewModel", typeof(ForecastItemViewModel), typeof(ForecastItemView), new PropertyMetadata(null));
 
-        public PhotoColumns2ViewModel ViewModel
+        public ForecastItemViewModel ViewModel
         {
-            get { return (PhotoColumns2ViewModel)GetValue(ViewModelProperty); }
+            get { return (ForecastItemViewModel)GetValue(ViewModelProperty); }
             set { SetValue(ViewModelProperty, value); }
         }
 
         object IViewFor.ViewModel
         {
             get { return ViewModel; }
-            set { ViewModel = (PhotoColumns2ViewModel)value; }
+            set { ViewModel = (ForecastItemViewModel)value; }
         }
+
     }
 }

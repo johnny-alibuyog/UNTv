@@ -27,6 +27,7 @@
             <converters:UpperCaseConverter x:Key="UpperCaseConverter" />
             <converters:PlainTextConverter x:Key="PlainTextConverter" />
             <converters:ThumbnailConverter x:Key="ThumbnailConverter" />
+            <converters:StringFormatConverter x:Key="StringFormatConverter" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

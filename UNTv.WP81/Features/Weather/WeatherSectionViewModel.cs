@@ -17,8 +17,8 @@ namespace UNTv.WP81.Features.Weather
         private readonly RoutingState _router;
         private readonly IDataService _service;
 
-        public virtual Location Location { get; set; }
-        public virtual ReactiveList<ItemViewModel> Forecast { get; set; }
+        public virtual LocationViewModel Location { get; set; }
+        public virtual ReactiveList<ForecastItemViewModel> Forecast { get; set; }
         public virtual ReactiveCommand<object> PopulateCommand { get; set; }
 
         public WeatherSectionViewModel()
@@ -26,20 +26,36 @@ namespace UNTv.WP81.Features.Weather
             _router = Locator.CurrentMutable.GetService<RoutingState>();
             _service = Locator.CurrentMutable.GetService<IDataService>();
 
-            this.PopulateCommand = ReactiveCommand.Create(this.WhenAny(x => x.Location, x => x.Value != null));
+            this.Location = new LocationViewModel();
+
+            this.PopulateCommand = ReactiveCommand.Create(this.WhenAny(
+                property1: x => x.Location.Longitude,
+                property2: x => x.Location.Latitude, 
+                selector: (longitude, latitude) => longitude.Value > 0 && latitude.Value > 0
+            ));
             this.PopulateCommand.Subscribe(x => Populate());
         }
 
         private void Populate()
         {
+            Action<WeatherMessage.Response> Populate = (response) =>
+            {
+                this.Location.Place = string.Format("{0}, {1}", response.Location.City, response.Location.Country);
+                this.Location.Timestamp = DateTimeOffset.Now; //response.Location.Timestamp;
+                this.Location.TimeZone = response.Location.TimeZone;
+                this.Location.Longitude = response.Location.Longitude;
+                this.Location.Latitude = response.Location.Latitude;
+                this.Forecast = response.AsForcastItems();
+
+            };
+
             if (this.Forecast.IsNullOrEmpty())
             {
                 _service.Get(new WeatherMessage.Request(Location.Longitude, Location.Latitude)).ContinueWith(
-                    continuationAction: x => this.Forecast = x.Result.AsItems(),
+                    continuationAction: x => Populate(x.Result),
                     scheduler: TaskScheduler.FromCurrentSynchronizationContext()
                 );
             }
         }
-
     }
 }

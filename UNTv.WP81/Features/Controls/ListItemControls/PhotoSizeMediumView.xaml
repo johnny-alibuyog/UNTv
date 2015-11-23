@@ -16,7 +16,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1.1*"/>
         </Grid.RowDefinitions>
-        <Border Grid.Row="1" VerticalAlignment="Stretch" Background="Black" Opacity="0.7" />
+        <Border Grid.Row="1" VerticalAlignment="Stretch" Background="{StaticResource PhotoOverlayBrush}" Opacity="0.6" />
         <StackPanel Grid.Row="1" Margin="8">
             <TextBlock Style="{StaticResource ListViewItemTextBlockStyle}" Text="{Binding Title, Converter={StaticResource PlainTextConverter}, ConverterParameter=140}" MaxHeight="40" TextWrapping="WrapWholeWords" />
             <TextBlock Style="{StaticResource ListViewItemSubheaderTextBlockStyle}" Text="{Binding Subtitle, Converter={StaticResource PlainTextConverter}, ConverterParameter=280}" TextWrapping="WrapWholeWords" />

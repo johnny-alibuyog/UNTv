@@ -9,6 +9,7 @@ using Newtonsoft.Json.Linq;
 using ReactiveUI;
 using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using UNTv.WP81.Features.Weather;
 
 namespace UNTv.WP81.Data.Contracts.Messages
 {
@@ -62,6 +63,36 @@ namespace UNTv.WP81.Data.Contracts.Messages
                 return new ReactiveList<ItemViewModel>(items);
                 
             }
+
+            public ReactiveList<ForecastItemViewModel> AsForcastItems()
+            {
+                if (this.Forecast == null || this.Forecast.Count() == 0)
+                    return null;
+
+                var items = this.Forecast
+                    .GroupBy(x => x.Period.Split(' ').First())
+                    .Select(x => new ForecastItemViewModel()
+                    {
+                        Title = new string(x.Key.Take(3).ToArray()),
+                        Day = new ForecastItemDetailViewModel()
+                        {
+                            Name = x.First().Period,
+                            Details = x.First().Details,
+                            ImageUri = x.First().ImageUri,
+                        },
+                        Night = new ForecastItemDetailViewModel()
+                        {
+                            Name = x.Last().Period,
+                            Details = x.Last().Details,
+                            ImageUri = x.Last().ImageUri,
+                        }
+                    })
+                    .ToList();
+
+                return new ReactiveList<ForecastItemViewModel>(items);
+
+            }
+
         }
     }
 }

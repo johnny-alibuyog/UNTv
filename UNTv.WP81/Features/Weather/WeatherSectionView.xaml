@@ -5,7 +5,8 @@
     xmlns:local="using:UNTv.WP81.Features.Weather"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls">
+    xmlns:controls="using:UNTv.WP81.Features.Controls.ListItemControls"
+    xmlns:weather="using:UNTv.WP81.Features.Weather">
 
     <Grid>
         <Grid.ChildrenTransitions>
@@ -19,20 +20,23 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!--<Button Grid.Row="0" x:Name="NavigateToVideosHubButton" Height="35" Content="More ..." HorizontalAlignment="Stretch">
-            <Button.Background>
-                <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
-            </Button.Background>
-        </Button>-->
+        <StackPanel x:Name="LocationPanel" Orientation="Vertical">
+            <TextBlock x:Name="LocationNameTextBlock" Text="{Binding Place, Converter={StaticResource UpperCaseConverter}}" Style="{StaticResource ListViewEmptyStaticTextBlockStyle}"></TextBlock>
+            <TextBlock x:Name="TimestampTextBlock" Text="{Binding Timestamp, Converter={StaticResource StringFormatConverter}, ConverterParameter='{}{0:f}'}"  Style="{StaticResource ListViewItemContentTextBlockStyle}"></TextBlock>
+        </StackPanel>
 
         <ListView Grid.Row="1" x:Name="ForecastListView"
             SelectionMode="Single"
             IsItemClickEnabled="True"
             ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
-            ScrollViewer.VerticalScrollMode="Auto">
+            ScrollViewer.VerticalScrollMode="Auto"
+            Margin="0,20,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <controls:PhotoLeftView />
+                    <StackPanel>
+                        <Line Margin="0,5,0,5" Stretch="Fill" Stroke="{StaticResource ItemSeparatorBrush}" X2="1"/>
+                        <weather:ForecastItemView />
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

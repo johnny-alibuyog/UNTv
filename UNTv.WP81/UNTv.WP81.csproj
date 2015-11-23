@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="Common\Converters\LowerCaseConverter.cs" />
     <Compile Include="Common\Converters\PlainTextConverter.cs" />
+    <Compile Include="Common\Converters\StringFormatConverter.cs" />
     <Compile Include="Common\Converters\ThumbnailConverter.cs" />
     <Compile Include="Common\Converters\UpperCaseConverter.cs" />
     <Compile Include="Common\Extentions\CollectionExtention.cs" />
@@ -240,6 +241,11 @@
       <DependentUpon>VideosSectionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Features\Videos\VideosSectionViewModel.cs" />
+    <Compile Include="Features\Weather\ForecastItemView.xaml.cs">
+      <DependentUpon>ForecastItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Weather\ForecastItemViewModel.cs" />
+    <Compile Include="Features\Weather\LocationViewModel.cs" />
     <Compile Include="Features\Weather\WeatherSectionView.xaml.cs">
       <DependentUpon>WeatherSectionView.xaml</DependentUpon>
     </Compile>
@@ -463,6 +469,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Features\Videos\VideosSectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Features\Weather\ForecastItemView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

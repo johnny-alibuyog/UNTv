@@ -40,15 +40,18 @@ namespace UNTv.WP81.Features.Weather
 
         private void InitializeBindings()
         {
+
+
             this.WhenActivated(block =>
             {
                 if (_isActivated)
                     return;
 
+                this.Bind(ViewModel, x => x.Location, x => x.LocationPanel.DataContext);
                 this.Bind(ViewModel, x => x.Forecast, x => x.ForecastListView.ItemsSource);
 
                 this.ViewModel.WhenAnyValue(x => x.Location)
-                    .Where(location => location != null)
+                    .Where(x => this.ViewModel.PopulateCommand.CanExecute(null))
                     .Subscribe(x => this.ViewModel.PopulateCommand.Execute(null));
 
                 _isActivated = true;
@@ -69,15 +72,17 @@ namespace UNTv.WP81.Features.Weather
                     timeout: TimeSpan.FromMinutes(5)
                 );
 
-                this.ViewModel.Location = new Location()
-                {
-                    //Country = geoposition.CivicAddress.Country,
-                    //City = geoposition.CivicAddress.City,
-                    //Timestamp = geoposition.CivicAddress.Timestamp,
-                    Longitude = geoposition.Coordinate.Point.Position.Longitude,
-                    Latitude = geoposition.Coordinate.Point.Position.Latitude
-                };
+                //this.ViewModel.Location = new LocationViewModel()
+                //{
+                //    //Country = geoposition.CivicAddress.Country,
+                //    //City = geoposition.CivicAddress.City,
+                //    //Timestamp = geoposition.CivicAddress.Timestamp,
+                //    Longitude = geoposition.Coordinate.Point.Position.Longitude,
+                //    Latitude = geoposition.Coordinate.Point.Position.Latitude
+                //};
 
+                this.ViewModel.Location.Longitude = geoposition.Coordinate.Point.Position.Longitude;
+                this.ViewModel.Location.Latitude = geoposition.Coordinate.Point.Position.Latitude;
             }
             catch (Exception ex)
             {
