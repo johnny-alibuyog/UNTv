@@ -3,7 +3,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-namespace UNTv.WP81.Features.Controls
+namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Videos
 {
     public sealed partial class VideoPlayerView : Page, IViewFor<VideoPlayerViewModel>
     {

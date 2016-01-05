@@ -1026,7 +1026,10 @@
 
     <BitmapImage x:Key="HubLogo" UriSource="/Assets/Images/HubLogo.png"/>
     <BitmapImage x:Key="HubBackground" UriSource="/Assets/Images/Background.png"/>
+    <BitmapImage x:Key="AudioBackgroundLogo" UriSource="/Assets/Images/UntvRadioLogo.png"/>
+
     <ImageBrush x:Key="HubBackgroundBrush" Stretch="UniformToFill" AlignmentY="Top" AlignmentX="Left" ImageSource="{StaticResource HubBackground}"/>
+    <ImageBrush x:Key="AudioBackgroundBrush" Stretch="None" AlignmentY="Center" AlignmentX="Center" ImageSource="{StaticResource AudioBackgroundLogo}"/>
 
     <!--<BitmapImage x:Key="BackgroundImage4" UriSource="../Assets/Images/Dark/Background4.png"/>-->
     <!--<local:LocalizedStrings  x:Key="LocalizedStrings"/>-->

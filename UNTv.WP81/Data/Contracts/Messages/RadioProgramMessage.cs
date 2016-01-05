@@ -9,8 +9,8 @@ using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81.Data.Contracts.Messages
 {
-    public static class RadioProgramMessage {
-
+    public static class RadioProgramMessage 
+    {
         public class Request : IReturn<Response> { }
 
         public class Response

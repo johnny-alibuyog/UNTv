@@ -16,55 +16,37 @@
 
         <StackPanel>
 
-            <!--<ContentControl x:Name="FeaturedProgramContainer" >
-                <ContentControl.Template>
-                    <ControlTemplate>
-                        <FlipView x:Name="ProgramsFlipView" ItemsSource="{Binding}">
-                            <FlipView.ItemTemplate>
-                                <DataTemplate>
-                                    <controls:PhotoSizeLargeView DataContext="{Binding}" />
-                                </DataTemplate>
-                            </FlipView.ItemTemplate>
-                        </FlipView>
-                    </ControlTemplate>
-                </ContentControl.Template>
-            </ContentControl>-->
-            
-            <!--<ContentControl x:Name="FeaturedProgramContainer" >
-                <ContentControl.Template>
-                    <ControlTemplate>
-                        <controls:PhotoSizeLargeView DataContext="{Binding}" />
-                    </ControlTemplate>
-                </ContentControl.Template>
-            </ContentControl>-->
-
             <controls:PhotoSizeLargeView x:Name="FeaturedProgramPhoto" />
 
-            <Button x:Name="VideoStreamingButton" Height="35" HorizontalAlignment="Stretch" Content="Live Video Streaming">
-                <!--<Button.Background>
+            <Button x:Name="VideoStreamingButton" Height="Auto" HorizontalAlignment="Stretch" Content="Live Video Streaming">
+                <!--
+                <Button.Background>
                     <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
-                </Button.Background>-->
-                <!--<Button.ContentTemplate>
+                </Button.Background>
+                -->
+                <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            --><!--<Image Source="Assets/Images/icon_radio.png" />--><!--
-                            <TextBlock VerticalAlignment="Center">Live Video Streaming</TextBlock>
+                            <Image Height="35" Source="/Assets/Images/PlayIcon2.png" />
+                            <TextBlock Margin="10" VerticalAlignment="Center">Live Video Streaming</TextBlock>
                         </StackPanel>
                     </DataTemplate>
-                </Button.ContentTemplate>-->
+                </Button.ContentTemplate>
             </Button>
-            <Button x:Name="AudioStreamingButton" Height="35" HorizontalAlignment="Stretch"  Content="Live Radio Streaming">
-                <!--<Button.Background>
+            <Button x:Name="AudioStreamingButton" Height="Auto" HorizontalAlignment="Stretch"  Content="Live Radio Streaming">
+                <!--
+                <Button.Background>
                     <SolidColorBrush Color="{StaticResource BoxBackgroundColor}" Opacity="0.6"/>
-                </Button.Background>-->
-                <!--<Button.ContentTemplate>
+                </Button.Background>
+                -->
+                <Button.ContentTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Assets/Images/Iicon_radio.png" />
-                            <TextBlock VerticalAlignment="Center">Live Audio Streaming</TextBlock>
+                            <Image Height="35" Source="/Assets/Images/RadioIcon2.png" />
+                            <TextBlock Margin="10" VerticalAlignment="Center">Live Audio Streaming</TextBlock>
                         </StackPanel>
                     </DataTemplate>
-                </Button.ContentTemplate>-->
+                </Button.ContentTemplate>
             </Button>
         </StackPanel>
     </Grid>

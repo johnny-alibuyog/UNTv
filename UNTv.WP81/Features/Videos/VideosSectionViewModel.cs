@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net.NetworkInformation;
-using System.Threading;
 using System.Threading.Tasks;
 using MyToolkit.Multimedia;
 using ReactiveUI;
@@ -8,8 +6,8 @@ using Splat;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
-using UNTv.WP81.Features.Controls;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using UNTv.WP81.Features.Controls.MediaPlayerControls.Videos;
 
 namespace UNTv.WP81.Features.Videos
 {

@@ -15,6 +15,7 @@ namespace UNTv.WP81.Data.Contracts.Services
             public static string PublicServices = _baseUri + "/api/programs/get_page_children_shallow/?slug=advocacies&callback=?";
             public static string Programs = _baseUri + "/api/programs/get_programs/?callback=?";
             public static string ProgramShcedules = _baseUri + "/api/programs/get_all_programs/?callback=?";
+            public static string Streaming = _baseUri + "/api/get_recent_posts/?callback=?&post_type=Streaming";
         }
 
         private class RadioUri
@@ -23,6 +24,7 @@ namespace UNTv.WP81.Data.Contracts.Services
 
             public static string Programs = _baseUri + "/api/programs/get_programs/?callback=?";
             public static string ProgramShcedules = _baseUri + "/api/programs/get_all_programs/?callback=?";
+            public static string Streaming = _baseUri + "/api/get_recent_posts/?callback=?&post_type=Streaming";
         }
 
         private class WeatherUri
@@ -60,6 +62,18 @@ namespace UNTv.WP81.Data.Contracts.Services
             if (request is WeatherMessage.Request)
                 return string.Format(WeatherUri.Forecast, WeatherUri.WUKey, ((WeatherMessage.Request)request).Latitude, ((WeatherMessage.Request)request).Longitude);
 
+            if (request is StreamingMessage.Request)
+            {
+                var streamingRequest = (StreamingMessage.Request)request;
+                switch (((StreamingMessage.Request)request).Media)
+                {
+                    case StreamingMedia.Audio:
+                        return RadioUri.Streaming;
+                    case StreamingMedia.Video:
+                        return TelevisionUri.Streaming;
+                }
+            }
+
             return null;
         }
 
@@ -88,6 +102,18 @@ namespace UNTv.WP81.Data.Contracts.Services
 
             if (request is WeatherMessage.Request)
                 return "weather_forcast.json";
+
+            if (request is StreamingMessage.Request)
+            {
+                var streamingRequest = (StreamingMessage.Request)request;
+                switch (((StreamingMessage.Request)request).Media)
+                {
+                    case StreamingMedia.Audio:
+                        return "audio_streaming.json";
+                    case StreamingMedia.Video:
+                        return "video_streaming.json";
+                }
+            }
 
             return null;
         }

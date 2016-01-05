@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reactive;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
-using Splat;
 using UNTv.WP81.Common.Extentions;
-using UNTv.WP81.Features.Controls;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -74,18 +71,6 @@ namespace UNTv.WP81.Features
 
             await new MessageDialog("No internet connection is avaliable. UNTv App will run on off-line mode.").ShowAsync();
             _hasNotifiedWithOfflineMode = true;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var router = Locator.CurrentMutable.GetService<RoutingState>();
-            var navigationRoute = new HlsPlayerViewModel();
-
-            //navigationRoute.VideoUri = new Uri("http://devstreaming.apple.com/videos/wwdc/2015/105ncyldc6ofunvsgtan/105/hls_vod_mvp.m3u8");
-            //navigationRoute.VideoUri = new Uri("http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8");
-            navigationRoute.VideoUri = new Uri("http://livestream01.untvweb.com:1935/public/untvwebstream/playlist.m3u8");
-            router.Navigate.Execute(navigationRoute);
-
         }
     }
 }
