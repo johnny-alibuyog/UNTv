@@ -98,12 +98,12 @@ namespace UNTv.WP81.Features.Start
 
         private void NavigateToAudioSreaming()
         {
-            _router.Navigate.Execute(new HlsPlayerViewModel(mediaUri: this.AudioUri));
+            _router.Navigate.Execute(new HlsAudioPlayerViewModel(mediaUri: this.AudioUri));
         }
 
         private void NavigateToVideoSreaming()
         {
-            _router.Navigate.Execute(new HlsPlayerViewModel(mediaUri: this.VideoUri));
+            _router.Navigate.Execute(new HlsVideoPlayerViewModel(mediaUri: this.VideoUri));
         }
 
         private void NavigateToFeaturedProgram()

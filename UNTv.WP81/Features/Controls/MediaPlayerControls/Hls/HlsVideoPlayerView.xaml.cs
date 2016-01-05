@@ -11,9 +11,9 @@ namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Hls
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HlsPlayerView : Page, IViewFor<HlsPlayerViewModel>
+    public sealed partial class HlsVideoPlayerView : Page, IViewFor<HlsVideoPlayerViewModel>
     {
-        public HlsPlayerView()
+        public HlsVideoPlayerView()
         {
             this.InitializeComponent();
             this.InitializeBinding();
@@ -60,18 +60,18 @@ namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Hls
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
-            .Register("ViewModel", typeof(HlsPlayerViewModel), typeof(HlsPlayerView), new PropertyMetadata(null));
+            .Register("ViewModel", typeof(HlsVideoPlayerViewModel), typeof(HlsVideoPlayerView), new PropertyMetadata(null));
 
-        public HlsPlayerViewModel ViewModel
+        public HlsVideoPlayerViewModel ViewModel
         {
-            get { return (HlsPlayerViewModel)GetValue(ViewModelProperty); }
+            get { return (HlsVideoPlayerViewModel)GetValue(ViewModelProperty); }
             set { SetValue(ViewModelProperty, value); }
         }
 
         object IViewFor.ViewModel
         {
             get { return ViewModel; }
-            set { ViewModel = (HlsPlayerViewModel)value; }
+            set { ViewModel = (HlsVideoPlayerViewModel)value; }
         }
     }
 }

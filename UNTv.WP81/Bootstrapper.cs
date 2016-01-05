@@ -93,7 +93,8 @@ namespace UNTv.WP81
             Locator.CurrentMutable.Register(() => new PhotoColumns4View(), typeof(IViewFor<PhotoColumns4ViewModel>));
             Locator.CurrentMutable.Register(() => new PhotoSizeLargeView(), typeof(IViewFor<PhotoSizeLargeViewModel>));
             Locator.CurrentMutable.Register(() => new PhotoSizeMediumView(), typeof(IViewFor<PhotoSizeMediumViewModel>));
-            Locator.CurrentMutable.Register(() => new HlsPlayerView(), typeof(IViewFor<HlsPlayerViewModel>));
+            Locator.CurrentMutable.Register(() => new HlsAudioPlayerView(), typeof(IViewFor<HlsAudioPlayerViewModel>));
+            Locator.CurrentMutable.Register(() => new HlsVideoPlayerView(), typeof(IViewFor<HlsVideoPlayerViewModel>));
             Locator.CurrentMutable.Register(() => new VideoPlayerView(), typeof(IViewFor<VideoPlayerViewModel>));
 
             // Converters

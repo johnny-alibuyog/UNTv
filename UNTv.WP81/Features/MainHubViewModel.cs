@@ -57,8 +57,10 @@ namespace UNTv.WP81.Features
             this.CurrentSection = this.StartSection;
 
             // Setup progress bar
-            this.StartSection.WhenAnyValue(x => x.Programs)
-                .Where(x => this.CurrentSection == this.StartSection)
+            this.StartSection.WhenAnyValue(x => x.Programs, x => x.AudioUri, x => x.VideoUri)
+                .Where(x => this.CurrentSection == this.StartSection &&
+                    !x.Item1.IsNullOrEmpty() && x.Item2 != null && x.Item3 != null
+                )
                 .Subscribe(x => this.IsLoading = x == null);
 
             this.NewsSection.WhenAnyValue(x => x.News)
