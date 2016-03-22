@@ -570,8 +570,9 @@
     <Reference Include="SM.Media.Builder">
       <HintPath>..\packages\phonesm-1.5.3\SM.Media.Builder.dll</HintPath>
     </Reference>
-    <Reference Include="SM.Media.MediaPlayer.WP81">
-      <HintPath>..\packages\phonesm-1.5.3\WP81\SM.Media.MediaPlayer.WP81.dll</HintPath>
+    <Reference Include="SM.Media.MediaPlayer.WP81, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll</HintPath>
     </Reference>
     <Reference Include="SM.Media.Platform.WinRT">
       <HintPath>..\packages\phonesm-1.5.3\WinRT\SM.Media.Platform.WinRT.dll</HintPath>
