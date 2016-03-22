@@ -5,6 +5,7 @@ using Splat;
 using UNTv.WP81.Features;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -30,9 +31,6 @@ namespace UNTv.WP81
         /// </summary>
         public App()
         {
-            //var xxx = "the   quick    bRown fOX".ToTitleCase();
-            //System.Diagnostics.Debug.WriteLine(xxx);
-
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
@@ -48,6 +46,8 @@ namespace UNTv.WP81
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            //DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
+
             StatusBar.GetForCurrentView().HideAsync();
             Bootstrapper.Start(); // let all resource load first before creating objects
 

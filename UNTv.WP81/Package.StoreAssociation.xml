@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StoreAssociation xmlns="http://schemas.microsoft.com/appx/2010/storeassociation">
-  <Publisher>CN=44E935F3-9CC4-4D4D-854E-E297C613BB3A</Publisher>
-  <PublisherDisplayName>Johnny Alibuyog</PublisherDisplayName>
+  <Publisher>CN=2E71E6DC-9E29-4EF3-A618-88F8E955EFE1</Publisher>
+  <PublisherDisplayName>BMPI</PublisherDisplayName>
   <GeneratePackageHash>http://www.w3.org/2001/04/xmlenc#sha256</GeneratePackageHash>
   <SupportedLocales>
     <Language Code="af" InMinimumRequirementSet="true" />
@@ -358,11 +358,11 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>25513JohnnyAlibuyog.105295F409477</MainPackageIdentityName>
+    <MainPackageIdentityName>BMPI.UNTv</MainPackageIdentityName>
     <ReservedNames>
       <ReservedName>UNTv</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames />
-  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH5KQL3" />
+  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH4RCKC" />
 </StoreAssociation>

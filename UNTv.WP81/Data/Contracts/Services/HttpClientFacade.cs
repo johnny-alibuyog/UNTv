@@ -22,7 +22,8 @@ namespace UNTv.WP81.Data.Contracts.Services
                 var response = await client.GetAsync(uri, cancellationSource.Token);
                 response.EnsureSuccessStatusCode();
 
-                var jsonResult = await response.Content.ReadAsStringAsync();
+                var rawJsonResult = await response.Content.ReadAsStringAsync();
+                var jsonResult = rawJsonResult.Trim();
                 if (jsonResult.StartsWith("?"))
                     jsonResult = jsonResult.Substring(2, jsonResult.Length - 3);
 

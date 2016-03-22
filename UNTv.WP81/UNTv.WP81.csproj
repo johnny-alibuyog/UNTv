@@ -94,6 +94,7 @@
     <None Include="Data\Json\audio_streaming.json" />
     <None Include="Data\Json\radio_programs.json" />
     <None Include="Data\Json\radio_program_schedules.json" />
+    <None Include="Data\Json\television_programs2.json" />
     <None Include="Data\Json\video_streaming.json" />
     <None Include="Data\Json\_resources.txt" />
     <None Include="Data\Json\videos_popular.json" />

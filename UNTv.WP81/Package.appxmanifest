@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="25513JohnnyAlibuyog.105295F409477" Publisher="CN=44E935F3-9CC4-4D4D-854E-E297C613BB3A" Version="1.1.0.0" />
-  <mp:PhoneIdentity PhoneProductId="9ff627db-b9c7-48ab-a76c-839c94e9a177" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="BMPI.UNTv" Publisher="CN=2E71E6DC-9E29-4EF3-A618-88F8E955EFE1" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="12480eab-533e-4305-8b97-c19915bf74cb" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UNTv</DisplayName>
-    <PublisherDisplayName>Johnny Alibuyog</PublisherDisplayName>
+    <PublisherDisplayName>BMPI</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
