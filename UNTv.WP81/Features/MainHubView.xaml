@@ -24,16 +24,24 @@
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <ProgressBar Grid.Row="0" IsIndeterminate="{Binding IsLoading}" />
 
-        <Hub x:Name="SectionHub" x:Uid="Hub" Background="{StaticResource HubBackgroundBrush}">
+        <Hub Grid.Row="1" x:Name="SectionHub" x:Uid="Hub" Background="{StaticResource HubBackgroundBrush}">
             <Hub.Header>
                 <StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Image Grid.Row="0" Height="80" Margin="5,5,5,0" Stretch="Fill" Source="{StaticResource HubLogo}" VerticalAlignment="Bottom" />
-                        <TextBlock Grid.Row="1" Text="public service channel"/>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Grid.Row="1" Text="  your public" Style="{StaticResource MainHeaderTitleStyle}" />
+                            <TextBlock Grid.Row="1" Text="  service channel" Style="{StaticResource MainHeaderTitleStyle}"/>
+                        </StackPanel>
                     </StackPanel>
-                    <ProgressBar IsIndeterminate="{Binding IsLoading}" />
+                    <!--<ProgressBar IsIndeterminate="{Binding IsLoading}" />-->
                 </StackPanel>
             </Hub.Header>
 

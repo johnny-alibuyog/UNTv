@@ -6,6 +6,7 @@ using UNTv.WP81.Features;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Phone.UI.Input;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
@@ -47,6 +48,7 @@ namespace UNTv.WP81
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            StatusBar.GetForCurrentView().HideAsync();
             Bootstrapper.Start(); // let all resource load first before creating objects
 
 #if DEBUG

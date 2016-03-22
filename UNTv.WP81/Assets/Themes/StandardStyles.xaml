@@ -1200,6 +1200,11 @@
         <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}"/>
     </Style>
 
+    <Style TargetType="TextBlock" x:Key="MainHeaderTitleStyle">
+        <Setter Property="Foreground" Value="Aqua"/>
+        <Setter Property="FontSize" Value="33"/>
+    </Style>
+
     <DataTemplate x:Key="PictureGalleryGroupHeaderTemplate">
         <Grid Width="460" Margin="4,32,0,20">
             <TextBlock Text="{Binding}" Foreground="{StaticResource AccentBrush}" Style="{StaticResource PictureGalleryGroupHeaderTitleStyle}"/>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="25513JohnnyAlibuyog.105295F409477" Publisher="CN=44E935F3-9CC4-4D4D-854E-E297C613BB3A" Version="1.1.0.1" />
+  <Identity Name="25513JohnnyAlibuyog.105295F409477" Publisher="CN=44E935F3-9CC4-4D4D-854E-E297C613BB3A" Version="1.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="9ff627db-b9c7-48ab-a76c-839c94e9a177" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UNTv</DisplayName>

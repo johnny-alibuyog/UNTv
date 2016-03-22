@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ReactiveUI;
 using UNTv.WP81.Common.Extentions;
 using Windows.UI.Popups;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -42,6 +43,16 @@ namespace UNTv.WP81.Features
                 this.DataContext = this.ViewModel;
 
                 this.ViewModel.PopulateCommand.Execute(null);
+
+                //this.ViewModel.WhenAnyValue(x => x.IsLoading)
+                //    .Subscribe(isLoading => 
+                //    {
+                //        var statusBar =StatusBar.GetForCurrentView();
+                //        if (isLoading)
+                //            statusBar.ShowAsync();
+                //        else
+                //            statusBar.HideAsync();
+                //    });
 
             });
         }
