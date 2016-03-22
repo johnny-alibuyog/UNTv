@@ -574,8 +574,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll</HintPath>
     </Reference>
-    <Reference Include="SM.Media.Platform.WinRT">
-      <HintPath>..\packages\phonesm-1.5.3\WinRT\SM.Media.Platform.WinRT.dll</HintPath>
+    <Reference Include="SM.Media.Platform.WinRT, Version=1.5.3.0, Culture=neutral, PublicKeyToken=a8a96d0f02112ebc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\phonesm-1.5.3\SM.Media.Platform.WinRT.dll</HintPath>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Splat.1.6.2\lib\Portable-Win81+Wpa81\Splat.dll</HintPath>

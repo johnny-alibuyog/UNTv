@@ -12,6 +12,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F3B093
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pacakges", "pacakges", "{7EE82C52-6897-4489-ADB5-E504D28DFC53}"
+	ProjectSection(SolutionItems) = preProject
+		packages\phonesm-1.5.3\SM.Media.Builder.dll = packages\phonesm-1.5.3\SM.Media.Builder.dll
+		packages\phonesm-1.5.3\SM.Media.Builder.pdb = packages\phonesm-1.5.3\SM.Media.Builder.pdb
+		packages\phonesm-1.5.3\SM.Media.dll = packages\phonesm-1.5.3\SM.Media.dll
+		packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll = packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll
+		packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.pdb = packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.pdb
+		packages\phonesm-1.5.3\SM.Media.pdb = packages\phonesm-1.5.3\SM.Media.pdb
+		packages\phonesm-1.5.3\SM.Media.Platform.WinRT.dll = packages\phonesm-1.5.3\SM.Media.Platform.WinRT.dll
+		packages\phonesm-1.5.3\SM.Media.Platform.WinRT.pdb = packages\phonesm-1.5.3\SM.Media.Platform.WinRT.pdb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
