@@ -1,12 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Reactive;
-using System.Reactive.Linq;
-using ReactiveUI;
-using Windows.Graphics.Display;
+﻿using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Navigation;
 
 namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Videos
 {

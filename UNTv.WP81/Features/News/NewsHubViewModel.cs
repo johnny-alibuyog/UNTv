@@ -1,15 +1,14 @@
-﻿using System;
+﻿using ReactiveUI;
+using Splat;
+using System;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
-using ReactiveUI;
-using Splat;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
-using System.Collections;
 
 namespace UNTv.WP81.Features.News
 {

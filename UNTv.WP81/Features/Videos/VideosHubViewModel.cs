@@ -1,9 +1,9 @@
-﻿using System;
-using System.Reactive.Linq;
-using System.Threading.Tasks;
-using MyToolkit.Multimedia;
+﻿using MyToolkit.Multimedia;
 using ReactiveUI;
 using Splat;
+using System;
+using System.Reactive.Linq;
+using System.Threading.Tasks;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;

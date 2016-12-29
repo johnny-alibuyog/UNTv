@@ -1,10 +1,8 @@
-﻿using System;
-using System.Diagnostics;
-using System.Linq;
-using System.Reactive;
-using System.Reactive.Linq;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Splat;
+using System;
+using System.Linq;
+using System.Reactive.Linq;
 using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Features.About;
 using UNTv.WP81.Features.ContactUs;

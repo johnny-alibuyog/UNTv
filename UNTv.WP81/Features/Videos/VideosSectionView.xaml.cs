@@ -1,7 +1,6 @@
-﻿using System;
-using System.Reactive;
+﻿using ReactiveUI;
+using System;
 using System.Reactive.Linq;
-using ReactiveUI;
 using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;

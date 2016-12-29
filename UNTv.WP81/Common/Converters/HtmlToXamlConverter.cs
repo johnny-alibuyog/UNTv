@@ -1,16 +1,15 @@
-﻿using System;
-using System.Linq;
+﻿using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using HtmlAgilityPack;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Xml.Linq;
+using Windows.ApplicationModel.Resources;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Markup;
-using Windows.UI.Xaml.Documents;
-using Windows.ApplicationModel.Resources;
 
 namespace UNTv.WP81.Common.Converters
 {

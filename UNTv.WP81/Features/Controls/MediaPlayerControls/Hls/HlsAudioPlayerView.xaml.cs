@@ -1,10 +1,6 @@
-﻿using Windows.UI.Xaml;
+﻿using ReactiveUI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using System;
-using ReactiveUI;
-using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.Xaml.Media;
-
 
 namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Hls
 {

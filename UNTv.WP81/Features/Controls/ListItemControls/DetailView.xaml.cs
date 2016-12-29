@@ -1,7 +1,6 @@
-﻿using Windows.UI.Xaml;
+﻿using ReactiveUI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using ReactiveUI;
-
 
 namespace UNTv.WP81.Features.Controls.ListItemControls
 {

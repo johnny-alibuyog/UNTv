@@ -1,5 +1,4 @@
-﻿using System;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -26,6 +25,5 @@ namespace UNTv.WP81.Features.Controls.ListItemControls
             get { return ViewModel; }
             set { ViewModel = (PhotoSizeLargeViewModel)value; }
         }
-
     }
 }

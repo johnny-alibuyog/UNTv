@@ -1,9 +1,9 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
 using System.Reactive.Linq;
-using ReactiveUI;
+using UNTv.WP81.Common.Extentions;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Features.Start
 {

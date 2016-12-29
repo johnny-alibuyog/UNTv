@@ -1,11 +1,11 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
 using System.Linq;
 using System.Reactive.Linq;
-using ReactiveUI;
+using UNTv.WP81.Common.Extentions;
+using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using UNTv.WP81.Features.Controls.ListItemControls;
-using UNTv.WP81.Common.Extentions;
 
 namespace UNTv.WP81.Features.Radios
 {

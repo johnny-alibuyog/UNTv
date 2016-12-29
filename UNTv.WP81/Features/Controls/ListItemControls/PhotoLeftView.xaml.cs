@@ -1,5 +1,4 @@
-﻿using System;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 

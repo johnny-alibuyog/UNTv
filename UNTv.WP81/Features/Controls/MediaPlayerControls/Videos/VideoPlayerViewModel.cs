@@ -1,5 +1,5 @@
-﻿using System;
-using ReactiveUI;
+﻿using ReactiveUI;
+using System;
 
 namespace UNTv.WP81.Features.Controls.MediaPlayerControls.Videos
 {

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Diagnostics;
+﻿using ReactiveUI;
+using System;
 using System.Linq;
-using System.Reactive;
 using System.Reactive.Linq;
-using ReactiveUI;
-using UNTv.WP81.Common.Extentions;
 using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.UI.Xaml;

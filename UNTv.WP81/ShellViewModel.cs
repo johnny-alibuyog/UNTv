@@ -1,12 +1,5 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using ReactiveUI;
-using Splat;
-using UNTv.WP81.Data.Contracts.Messages;
-using UNTv.WP81.Data.Contracts.Services;
-using UNTv.WP81.Data.Entities;
+﻿using ReactiveUI;
 using UNTv.WP81.Features;
-using UNTv.WP81.Features.Controls.ListItemControls;
 
 namespace UNTv.WP81
 {

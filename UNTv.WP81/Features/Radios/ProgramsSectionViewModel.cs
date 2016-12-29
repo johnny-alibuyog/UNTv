@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Splat;
+using System;
+using System.Threading.Tasks;
 using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Features.Controls.ListItemControls;

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Linq;
-using ReactiveUI;
+﻿using ReactiveUI;
 using Splat;
-using UNTv.WP81.Features;
+using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;

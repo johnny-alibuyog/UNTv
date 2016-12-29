@@ -1,18 +1,12 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
+using System.Diagnostics;
 using System.Linq;
-using System.Reactive;
 using System.Reactive.Linq;
-using System.Reactive;
-using System.Reactive.Linq;
-using System.Threading;
 using System.Threading.Tasks;
-using ReactiveUI;
-using UNTv.WP81.Data.Entities;
-using UNTv.WP81.Features.Controls.ListItemControls;
 using Windows.Devices.Geolocation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using System.Diagnostics;
 
 namespace UNTv.WP81.Features.Weather
 {
