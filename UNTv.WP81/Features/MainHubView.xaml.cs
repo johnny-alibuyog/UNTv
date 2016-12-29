@@ -10,6 +10,7 @@ using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 
 namespace UNTv.WP81.Features
 {
@@ -38,7 +39,11 @@ namespace UNTv.WP81.Features
                 // capture SectionInViewChanged event
                 this.SectionHub.Events().SectionsInViewChanged
                     .Where(x => GetVisibleSections().Count() == 2)
-                    .Subscribe(x => this.ViewModel.CurrentSection = GetVisibleSections().First());
+                    .Subscribe(x =>
+                    {
+                        Debug.WriteLine(x);
+                        this.ViewModel.CurrentSection = GetVisibleSections().First();
+                    });
 
                 this.DataContext = this.ViewModel;
 

@@ -78,14 +78,14 @@ namespace UNTv.WP81.Features.Televisions
 
         private void Populate(Nullable<DayOfWeek> section = null)
         {
-            var needsToPopulate =
-                ((section == null || section == DayOfWeek.Monday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Tuesday) && (this.IsLoading = this.TuesdayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Wednesday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Thursday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Friday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Saturday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
-                ((section == null || section == DayOfWeek.Sunday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty()));
+            var needsToPopulate = section == null ||
+                ((section == DayOfWeek.Monday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Tuesday) && (this.IsLoading = this.TuesdayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Wednesday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Thursday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Friday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Saturday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty())) ||
+                ((section == DayOfWeek.Sunday) && (this.IsLoading = this.MondayPrograms.IsNullOrEmpty()));
 
             if (needsToPopulate)
             {

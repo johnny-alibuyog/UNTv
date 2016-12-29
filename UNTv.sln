@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNTv.WP81", "UNTv.WP81\UNTv.WP81.csproj", "{D9BA7420-3AC9-46C3-9393-62C38B13C2AB}"
 EndProject
@@ -10,18 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F3B093
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pacakges", "pacakges", "{7EE82C52-6897-4489-ADB5-E504D28DFC53}"
-	ProjectSection(SolutionItems) = preProject
-		packages\phonesm-1.5.3\SM.Media.Builder.dll = packages\phonesm-1.5.3\SM.Media.Builder.dll
-		packages\phonesm-1.5.3\SM.Media.Builder.pdb = packages\phonesm-1.5.3\SM.Media.Builder.pdb
-		packages\phonesm-1.5.3\SM.Media.dll = packages\phonesm-1.5.3\SM.Media.dll
-		packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll = packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.dll
-		packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.pdb = packages\phonesm-1.5.3\SM.Media.MediaPlayer.WP81.pdb
-		packages\phonesm-1.5.3\SM.Media.pdb = packages\phonesm-1.5.3\SM.Media.pdb
-		packages\phonesm-1.5.3\SM.Media.Platform.WinRT.dll = packages\phonesm-1.5.3\SM.Media.Platform.WinRT.dll
-		packages\phonesm-1.5.3\SM.Media.Platform.WinRT.pdb = packages\phonesm-1.5.3\SM.Media.Platform.WinRT.pdb
 	EndProjectSection
 EndProject
 Global

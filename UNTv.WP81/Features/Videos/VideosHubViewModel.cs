@@ -38,7 +38,6 @@ namespace UNTv.WP81.Features.Videos
             this.NavigateToVideosDetailCommand = ReactiveCommand.Create();
             this.NavigateToVideosDetailCommand.Subscribe(x => NavigateToVideosDetail((ItemViewModel)x));
 
-            this.CurrentSection = SortFilter.Latest;
             this.WhenAnyValue(x => x.CurrentSection)
                 .Subscribe(x => this.PopulateCommand.Execute(x));
 
@@ -54,13 +53,17 @@ namespace UNTv.WP81.Features.Videos
             this.WhenAnyValue(x => x.PopularVideos)
                 .Where(x => this.CurrentSection == SortFilter.Popular)
                 .Subscribe(x => this.IsLoading = x == null);
+
+            // populate section latest
+            this.CurrentSection = SortFilter.Latest;
         }
 
         private void Populate(Nullable<SortFilter> section = null)
         {
-            Action<SortFilter, ReactiveList<ItemViewModel>, Action<ReactiveList<ItemViewModel>>> EvaluateThenPopulate = (sortFilter, items, callback) =>
+            Action<SortFilter, ReactiveList<ItemViewModel>, Action<ReactiveList<ItemViewModel>>> PopulateCurrentSectionIfEmpty = (sortFilter, items, callback) =>
             {
-                if ((section == null || section == sortFilter) && (this.IsLoading = items.IsNullOrEmpty()))
+                var isCurrentSectionEmpty = (section == sortFilter) && (this.IsLoading = items.IsNullOrEmpty());
+                if (isCurrentSectionEmpty)
                 {
                     _service.Get(new VideoMessage.Request(sortFilter)).ContinueWith(
                         continuationAction: x => callback(x.Result.AsItems()),
@@ -69,9 +72,9 @@ namespace UNTv.WP81.Features.Videos
                 }
             };
 
-            EvaluateThenPopulate(SortFilter.Latest, this.LatestVideos, result => this.LatestVideos = result);
-            EvaluateThenPopulate(SortFilter.Featured, this.FeaturedVideos, result => this.FeaturedVideos = result);
-            EvaluateThenPopulate(SortFilter.Popular, this.PopularVideos, result => this.PopularVideos = result);
+            PopulateCurrentSectionIfEmpty(SortFilter.Latest, this.LatestVideos, result => this.LatestVideos = result);
+            PopulateCurrentSectionIfEmpty(SortFilter.Featured, this.FeaturedVideos, result => this.FeaturedVideos = result);
+            PopulateCurrentSectionIfEmpty(SortFilter.Popular, this.PopularVideos, result => this.PopularVideos = result);
         }
 
         private void NavigateToVideosDetail(ItemViewModel item)

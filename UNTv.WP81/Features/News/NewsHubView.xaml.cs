@@ -34,20 +34,7 @@ namespace UNTv.WP81.Features.News
                 if (_isActivated)
                     return;
 
-                Action<ListView> BindClickEvent = (listView) =>
-                {
-                    listView.Events().ItemClick
-                        .Select(x => x.ClickedItem as ItemViewModel)
-                        .Where(x => this.ViewModel.NavigateToNewsDetailCommand.CanExecute(null))
-                        .Subscribe(x => this.ViewModel.NavigateToNewsDetailCommand.Execute(x));
-                };
-
-
-                Action<PivotItem> SetCurrentSection = (pivotItem) => 
-                {
-                    this.ViewModel.CurrentSection = Category.GetByHeader(pivotItem.Header.ToString());
-                };
-
+                // signals panning off pivot (change of news category: Worl, Sports, Health ...)
                 this.NewsPivot.Events().SelectionChanged
                     .Select(x => x.AddedItems.OfType<PivotItem>().FirstOrDefault())
                     .Where(pivotItem => pivotItem != null)
@@ -65,21 +52,35 @@ namespace UNTv.WP81.Features.News
                 this.Bind(ViewModel, x => x.ProvincialNews, x => x.ProvincialNewsListView.ItemsSource);
                 this.Bind(ViewModel, x => x.ScienceNews, x => x.ScienceNewsListView.ItemsSource);
 
-                BindClickEvent(this.HeadlinesListView);
-                BindClickEvent(this.WorldNewsListView);
-                BindClickEvent(this.SportsNewsListView);
-                BindClickEvent(this.HealthNewsListView);
-                BindClickEvent(this.PoliticalNewsListView);
-                BindClickEvent(this.EducationNewsListView);
-                BindClickEvent(this.TechnologyNewsListView);
-                BindClickEvent(this.GovernmentNewsListView);
-                BindClickEvent(this.ProvincialNewsListView);
-                BindClickEvent(this.ScienceNewsListView);
+                this.BindClickEvent(this.HeadlinesListView);
+                this.BindClickEvent(this.WorldNewsListView);
+                this.BindClickEvent(this.SportsNewsListView);
+                this.BindClickEvent(this.HealthNewsListView);
+                this.BindClickEvent(this.PoliticalNewsListView);
+                this.BindClickEvent(this.EducationNewsListView);
+                this.BindClickEvent(this.TechnologyNewsListView);
+                this.BindClickEvent(this.GovernmentNewsListView);
+                this.BindClickEvent(this.ProvincialNewsListView);
+                this.BindClickEvent(this.ScienceNewsListView);
 
-                this.ViewModel.PopulateCommand.Execute(null);
+                // setting current section will populate the view
+                this.ViewModel.CurrentSection = Category.Headlines;
 
                 _isActivated = true;
             });
+        }
+
+        private void BindClickEvent(ListView listView)
+        {
+            listView.Events().ItemClick
+                .Select(x => x.ClickedItem as ItemViewModel)
+                .Where(x => this.ViewModel.NavigateToNewsDetailCommand.CanExecute(null))
+                .Subscribe(x => this.ViewModel.NavigateToNewsDetailCommand.Execute(x));
+        }
+
+        private void SetCurrentSection(PivotItem pivotItem)
+        {
+            this.ViewModel.CurrentSection = Category.GetByHeader(pivotItem.Header.ToString());
         }
 
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty

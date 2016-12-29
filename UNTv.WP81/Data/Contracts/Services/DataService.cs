@@ -57,11 +57,14 @@ namespace UNTv.WP81.Data.Contracts.Services
                     }
                     else
                     {
-                        json = await _localData.Get(filename);
+                        if (await _localData.Exists(filename))
+                            json = await _localData.Get(filename);
                     }
                 }
 
-                return JsonConvert.DeserializeObject<TResponse>(json);
+                return !string.IsNullOrWhiteSpace(json)
+                    ? JsonConvert.DeserializeObject<TResponse>(json)
+                    : Activator.CreateInstance<TResponse>();
             }
             catch (Exception ex)
             {

@@ -11,6 +11,5 @@ namespace UNTv.WP81.Data.Stores
         Task<bool> Exists(string filename);
         Task<string> Get(string filename);
         Task Save(string filename, string data);
-
     }
 }

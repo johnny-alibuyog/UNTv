@@ -50,18 +50,13 @@ namespace UNTv.WP81.Features
             this.PopulateCommand = ReactiveCommand.Create();
             this.PopulateCommand.Subscribe(x => Populate(x));
 
-            this.CurrentSection = this.StartSection;
             this.WhenAnyValue(x => x.CurrentSection)
                 .Subscribe(x => this.PopulateCommand.Execute(x));
 
-            this.CurrentSection = this.StartSection;
-
             // Setup progress bar
             this.StartSection.WhenAnyValue(x => x.Programs, x => x.AudioUri, x => x.VideoUri)
-                .Where(x => this.CurrentSection == this.StartSection &&
-                    !x.Item1.IsNullOrEmpty() && x.Item2 != null && x.Item3 != null
-                )
-                .Subscribe(x => this.IsLoading = x == null);
+                .Where(x => this.CurrentSection == this.StartSection)
+                .Subscribe(x => this.IsLoading = (x.Item1.IsNullOrEmpty() || x.Item2 == null || x.Item3 == null));
 
             this.NewsSection.WhenAnyValue(x => x.News)
                 .Where(x => this.CurrentSection == this.NewsSection)
@@ -94,60 +89,55 @@ namespace UNTv.WP81.Features
             this.ContactUsSection.WhenAnyValue(x => x.Content)
                 .Where(x => this.CurrentSection == this.ContactUsSection)
                 .Subscribe(x => this.IsLoading = x == null);
+
+            // populate start screen
+            this.CurrentSection = this.StartSection;
         }
 
         private void Populate(object section)
         {
-            if (section == null || section == this.StartSection)
+            if (section == this.StartSection)
             {
                 this.IsLoading = this.StartSection.Programs.IsNullOrEmpty();
                 this.StartSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.NewsSection)
+            else if (section == this.NewsSection)
             {
                 this.IsLoading = this.NewsSection.News.IsNullOrEmpty();
                 this.NewsSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.VideosSection)
+            else if (section == this.VideosSection)
             {
                 this.IsLoading = this.VideosSection.Videos.IsNullOrEmpty();
                 this.VideosSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.WeatherSection)
+            else if (section == this.WeatherSection)
             {
                 this.IsLoading = this.WeatherSection.Forecast.IsNullOrEmpty();
                 if (this.WeatherSection.PopulateCommand.CanExecute(null))
                     this.WeatherSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.PublicServicesSection)
+            else if (section == this.PublicServicesSection)
             {
                 this.IsLoading = this.PublicServicesSection.Programs.IsNullOrEmpty();
                 this.PublicServicesSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.RadioProgramSection)
+            else if (section == this.RadioProgramSection)
             {
                 this.IsLoading = this.RadioProgramSection.Programs.IsNullOrEmpty();
                 this.RadioProgramSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.TelevisionProgramSection)
+            else if (section == this.TelevisionProgramSection)
             {
                 this.IsLoading = this.TelevisionProgramSection.Programs.IsNullOrEmpty();
                 this.TelevisionProgramSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.AboutSection)
+            else if (section == this.AboutSection)
             {
                 this.IsLoading = string.IsNullOrEmpty(this.AboutSection.Content);
                 this.AboutSection.PopulateCommand.Execute(null);
             }
-
-            if (section == null || section == this.ContactUsSection)
+            else if (section == this.ContactUsSection)
             {
                 this.IsLoading = string.IsNullOrEmpty(this.ContactUsSection.Content);
                 this.ContactUsSection.PopulateCommand.Execute(null);

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reactive;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
@@ -11,6 +9,7 @@ using UNTv.WP81.Data.Contracts.Messages;
 using UNTv.WP81.Data.Contracts.Services;
 using UNTv.WP81.Data.Entities;
 using UNTv.WP81.Features.Controls.ListItemControls;
+using System.Collections;
 
 namespace UNTv.WP81.Features.News
 {
@@ -48,51 +47,54 @@ namespace UNTv.WP81.Features.News
 
             this.WhenAnyValue(x => x.CurrentSection)
                 .Subscribe(x => this.PopulateCommand.Execute(x));
-            this.CurrentSection = Category.Headlines;
 
             // Setup progress bar
             this.WhenAnyValue(x => x.Headlines)
                 .Where(x => this.CurrentSection == Category.Headlines)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.WorldNews)
                 .Where(x => this.CurrentSection == Category.World)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.HealthNews)
                 .Where(x => this.CurrentSection == Category.Health)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.PoliticalNews)
                 .Where(x => this.CurrentSection == Category.Political)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.EducationNews)
                 .Where(x => this.CurrentSection == Category.Education)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.TechnologyNews)
                 .Where(x => this.CurrentSection == Category.Technology)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.GovernmentNews)
                 .Where(x => this.CurrentSection == Category.Government)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.ProvincialNews)
                 .Where(x => this.CurrentSection == Category.ProvincialNews)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
 
             this.WhenAnyValue(x => x.ScienceNews)
                 .Where(x => this.CurrentSection == Category.ScienceAndEnvironment)
-                .Subscribe(x => this.IsLoading = x == null);
+                .Subscribe(x => this.IsLoading = x.IsNullOrEmpty());
+
+            // populate section headlines
+            this.CurrentSection = Category.Headlines;
         }
-  
+
         private void Populate(Category section = null)
         {
-            Action<Category, ReactiveList<ItemViewModel>, Action<ReactiveList<ItemViewModel>>> EvaluateThenPopulate = (category, items, callback) =>
+            Action<Category, ReactiveList<ItemViewModel>, Action<ReactiveList<ItemViewModel>>> PopulateCurrentSectionIfEmpty = (category, items, callback) =>
             {
-                if ((section == null || section == category) && (this.IsLoading = items.IsNullOrEmpty()))
+                var isCurrentSectionEmpty = (section == category) && (this.IsLoading = items.IsNullOrEmpty());
+                if (isCurrentSectionEmpty)
                 {
                     _service.Get(new NewsMessage.Request(category)).ContinueWith(
                         continuationAction: x => callback(x.Result.AsItems()),
@@ -101,16 +103,16 @@ namespace UNTv.WP81.Features.News
                 }
             };
 
-            EvaluateThenPopulate(Category.Headlines, this.Headlines, result => this.Headlines = result);
-            EvaluateThenPopulate(Category.World, this.WorldNews, result => this.WorldNews = result);
-            EvaluateThenPopulate(Category.Sports, this.SportsNews, result => this.SportsNews = result);
-            EvaluateThenPopulate(Category.Health, this.HealthNews, result => this.HealthNews = result);
-            EvaluateThenPopulate(Category.Political, this.PoliticalNews, result => this.PoliticalNews = result);
-            EvaluateThenPopulate(Category.Education, this.EducationNews, result => this.EducationNews = result);
-            EvaluateThenPopulate(Category.Technology, this.TechnologyNews, result => this.TechnologyNews = result);
-            EvaluateThenPopulate(Category.Government, this.GovernmentNews, result => this.GovernmentNews = result);
-            EvaluateThenPopulate(Category.ProvincialNews, this.ProvincialNews, result => this.ProvincialNews = result);
-            EvaluateThenPopulate(Category.ScienceAndEnvironment, this.ScienceNews, result => this.ScienceNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Headlines, this.Headlines, result => this.Headlines = result);
+            PopulateCurrentSectionIfEmpty(Category.World, this.WorldNews, result => this.WorldNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Sports, this.SportsNews, result => this.SportsNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Health, this.HealthNews, result => this.HealthNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Political, this.PoliticalNews, result => this.PoliticalNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Education, this.EducationNews, result => this.EducationNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Technology, this.TechnologyNews, result => this.TechnologyNews = result);
+            PopulateCurrentSectionIfEmpty(Category.Government, this.GovernmentNews, result => this.GovernmentNews = result);
+            PopulateCurrentSectionIfEmpty(Category.ProvincialNews, this.ProvincialNews, result => this.ProvincialNews = result);
+            PopulateCurrentSectionIfEmpty(Category.ScienceAndEnvironment, this.ScienceNews, result => this.ScienceNews = result);
         }
 
         private void NavigateToNewsDetail(ItemViewModel newsItem)

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,7 +17,20 @@ namespace UNTv.WP81.Data.Contracts.Services
                 var client = new HttpClient();
                 client.Timeout = TimeSpan.FromMinutes(2);
                 var response = await client.GetAsync(uri, cancellationSource.Token);
-                response.EnsureSuccessStatusCode();
+                //Debug.WriteLine(uri);
+                //Debug.WriteLine(response.Headers);
+                //Debug.WriteLine(response.Content);
+                //Debug.WriteLine(response.RequestMessage);
+                //response.EnsureSuccessStatusCode();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Debug.WriteLine(uri);
+                    Debug.WriteLine(response.Headers);
+                    Debug.WriteLine(response.Content);
+                    Debug.WriteLine(response.RequestMessage);
+                    return null;
+                }
 
                 var rawJsonResult = await response.Content.ReadAsStringAsync();
                 var jsonResult = rawJsonResult.Trim();

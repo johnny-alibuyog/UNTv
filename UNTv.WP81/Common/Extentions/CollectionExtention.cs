@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
+using System.Diagnostics;
 
 namespace UNTv.WP81.Common.Extentions
 {
@@ -16,6 +12,8 @@ namespace UNTv.WP81.Common.Extentions
 
         public static bool IsNullOrEmpty(this IEnumerable items)
         {
+            Debug.WriteLine(items);
+
             if (items == null)
                 return true;
 
